@@ -1,0 +1,6 @@
+framework module Pods_DashboardPrototype {
+  umbrella header "Pods-DashboardPrototype-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AECA35C51E491AAE00C9DC45"
-               BuildableName = "DashboardPrototype.app"
-               BlueprintName = "DashboardPrototype"
-               ReferencedContainer = "container:DashboardPrototype.xcodeproj">
+               BlueprintIdentifier = "60D54366D532952BCBD16D954625184D"
+               BuildableName = "Pods_DashboardPrototype.framework"
+               BlueprintName = "Pods-DashboardPrototype"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AECA35C51E491AAE00C9DC45"
-            BuildableName = "DashboardPrototype.app"
-            BlueprintName = "DashboardPrototype"
-            ReferencedContainer = "container:DashboardPrototype.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AECA35C51E491AAE00C9DC45"
-            BuildableName = "DashboardPrototype.app"
-            BlueprintName = "DashboardPrototype"
-            ReferencedContainer = "container:DashboardPrototype.xcodeproj">
+            BlueprintIdentifier = "60D54366D532952BCBD16D954625184D"
+            BuildableName = "Pods_DashboardPrototype.framework"
+            BlueprintName = "Pods-DashboardPrototype"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AECA35C51E491AAE00C9DC45"
-            BuildableName = "DashboardPrototype.app"
-            BlueprintName = "DashboardPrototype"
-            ReferencedContainer = "container:DashboardPrototype.xcodeproj">
+            BlueprintIdentifier = "60D54366D532952BCBD16D954625184D"
+            BuildableName = "Pods_DashboardPrototype.framework"
+            BlueprintName = "Pods-DashboardPrototype"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
