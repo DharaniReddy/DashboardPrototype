@@ -45,7 +45,8 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let imageView: UIView
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        let label = UILabel(frame: CGRect(x: 0, y: 150, width: 200, height: 50))
+        let backgroundImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
         
         if view != nil {
             imageView = view!
@@ -53,20 +54,23 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
             imageView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
             imageView.backgroundColor = UIColor(red: 69/255.0, green: 195/255.0, blue: 171/255.0, alpha: 1.0)
             
+            backgroundImage.image = UIImage(named: getImageName(atIndex: index))
+            
             label.text = getSelectDataText(index)
             label.textColor = UIColor.white
             label.textAlignment = .center
             label.font = UIFont(name: label.font.fontName, size: 36)
         }
         
-        imageView.addSubview(label)
+        imageView.addSubview(backgroundImage)
+        //imageView.addSubview(label)
         
         return imageView
     }
 
     func carouselDidEndScrollingAnimation(_ carousel: iCarousel) {
         let currentViewIndex = carousel.currentItemIndex
-        LabelTitle.text = getSelectDataText(currentViewIndex)
+        LabelTitle.text = getSelectedIndexText(indexValue: currentViewIndex)
     }
     
     // gets the string value from local data based on current index of carousel
@@ -88,3 +92,10 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     }
 }
 
+func getSelectedIndexText(indexValue index: Int) -> String {
+    return ["Friends & Family", "Fitness", "Points", "Nutrition", "Trackers", "Health Assessment", "", "", ""][index]
+}
+
+func getImageName(atIndex index: Int) -> String {
+    return ["familytogether", "fitness", "points", "nutrition", "trackers", "assessment", "familytogether", "fitness", "trackers"][index]
+}
