@@ -1,12 +1,25 @@
 PODS:
   - iCarousel (1.8.3)
+  - Spring (1.0.3)
 
 DEPENDENCIES:
   - iCarousel
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 3a9227c6e9157e7b47f5ac1ee5abab2a56b50002
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
-PODFILE CHECKSUM: a89ec72273120da25258662afd49c51193c781fe
+PODFILE CHECKSUM: d86f0a1c3454afeb7cdaa553c1dce9458bb7b448
 
 COCOAPODS: 1.1.1
