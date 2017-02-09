@@ -14,6 +14,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     // View Outlets
     @IBOutlet weak var LabelTitle: UILabel!
     
+    @IBOutlet weak var carousel: iCarousel!
     var data: [[Int:String]] = [
         [1 : "one"],
         [2 : "two"],
@@ -28,14 +29,8 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let carousel = iCarousel(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 280))
-        carousel.dataSource = self
-        carousel.delegate = self
         carousel.type = .coverFlow
-        carousel.bounds = view.frame
-        carousel.scrollToItem(at: 5, animated: false)
-        view.addSubview(carousel)
+        carousel.scrollToItem(at: data.count/2, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +41,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     func numberOfItems(in carousel: iCarousel) -> Int {
         return data.count
     }
+    
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let imageView: UIView
