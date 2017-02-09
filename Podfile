@@ -7,4 +7,6 @@ target 'DashboardPrototype' do
 
   # Pods for DashboardPrototype
   pod 'iCarousel'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+
 end
