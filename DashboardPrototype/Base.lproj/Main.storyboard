@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,12 +25,6 @@
                             <userLayoutGuide location="280" affinity="minY"/>
                         </userGuides>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoW-zV-Y2U">
-                                <rect key="frame" x="115" y="323" width="120" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osH-QB-dVX" customClass="iCarousel">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
                                 <color key="backgroundColor" red="0.29019607843137252" green="0.34901960784313724" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,21 +36,40 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Lfb-y2-v53"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoW-zV-Y2U" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="16" y="333" width="343" height="284"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.2901960784" green="0.34901960780000002" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="497-B7-ecW">
+                                <rect key="frame" x="16" y="305" width="42" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="eQE-Jz-og0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.2901960784" green="0.34901960780000002" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="497-B7-ecW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5Rl-vM-vIs"/>
                             <constraint firstItem="osH-QB-dVX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Ua-Mu-J7z"/>
+                            <constraint firstItem="497-B7-ecW" firstAttribute="top" secondItem="osH-QB-dVX" secondAttribute="bottom" constant="25" id="Ds0-cD-Fey"/>
                             <constraint firstItem="osH-QB-dVX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QDS-KP-Ot9"/>
-                            <constraint firstItem="qoW-zV-Y2U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="T8F-w7-4Gg"/>
                             <constraint firstAttribute="trailing" secondItem="osH-QB-dVX" secondAttribute="trailing" id="TPE-Qw-clw"/>
-                            <constraint firstItem="qoW-zV-Y2U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="303" id="ZNH-Q5-LVU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qoW-zV-Y2U" secondAttribute="trailing" constant="124" id="lQo-p5-kuU"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qoW-zV-Y2U" secondAttribute="bottom" constant="323" id="rqG-TT-29V"/>
+                            <constraint firstItem="qoW-zV-Y2U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XrA-Jd-zrm"/>
+                            <constraint firstItem="qoW-zV-Y2U" firstAttribute="top" secondItem="497-B7-ecW" secondAttribute="bottom" constant="8" id="Z1H-tt-Rgl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qoW-zV-Y2U" secondAttribute="trailing" id="ae4-2p-rAQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qoW-zV-Y2U" secondAttribute="bottom" constant="50" id="hmW-ho-QFe"/>
+                            <constraint firstItem="qoW-zV-Y2U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zRm-u7-xSk"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="LabelTitle" destination="qoW-zV-Y2U" id="1it-Q3-gHN"/>
                         <outlet property="carousel" destination="osH-QB-dVX" id="wzo-MC-MsN"/>
+                        <outlet property="descriptionLabel" destination="qoW-zV-Y2U" id="fnj-FQ-2Bv"/>
+                        <outlet property="titleLabel" destination="497-B7-ecW" id="ClK-w8-SJ9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

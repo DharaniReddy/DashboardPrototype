@@ -8,20 +8,26 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+		</dict>
+		<key>Spring.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>iCarousel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>60D54366D532952BCBD16D954625184D</key>
+		<key>2977C21DE44DA3A0B2B5A923F9B9D093</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84EB239D033A48B845623B13EC7E25B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

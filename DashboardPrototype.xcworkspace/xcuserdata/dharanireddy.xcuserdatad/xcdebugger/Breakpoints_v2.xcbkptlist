@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DashboardPrototype/ViewController.swift"
-            timestampString = "508335401.47232"
+            timestampString = "508338445.587197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "carousel(_:viewForItemAt:reusing:)"
             landmarkType = "7">
          </BreakpointContent>
