@@ -11,8 +11,9 @@ import UIKit
 class CircleView: UIView {
     
     var circleLayer: CAShapeLayer!
+    var defaultLayer: CAShapeLayer!
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, width: CGFloat, drawColor: UIColor) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
         
@@ -22,16 +23,25 @@ class CircleView: UIView {
         
         // Setup the CAShapeLayer with the path, colors, and line width
         circleLayer = CAShapeLayer()
+        defaultLayer = CAShapeLayer()
         circleLayer.path = circlePath.cgPath
+        defaultLayer.path = circlePath.cgPath
         circleLayer.fillColor = UIColor.clear.cgColor
-        circleLayer.strokeColor = UIColor.blue.cgColor
-        circleLayer.lineWidth = 5.0;
+        defaultLayer.fillColor = UIColor.clear.cgColor
+        
+        circleLayer.lineWidth = width
+        defaultLayer.lineWidth = width
+        
+        circleLayer.strokeColor = drawColor.cgColor //UIColor(red: 1, green: 130/255, blue: 0, alpha: 1.0).cgColor
+        defaultLayer.strokeColor = UIColor(red: 0, green: 0, blue: 0.1, alpha: 0.05).cgColor
         
         // Don't draw the circle initially
         circleLayer.strokeEnd = 0.0
+        defaultLayer.strokeEnd = 1.0
         
         // Add the circleLayer to the view's layer's sublayers
         layer.addSublayer(circleLayer)
+        layer.addSublayer(defaultLayer)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -39,7 +49,6 @@ class CircleView: UIView {
     }
     
     func animateCircle(duration: TimeInterval, toValue: CGFloat) {
-        
         // We want to animate the strokeEnd property of the circleLayer
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         

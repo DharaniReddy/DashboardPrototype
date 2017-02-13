@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D161E519036003071EE /* ChallengesViewController.swift */; };
 		9F896D191E51A461003071EE /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D181E51A461003071EE /* CircleView.swift */; };
+		9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D1A1E51B38A003071EE /* RoundedButton.swift */; };
 		AE0D27B01E4E274F006AD0B6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27AF1E4E274F006AD0B6 /* CardView.swift */; };
 		AE0D27B21E4E3551006AD0B6 /* Peace Sans Webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */; };
 		AE0D27B41E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */; };
@@ -29,6 +30,7 @@
 		13334682B592D49EDDBE01C2 /* Pods-DashboardPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashboardPrototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DashboardPrototype/Pods-DashboardPrototype.debug.xcconfig"; sourceTree = "<group>"; };
 		9F896D161E519036003071EE /* ChallengesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		9F896D181E51A461003071EE /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		9F896D1A1E51B38A003071EE /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		AE0D27AF1E4E274F006AD0B6 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Peace Sans Webfont.ttf"; sourceTree = "<group>"; };
 		AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SIMPLIFICA Typeface.ttf"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				9F896D161E519036003071EE /* ChallengesViewController.swift */,
 				9F896D181E51A461003071EE /* CircleView.swift */,
+				9F896D1A1E51B38A003071EE /* RoundedButton.swift */,
 			);
 			name = Challenges;
 			path = DashboardPrototype;
@@ -276,6 +279,7 @@
 				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
 				C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */,
+				9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */,
 				AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */,
 				9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */,
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
