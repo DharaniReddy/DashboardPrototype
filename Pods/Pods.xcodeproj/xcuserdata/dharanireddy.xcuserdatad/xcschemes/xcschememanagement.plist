@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HGCircularSlider.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DashboardPrototype.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2977C21DE44DA3A0B2B5A923F9B9D093</key>
+		<key>01E9FE51F89215D0FFFCF2A90DD7B4B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84EB239D033A48B845623B13EC7E25B8</key>
+		<key>2C138F0994202F9E2A73B3C477F70F65</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B8D8C363B343A0778AE6633D70E11749</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C37B872D707D7590FFF79745BED6EE95</key>
 		<dict>
 			<key>primary</key>
 			<true/>
