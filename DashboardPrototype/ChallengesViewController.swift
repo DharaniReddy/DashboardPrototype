@@ -13,17 +13,20 @@ class ChallengesViewController: UIViewController {
     @IBOutlet private weak var circleView: CircleView!
     @IBOutlet weak var percentageLabel: UILabel!
     
+    var circleProgressView: CircleView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationController?.isNavigationBarHidden = true
         
-        
+        circleProgressView = CircleView(frame: circleView.frame)
+        view.addSubview(circleProgressView)
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         addCircleView()
     }
 
@@ -38,14 +41,9 @@ class ChallengesViewController: UIViewController {
     
     private func addCircleView() {
         
-        // Create a new CircleView
-        let circleView = CircleView(frame: self.circleView.frame)
-        
-        view.addSubview(circleView)
-        
         // Animate the drawing of the circle over the course of 1 second
-        circleView.animateCircle(duration: 1.0, toValue: 0.8)
-        percentageLabel.text = "\(Int(0.8 * 100)) " + "% completed"
+        circleProgressView.animateCircle(duration: 1.0, toValue: 0.73)
+        percentageLabel.text = "\(Int(0.73 * 100))" + "% time remaining"
     }
     
     @IBAction private func popViewController() {
