@@ -73,8 +73,8 @@ extension GolasViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func addCircleView(_ cell: GoalsCollectionViewCell) {
         
-        let circleView = CircleView(frame: CGRect(x: 0, y: 0, width: cell.circleView.frame.width,height: cell.circleView.frame.height))
-        //UIColor(red: 206, green: 234, blue: 67, alpha: 1)
+        let circleView = CircleView(frame: CGRect(x: 0, y: 0, width: cell.circleView.frame.width,height: cell.circleView.frame.height), width: 8, drawColor: UIColor(red: 206/255, green: 234/255, blue: 67/255, alpha: 1))
+        
         cell.circleView.addSubview(circleView)
         circleView.animateCircle(duration: 1.0, toValue: 0.8)
         cell.completedLabel.text = "\(Int(0.8 * 100)) "
