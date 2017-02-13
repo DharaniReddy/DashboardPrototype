@@ -13,7 +13,7 @@ class CircleView: UIView {
     var circleLayer: CAShapeLayer!
     var defaultLayer: CAShapeLayer!
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, width: CGFloat, drawColor: UIColor) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
         
@@ -29,10 +29,10 @@ class CircleView: UIView {
         circleLayer.fillColor = UIColor.clear.cgColor
         defaultLayer.fillColor = UIColor.clear.cgColor
         
-        circleLayer.lineWidth = 8.0
-        defaultLayer.lineWidth = 8.0
+        circleLayer.lineWidth = width
+        defaultLayer.lineWidth = width
         
-        circleLayer.strokeColor = UIColor(red: 1, green: 130/255, blue: 0, alpha: 1.0).cgColor //blue.cgColor
+        circleLayer.strokeColor = drawColor.cgColor //UIColor(red: 1, green: 130/255, blue: 0, alpha: 1.0).cgColor
         defaultLayer.strokeColor = UIColor(red: 0, green: 0, blue: 0.1, alpha: 0.05).cgColor
         
         // Don't draw the circle initially

@@ -20,7 +20,7 @@ class ChallengesViewController: UIViewController {
 
         navigationController?.isNavigationBarHidden = true
         
-        circleProgressView = CircleView(frame: circleView.frame)
+        circleProgressView = CircleView(frame: circleView.frame, width: 8, drawColor: UIColor(red: 1, green: 130/255, blue: 0, alpha: 1.0))
         view.addSubview(circleProgressView)
         // Do any additional setup after loading the view.
     }
