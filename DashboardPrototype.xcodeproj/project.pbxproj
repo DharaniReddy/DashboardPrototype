@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D161E519036003071EE /* ChallengesViewController.swift */; };
+		9F896D191E51A461003071EE /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D181E51A461003071EE /* CircleView.swift */; };
 		AE0D27B01E4E274F006AD0B6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27AF1E4E274F006AD0B6 /* CardView.swift */; };
 		AE0D27B21E4E3551006AD0B6 /* Peace Sans Webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */; };
 		AE0D27B41E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		0A1D0970DCB2B67D0C220C19 /* Pods-DashboardPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashboardPrototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-DashboardPrototype/Pods-DashboardPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		13334682B592D49EDDBE01C2 /* Pods-DashboardPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashboardPrototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DashboardPrototype/Pods-DashboardPrototype.debug.xcconfig"; sourceTree = "<group>"; };
+		9F896D161E519036003071EE /* ChallengesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
+		9F896D181E51A461003071EE /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		AE0D27AF1E4E274F006AD0B6 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Peace Sans Webfont.ttf"; sourceTree = "<group>"; };
 		AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SIMPLIFICA Typeface.ttf"; sourceTree = "<group>"; };
@@ -60,11 +64,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F896D151E519007003071EE /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				9F896D161E519036003071EE /* ChallengesViewController.swift */,
+				9F896D181E51A461003071EE /* CircleView.swift */,
+			);
+			name = Challenges;
+			path = DashboardPrototype;
+			sourceTree = "<group>";
+		};
 		AECA35BD1E491AAE00C9DC45 = {
 			isa = PBXGroup;
 			children = (
 				C7A23B201E4DDEE90042D176 /* CustomLayout */,
 				AECA35C81E491AAE00C9DC45 /* DashboardPrototype */,
+				9F896D151E519007003071EE /* Challenges */,
 				AECA35C71E491AAE00C9DC45 /* Products */,
 				EF83EE230179F9F992A111AF /* Pods */,
 				3B3C49592B74533D556AC0CD /* Frameworks */,
@@ -246,6 +261,8 @@
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
 				C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */,
 				AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */,
+				9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */,
+				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
 				AE0D27B01E4E274F006AD0B6 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

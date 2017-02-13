@@ -1,34 +1,25 @@
 PODS:
-  - HGCircularSlider (1.0.3)
   - iCarousel (1.8.3)
   - Spring (1.0.3)
 
 DEPENDENCIES:
-  - HGCircularSlider (from `https://github.com/HamzaGhazouani/HGCircularSlider`, branch `master`)
   - iCarousel
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
 
 EXTERNAL SOURCES:
-  HGCircularSlider:
-    :branch: master
-    :git: https://github.com/HamzaGhazouani/HGCircularSlider
   Spring:
     :branch: swift3
     :git: https://github.com/MengTo/Spring.git
 
 CHECKOUT OPTIONS:
-  HGCircularSlider:
-    :commit: 238de3030f4fbb4f309f3cde63c5ed58f505ba63
-    :git: https://github.com/HamzaGhazouani/HGCircularSlider
   Spring:
     :commit: 3a9227c6e9157e7b47f5ac1ee5abab2a56b50002
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
-  HGCircularSlider: e189859761f556d168645f33ad631a84ee50e457
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
-PODFILE CHECKSUM: d84cfae51bc7e1bf97bb32f0801a7e50817343bd
+PODFILE CHECKSUM: d86f0a1c3454afeb7cdaa553c1dce9458bb7b448
 
 COCOAPODS: 1.1.1
