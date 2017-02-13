@@ -40,10 +40,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        appointmentViewBox.createBox()
-        messageViewBox.createBox()
-        
-        carousel.type = .coverFlow
+        carousel.type = .linear
         carousel.scrollToItem(at: data.count/2, animated: false)
         carousel.isPagingEnabled = true
     }
@@ -75,8 +72,8 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
    
     func carouselDidEndScrollingAnimation(_ carousel: iCarousel) {
         let currentViewIndex = carousel.currentItemIndex
-        descriptionLabel.text = tilesDescriptions[currentViewIndex%2]
-        transitionLabel(currentViewIndex)
+        // descriptionLabel.text = tilesDescriptions[currentViewIndex%2]
+        // transitionLabel(currentViewIndex)
         lastIndex = currentViewIndex
         titleLabel.text = getSelectedIndexText(indexValue: currentViewIndex)
     }
