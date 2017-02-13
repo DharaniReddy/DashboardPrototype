@@ -49,6 +49,13 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
         return data.count
     }
     
+    @IBAction func goalsAction(_ sender: Any) {
+        
+        let goalsViewController = UIStoryboard(name: "Goals", bundle: nil).instantiateViewController(withIdentifier:"Goals") as! GolasViewController
+        
+        present(goalsViewController, animated: true)
+
+    }
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let imageView: UIView

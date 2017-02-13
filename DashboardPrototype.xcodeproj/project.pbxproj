@@ -19,6 +19,8 @@
 		AECA35D41E491AAE00C9DC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */; };
 		C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B191E4DDE2D0042D176 /* customLayout.m */; };
 		C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */; };
+		C7A805931E51B4A500FF59AC /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A805921E51B4A500FF59AC /* Goals.storyboard */; };
+		C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A805941E51B5CB00FF59AC /* GolasViewController.swift */; };
 		D41F30B086687699A1DAC58E /* Pods_DashboardPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		C7A23B181E4DDE2D0042D176 /* customLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customLayout.h; sourceTree = "<group>"; };
 		C7A23B191E4DDE2D0042D176 /* customLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customLayout.m; sourceTree = "<group>"; };
 		C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewViewController.swift; sourceTree = "<group>"; };
+		C7A805921E51B4A500FF59AC /* Goals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
+		C7A805941E51B5CB00FF59AC /* GolasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolasViewController.swift; sourceTree = "<group>"; };
 		D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashboardPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 				C7A23B201E4DDEE90042D176 /* CustomLayout */,
 				AECA35C81E491AAE00C9DC45 /* DashboardPrototype */,
 				9F896D151E519007003071EE /* Challenges */,
+				C7A805911E51B48A00FF59AC /* Goals */,
 				AECA35C71E491AAE00C9DC45 /* Products */,
 				EF83EE230179F9F992A111AF /* Pods */,
 				3B3C49592B74533D556AC0CD /* Frameworks */,
@@ -119,6 +124,15 @@
 				C7A23B191E4DDE2D0042D176 /* customLayout.m */,
 			);
 			name = CustomLayout;
+			sourceTree = "<group>";
+		};
+		C7A805911E51B48A00FF59AC /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				C7A805921E51B4A500FF59AC /* Goals.storyboard */,
+				C7A805941E51B5CB00FF59AC /* GolasViewController.swift */,
+			);
+			path = Goals;
 			sourceTree = "<group>";
 		};
 		EF83EE230179F9F992A111AF /* Pods */ = {
@@ -199,6 +213,7 @@
 				AECA35D11E491AAE00C9DC45 /* Assets.xcassets in Resources */,
 				AE0D27B21E4E3551006AD0B6 /* Peace Sans Webfont.ttf in Resources */,
 				AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */,
+				C7A805931E51B4A500FF59AC /* Goals.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */,
+				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
 				C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */,
 				AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */,

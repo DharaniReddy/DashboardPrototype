@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sQy-hf-ScF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sQy-hf-ScF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,7 +29,7 @@
                         <userGuides>
                             <userLayoutGuide location="280" affinity="minY"/>
                             <userLayoutGuide location="357" affinity="minY"/>
-                            <userLayoutGuide location="187" affinity="minX"/>
+                            <userLayoutGuide location="193" affinity="minX"/>
                         </userGuides>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osH-QB-dVX" customClass="iCarousel">
@@ -109,6 +109,20 @@
                                     <segue destination="prK-WA-RGz" kind="show" id="tV2-2b-Tns"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b8-sa-3C4">
+                                <rect key="frame" x="250" y="623" width="60" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Yde-fb-zy8"/>
+                                    <constraint firstAttribute="width" constant="60" id="Z6e-Xi-euQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Goals">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.48627450979999998" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goalsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YYw-Wy-gZ7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -120,7 +134,9 @@
                             <constraint firstItem="7Tk-Ts-D55" firstAttribute="top" secondItem="osH-QB-dVX" secondAttribute="bottom" constant="27" id="8Up-ME-s3A"/>
                             <constraint firstItem="bDa-b7-LVk" firstAttribute="top" secondItem="osH-QB-dVX" secondAttribute="bottom" constant="27" id="8wa-Lw-4RD"/>
                             <constraint firstItem="h0s-jc-SjK" firstAttribute="leading" secondItem="7Tk-Ts-D55" secondAttribute="trailing" id="9Xk-5y-MaU"/>
+                            <constraint firstItem="5b8-sa-3C4" firstAttribute="bottom" secondItem="TiP-a3-A0i" secondAttribute="bottom" id="HIC-pa-PAS"/>
                             <constraint firstItem="osH-QB-dVX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QDS-KP-Ot9"/>
+                            <constraint firstItem="TiP-a3-A0i" firstAttribute="trailing" secondItem="5b8-sa-3C4" secondAttribute="leading" constant="-20" id="RLd-7j-ffj"/>
                             <constraint firstAttribute="trailing" secondItem="osH-QB-dVX" secondAttribute="trailing" id="TPE-Qw-clw"/>
                             <constraint firstItem="7Tk-Ts-D55" firstAttribute="leading" secondItem="bDa-b7-LVk" secondAttribute="trailing" constant="8" id="U4D-T0-vWN"/>
                             <constraint firstAttribute="bottom" secondItem="gZz-xM-ZTc" secondAttribute="bottom" constant="141" id="V1V-lN-FWn"/>
@@ -444,6 +460,6 @@
         <image name="challenge" width="280" height="157"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z53-ag-fY5"/>
+        <segue reference="Rvp-cT-SAw"/>
     </inferredMetricsTieBreakers>
 </document>
