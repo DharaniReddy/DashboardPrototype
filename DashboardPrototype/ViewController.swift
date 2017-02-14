@@ -40,7 +40,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        carousel.type = .linear
+        carousel.type = .coverFlow
         carousel.scrollToItem(at: data.count/2, animated: false)
         carousel.isPagingEnabled = true
     }
