@@ -1,9 +1,11 @@
 PODS:
   - iCarousel (1.8.3)
+  - Persei (3.0)
   - Spring (1.0.3)
 
 DEPENDENCIES:
   - iCarousel
+  - Persei (~> 3.0)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
 
 EXTERNAL SOURCES:
@@ -18,8 +20,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  Persei: 2fa633362b1686ec53f8d2d1368ee523b8630742
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
-PODFILE CHECKSUM: d86f0a1c3454afeb7cdaa553c1dce9458bb7b448
+PODFILE CHECKSUM: 17a5aaa9af66f048d1cb34eda06c0133673c55d9
 
 COCOAPODS: 1.1.1
