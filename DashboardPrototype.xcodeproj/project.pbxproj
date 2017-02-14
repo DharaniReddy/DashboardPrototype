@@ -22,6 +22,7 @@
 		AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35CD1E491AAE00C9DC45 /* Main.storyboard */; };
 		AECA35D11E491AAE00C9DC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECA35D01E491AAE00C9DC45 /* Assets.xcassets */; };
 		AECA35D41E491AAE00C9DC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */; };
+		C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */; };
 		C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B191E4DDE2D0042D176 /* customLayout.m */; };
 		C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */; };
 		C7A805931E51B4A500FF59AC /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A805921E51B4A500FF59AC /* Goals.storyboard */; };
@@ -49,6 +50,7 @@
 		AECA35D01E491AAE00C9DC45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AECA35D31E491AAE00C9DC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AECA35D51E491AAE00C9DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDetailsViewController.swift; sourceTree = "<group>"; };
 		C7A23B151E4DDE160042D176 /* DashboardPrototype-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashboardPrototype-Bridging-Header.h"; sourceTree = "<group>"; };
 		C7A23B181E4DDE2D0042D176 /* customLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customLayout.h; sourceTree = "<group>"; };
 		C7A23B191E4DDE2D0042D176 /* customLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customLayout.m; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				C7A805921E51B4A500FF59AC /* Goals.storyboard */,
 				C7A805941E51B5CB00FF59AC /* GolasViewController.swift */,
+				C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */,
 			);
 			path = Goals;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */,
 				AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */,
 				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
