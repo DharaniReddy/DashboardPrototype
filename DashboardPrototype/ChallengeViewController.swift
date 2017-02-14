@@ -10,9 +10,23 @@ import UIKit
 
 class ChallengeViewController: UIViewController {
 
+    var index = 0
+    
+    // MARK:- IBOutlets
+    
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var challengeImageView: UIImageView!
+    
+    func configure(indexValue: Int, identifier: String) {
+        index = indexValue
+        restorationIdentifier = identifier
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        titleLabel.text = ["Improve Fitness", "Manage Stress", "Improve Cholesterol", "Improve Blood Pressure"][index]
+        challengeImageView.image = UIImage(named: ["challenge", "emotionalHealth", "snapshotReport", "blood_pressure"][index])
         // Do any additional setup after loading the view.
     }
 

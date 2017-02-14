@@ -9,7 +9,8 @@
 import UIKit
 
 class ChallengesPageViewController: UIPageViewController {
-
+    
+    let restoreIDs = ["Improve Fitness", "Manage Stress", "Improve Cholesterol", "Improve Blood Pressure"]
     
     weak var challengesDelegate: ChallengesPageDelegate?
     
@@ -17,26 +18,29 @@ class ChallengesPageViewController: UIPageViewController {
     
     var direction: Direction = Direction.left
     
+    var index = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        dataSource = self
+        delegate = self
+        
+        for _ in 0...3 {
+            let challenge: ChallengeViewController! = storyboard!.instantiateViewController(withIdentifier: "ChallengeViewController") as! ChallengeViewController
+            challenges.append(challenge)
+        }
+        
+        setViewControllers([getViewControllerAtIndex(index: 0)], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+        
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /**
-     Notifies 'categoryPageVC' that the current page index was updated.
-     */
-    fileprivate func notifyDelegateOfNewIndex() {
-        if let firstViewController = viewControllers?.first,
-            let index = challenges.index(of: firstViewController as! ChallengeViewController) {
-            challengesDelegate?.challengesPageViewController(self, didUpdatePageIndex: index, swipeDirection: self.direction)
-        }
+    func getViewControllerAtIndex(index: NSInteger) -> ChallengeViewController {
+        // Create a new view controller and pass suitable data.
+        let challengeViewController = self.storyboard?.instantiateViewController(withIdentifier: "ChallengeViewController") as! ChallengeViewController
+        challengeViewController.configure(indexValue: index, identifier: restoreIDs[index])
+        return challengeViewController
     }
 
 }
@@ -51,6 +55,55 @@ protocol ChallengesPageDelegate: class {
      - parameter categoryPageViewController: the CategoryPageVC instance
      - parameter index: the index of the currently visible page.
      */
-    func challengesPageViewController(_ categoryPageViewController: ChallengesPageViewController,
-                                    didUpdatePageIndex index: Int, swipeDirection direction: Direction)
+    func challengesPageViewController(updatePageIndex index: Int)
+}
+
+
+// MARK: UIPageViewControllerDataSource
+
+extension ChallengesPageViewController: UIPageViewControllerDataSource {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        
+        direction = .right
+        
+        let challengeViewController = viewController as! ChallengeViewController
+        var index = challengeViewController.index
+        if ((index == 0) || (index == NSNotFound))
+        {
+            return nil
+        }
+        index -= 1
+        self.index = index
+        return getViewControllerAtIndex(index: index)
+    }
+    
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        
+        direction = .left
+        
+        let challengeViewController = viewController as! ChallengeViewController
+        var index = challengeViewController.index
+        if (index == NSNotFound) {
+            return nil
+        }
+        index += 1
+        if (index == 4) {
+            return nil
+        }
+        self.index = index
+        return getViewControllerAtIndex(index: index)
+    }
+}
+
+extension ChallengesPageViewController: UIPageViewControllerDelegate {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if let identifier = self.viewControllers?.last?.restorationIdentifier {
+            if let index = restoreIDs.index(of: identifier) {
+                challengesDelegate?.challengesPageViewController(updatePageIndex: index)
+            }
+        }
+    }
 }
