@@ -15,6 +15,12 @@ class ChallengesViewController: UIViewController {
     
     var circleProgressView: CircleView!
     
+    var challengesPageVC: ChallengesPageViewController? {
+        didSet {
+            challengesPageVC?.challengesDelegate = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,5 +54,19 @@ class ChallengesViewController: UIViewController {
     
     @IBAction private func popViewController() {
         _ = navigationController?.popViewController(animated: true)
+    }
+    
+    
+    // MARK:- Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let challengesPageVC = segue.destination as? ChallengesPageViewController {
+            self.challengesPageVC = challengesPageVC
+        }
+    }
+}
+
+extension ChallengesViewController: ChallengesPageDelegate {
+    func challengesPageViewController(_ categoryPageViewController: ChallengesPageViewController, didUpdatePageIndex index: Int, swipeDirection direction: Direction) {
+        
     }
 }
