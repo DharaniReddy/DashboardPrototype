@@ -39,6 +39,8 @@ class NTWaterfallViewCellType1 :UICollectionViewCell, NTTansitionWaterfallGridVi
     
     var containerView = UIView()
     
+    var titleLabel = UILabel()
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -50,6 +52,7 @@ class NTWaterfallViewCellType1 :UICollectionViewCell, NTTansitionWaterfallGridVi
         
         containerView.addSubview(imageViewContent)
         contentView.addSubview(containerView)
+        contentView.addSubview(titleLabel)
         
     }
     
@@ -66,6 +69,10 @@ class NTWaterfallViewCellType1 :UICollectionViewCell, NTTansitionWaterfallGridVi
         containerView.layer.cornerRadius = 15
         containerView.layer.borderWidth = 2
         containerView.layer.borderColor = UIColor.lightGray.cgColor
+        
+        titleLabel.frame = CGRect(x: 5, y: frame.size.height - 50, width: 100, height: 20)
+       // titleLabel.text = "Coach"
+        
     }
     
     func snapShotForTransition() -> UIView! {

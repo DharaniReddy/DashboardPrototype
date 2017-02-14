@@ -38,6 +38,8 @@ class NTWaterfallViewController:UICollectionViewController,CHTCollectionViewDele
     var imageNameList : Array <NSString> = []
     let delegateHolder = NavigationControllerDelegate()
     
+    let titles = ["Challenges", "Goals", "Coach", "Coach"]
+    
     fileprivate weak var menu: MenuView!
     
     
@@ -92,6 +94,13 @@ class NTWaterfallViewController:UICollectionViewController,CHTCollectionViewDele
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         let collectionCell: NTWaterfallViewCellType1 = collectionView.dequeueReusableCell(withReuseIdentifier: waterfallViewCellIdentify, for: indexPath) as! NTWaterfallViewCellType1
+        collectionCell.titleLabel.isHidden = true
+        
+        if indexPath.row == 3 || indexPath.row == 0 || indexPath.row == 1  {
+           collectionCell.titleLabel.isHidden = false
+          collectionCell.titleLabel.text = titles[indexPath.row]
+        }
+        
         collectionCell.imageName = self.imageNameList[(indexPath as NSIndexPath).row] as String
         collectionCell.setNeedsLayout()
         return collectionCell;
@@ -102,11 +111,32 @@ class NTWaterfallViewController:UICollectionViewController,CHTCollectionViewDele
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        
+        if indexPath.row == 0 {
+            
+            let challengesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"ChallengesViewController") as! ChallengesViewController
+            navigationController?.pushViewController(challengesViewController, animated: true)
+            
+        }else if indexPath.row == 1 {
+            
+            let goalsViewController = UIStoryboard(name: "Goals", bundle: nil).instantiateViewController(withIdentifier:"Goals") as! GolasViewController
+            navigationController?.pushViewController(goalsViewController, animated: true)
+            
+            
+        }else if indexPath.row == 3 {
+            
+            let coachViewController = UIStoryboard(name: "Coach", bundle: nil).instantiateInitialViewController() as! CoachViewController
+            navigationController?.pushViewController(coachViewController, animated: true)
+            
+        }else {
+        
+        
         let pageViewController =
         NTHorizontalPageViewController(collectionViewLayout: pageViewControllerLayout(), currentIndexPath:indexPath)
         pageViewController.imageNameList = imageNameList
         collectionView.setToIndexPath(indexPath)
         navigationController!.pushViewController(pageViewController, animated: true)
+        }
     }
     
     func pageViewControllerLayout () -> UICollectionViewFlowLayout {

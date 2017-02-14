@@ -428,7 +428,7 @@
         <!--Challenges View Controller-->
         <scene sceneID="Nia-ez-9VV">
             <objects>
-                <viewController id="prK-WA-RGz" customClass="ChallengesViewController" customModule="DashboardPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChallengesViewController" id="prK-WA-RGz" customClass="ChallengesViewController" customModule="DashboardPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S60-cx-jaa"/>
                         <viewControllerLayoutGuide type="bottom" id="rzj-qy-QBk"/>
@@ -1282,7 +1282,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O9t-0b-B44" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8F0-w9-AEF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8F0-w9-AEF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
