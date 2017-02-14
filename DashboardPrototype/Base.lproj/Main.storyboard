@@ -110,6 +110,14 @@
                                     <segue destination="prK-WA-RGz" kind="show" id="tV2-2b-Tns"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AV3-zi-tEi">
+                                <rect key="frame" x="24" y="626" width="52" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Layout"/>
+                                <connections>
+                                    <segue destination="6oK-Lc-lyh" kind="presentation" id="TJw-XE-tki"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b8-sa-3C4">
                                 <rect key="frame" x="250" y="623" width="60" height="32"/>
                                 <constraints>
@@ -136,6 +144,7 @@
                             <constraint firstItem="bDa-b7-LVk" firstAttribute="top" secondItem="osH-QB-dVX" secondAttribute="bottom" constant="27" id="8wa-Lw-4RD"/>
                             <constraint firstItem="h0s-jc-SjK" firstAttribute="leading" secondItem="7Tk-Ts-D55" secondAttribute="trailing" id="9Xk-5y-MaU"/>
                             <constraint firstItem="5b8-sa-3C4" firstAttribute="bottom" secondItem="TiP-a3-A0i" secondAttribute="bottom" id="HIC-pa-PAS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AV3-zi-tEi" secondAttribute="bottom" constant="9" id="N9o-g9-eAM"/>
                             <constraint firstItem="osH-QB-dVX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QDS-KP-Ot9"/>
                             <constraint firstItem="TiP-a3-A0i" firstAttribute="trailing" secondItem="5b8-sa-3C4" secondAttribute="leading" constant="-20" id="RLd-7j-ffj"/>
                             <constraint firstAttribute="trailing" secondItem="osH-QB-dVX" secondAttribute="trailing" id="TPE-Qw-clw"/>
@@ -143,6 +152,7 @@
                             <constraint firstAttribute="bottom" secondItem="gZz-xM-ZTc" secondAttribute="bottom" constant="141" id="V1V-lN-FWn"/>
                             <constraint firstItem="h0s-jc-SjK" firstAttribute="leading" secondItem="7Tk-Ts-D55" secondAttribute="trailing" id="YYO-3B-5Wh"/>
                             <constraint firstItem="497-B7-ecW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aDV-KA-Tho"/>
+                            <constraint firstItem="AV3-zi-tEi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="cVg-nr-Squ"/>
                             <constraint firstAttribute="trailing" secondItem="h0s-jc-SjK" secondAttribute="trailing" constant="4" id="ePb-Dg-ChJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="497-B7-ecW" secondAttribute="bottom" constant="8" id="eXo-ox-CvU"/>
                             <constraint firstItem="7Tk-Ts-D55" firstAttribute="leading" secondItem="bDa-b7-LVk" secondAttribute="trailing" constant="8" id="fY2-eg-gvL"/>
@@ -158,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="-62"/>
+            <point key="canvasLocation" x="1106" y="-105"/>
         </scene>
         <!--Custom Collection View View Controller-->
         <scene sceneID="Oxi-Kp-Xf4">
@@ -248,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwy-u7-nCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="-63"/>
+            <point key="canvasLocation" x="2408.8000000000002" y="-63.418290854572717"/>
         </scene>
         <!--DashboardVC-->
         <scene sceneID="v8v-4g-9D2">
@@ -295,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izJ-vG-vlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2308" y="-72.413793103448285"/>
+            <point key="canvasLocation" x="3247.1999999999998" y="-72.413793103448285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dZT-6T-xTu">
@@ -315,7 +325,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdJ-1s-XRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-209" y="-61"/>
+            <point key="canvasLocation" x="-718" y="-49"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Aie-4A-uHY">
@@ -720,7 +730,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="eC0-mx-Zxe" customClass="CategoryPageVC" customModule="DashboardPrototype" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvh-qd-k1W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3116" y="-246"/>
+            <point key="canvasLocation" x="4055.1999999999998" y="-246.47676161919043"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6Ew-zl-pAU">
@@ -810,7 +820,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l79-NS-Tdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3798" y="-421"/>
+            <point key="canvasLocation" x="4736.8000000000002" y="-421.43928035982015"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0Z4-PF-wqT">
@@ -889,7 +899,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8u-U7-Hrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4506" y="-421"/>
+            <point key="canvasLocation" x="5444" y="-421.43928035982015"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OVH-kY-ty1">
@@ -968,7 +978,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlt-CB-oUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5202" y="-421"/>
+            <point key="canvasLocation" x="6140" y="-421.43928035982015"/>
         </scene>
         <!--Challenges View Controller-->
         <scene sceneID="Icv-WT-nrP">
@@ -1206,6 +1216,43 @@
             </objects>
             <point key="canvasLocation" x="3798" y="242"/>
         </scene>
+        <!--Waterfall View Controller-->
+        <scene sceneID="DtZ-oo-Rxv">
+            <objects>
+                <viewController storyboardIdentifier="WaterFallController" id="lNR-gt-cIZ" customClass="NTWaterfallViewController" customModule="DashboardPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VUp-3Y-uQa"/>
+                        <viewControllerLayoutGuide type="bottom" id="eNH-0x-pF0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wnL-nq-O50" customClass="UICollectionView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q9z-Lr-kbM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mU4-Fz-VZa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="-481.70914542728639"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="COw-9b-L9u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6oK-Lc-lyh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Igb-wf-rUO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lNR-gt-cIZ" kind="relationship" relationship="rootViewController" id="xED-it-ecd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qK-HE-kci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119.2" y="-481.70914542728639"/>
+        </scene>
     </scenes>
     <resources>
         <image name="IMAGES_640x960_EMOTIONAL_HEALTH" width="640" height="960"/>
@@ -1217,6 +1264,6 @@
         <image name="watching" width="12" height="12"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rvp-cT-SAw"/>
+        <segue reference="z53-ag-fY5"/>
     </inferredMetricsTieBreakers>
 </document>

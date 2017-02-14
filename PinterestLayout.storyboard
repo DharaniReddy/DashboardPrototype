@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AxP-Zl-21a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Waterfall View Controller-->
         <scene sceneID="gyN-T5-3Ub">
             <objects>
-                <viewController id="yGR-Ol-ldb" customClass="NTWaterfallViewController" customModule="PinterestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WaterFallController" id="yGR-Ol-ldb" customClass="NTWaterfallViewController" customModule="DashboardPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="caX-hm-g80"/>
                         <viewControllerLayoutGuide type="bottom" id="xho-gc-mXx"/>
@@ -31,9 +31,9 @@
         <!--Navigation Controller-->
         <scene sceneID="7ik-cm-I1m">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AxP-Zl-21a" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="WaterFallNavCon" storyboardIdentifier="WaterFallNavCon" automaticallyAdjustsScrollViewInsets="NO" id="AxP-Zl-21a" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ylU-EC-Uvg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ylU-EC-Uvg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
