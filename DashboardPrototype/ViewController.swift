@@ -49,6 +49,16 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
         return data.count
     }
     
+    @IBAction func layoutButton_Tapped(_ sender: Any) {
+        
+        let trackerEntryVCNC = UIStoryboard("PinterestLayout").instantiateNavigationController("WaterFallNavCon")
+        let trackerEntryViewController = trackerEntryVCNC.topViewController as! NTWaterfallViewController
+        
+        
+        present(trackerEntryViewController, animated: true)
+    }
+    
+    
     @IBAction func goalsAction(_ sender: Any) {
         
         let goalsViewController = UIStoryboard(name: "Goals", bundle: nil).instantiateViewController(withIdentifier:"Goals") as! GolasViewController
@@ -135,4 +145,20 @@ extension UIView {
 //        self.layer.borderColor = UIColor.gray.cgColor
 //        self.layer.borderWidth = 1
     }
+}
+
+
+class EmptyClassInCurrentBundle { }
+
+extension UIStoryboard {
+    
+    convenience init(_ name: String) {
+        let currentBundle = Bundle(for: EmptyClassInCurrentBundle.self)
+        self.init(name: name, bundle:currentBundle)
+    }
+    
+    func instantiateNavigationController(_ identifier: String) -> UINavigationController {
+        return instantiateViewController(withIdentifier: identifier) as! UINavigationController
+    }
+    
 }

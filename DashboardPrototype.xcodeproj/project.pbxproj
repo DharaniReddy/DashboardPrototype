@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32CBFB4F1E53106A003169F2 /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB4C1E53106A003169F2 /* CHTCollectionViewWaterfallLayout.swift */; };
+		32CBFB501E53106A003169F2 /* CircularRevealTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB4D1E53106A003169F2 /* CircularRevealTransition.swift */; };
+		32CBFB511E53106A003169F2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB4E1E53106A003169F2 /* Extension.swift */; };
+		32CBFB651E531075003169F2 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB531E531075003169F2 /* 0.jpg */; };
+		32CBFB661E531075003169F2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB541E531075003169F2 /* 1.jpg */; };
+		32CBFB671E531075003169F2 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB551E531075003169F2 /* 10.jpg */; };
+		32CBFB681E531075003169F2 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB561E531075003169F2 /* 11.jpg */; };
+		32CBFB691E531075003169F2 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB571E531075003169F2 /* 12.jpg */; };
+		32CBFB6A1E531075003169F2 /* 122.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB581E531075003169F2 /* 122.jpg */; };
+		32CBFB6B1E531075003169F2 /* 1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB591E531075003169F2 /* 1222.jpg */; };
+		32CBFB6C1E531075003169F2 /* 122222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB5A1E531075003169F2 /* 122222.jpg */; };
+		32CBFB6D1E531075003169F2 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB5B1E531075003169F2 /* 13.jpg */; };
+		32CBFB6E1E531075003169F2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB5C1E531075003169F2 /* 2.jpg */; };
+		32CBFB6F1E531075003169F2 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB5D1E531075003169F2 /* 3.jpg */; };
+		32CBFB701E531075003169F2 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB5E1E531075003169F2 /* 4.jpg */; };
+		32CBFB711E531075003169F2 /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB5F1E531075003169F2 /* 5.jpeg */; };
+		32CBFB721E531075003169F2 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB601E531075003169F2 /* 5.jpg */; };
+		32CBFB731E531075003169F2 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB611E531075003169F2 /* 6.jpg */; };
+		32CBFB741E531075003169F2 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB621E531075003169F2 /* 7.jpg */; };
+		32CBFB751E531075003169F2 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB631E531075003169F2 /* 8.jpg */; };
+		32CBFB761E531075003169F2 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB641E531075003169F2 /* 9.jpg */; };
+		32CBFB7F1E53108B003169F2 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB771E53108B003169F2 /* Macro.swift */; };
+		32CBFB801E53108B003169F2 /* NTHorizontalPageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB781E53108B003169F2 /* NTHorizontalPageViewCell.swift */; };
+		32CBFB811E53108B003169F2 /* NTHorizontalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB791E53108B003169F2 /* NTHorizontalPageViewController.swift */; };
+		32CBFB821E53108B003169F2 /* NTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB7A1E53108B003169F2 /* NTNavigationController.swift */; };
+		32CBFB831E53108B003169F2 /* NTTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB7B1E53108B003169F2 /* NTTransition.swift */; };
+		32CBFB841E53108B003169F2 /* NTTransitionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB7C1E53108B003169F2 /* NTTransitionProtocol.swift */; };
+		32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB7D1E53108B003169F2 /* NTWaterfallViewCell.swift */; };
+		32CBFB861E53108B003169F2 /* NTWaterfallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB7E1E53108B003169F2 /* NTWaterfallViewController.swift */; };
+		32CBFB881E5310E0003169F2 /* PinterestLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB871E5310E0003169F2 /* PinterestLayout.storyboard */; };
 		9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */; };
 		9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */; };
 		9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D161E519036003071EE /* ChallengesViewController.swift */; };
@@ -27,12 +57,44 @@
 		C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */; };
 		C7A805931E51B4A500FF59AC /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A805921E51B4A500FF59AC /* Goals.storyboard */; };
 		C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A805941E51B5CB00FF59AC /* GolasViewController.swift */; };
+		CE7C03801E52DE450027768A /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7C037F1E52DE450027768A /* Coach.storyboard */; };
+		CE7C03831E52DF530027768A /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C03821E52DF530027768A /* CoachViewController.swift */; };
 		D41F30B086687699A1DAC58E /* Pods_DashboardPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A1D0970DCB2B67D0C220C19 /* Pods-DashboardPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashboardPrototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-DashboardPrototype/Pods-DashboardPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		13334682B592D49EDDBE01C2 /* Pods-DashboardPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashboardPrototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DashboardPrototype/Pods-DashboardPrototype.debug.xcconfig"; sourceTree = "<group>"; };
+		32CBFB4C1E53106A003169F2 /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
+		32CBFB4D1E53106A003169F2 /* CircularRevealTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealTransition.swift; sourceTree = "<group>"; };
+		32CBFB4E1E53106A003169F2 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		32CBFB531E531075003169F2 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		32CBFB541E531075003169F2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		32CBFB551E531075003169F2 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		32CBFB561E531075003169F2 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		32CBFB571E531075003169F2 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		32CBFB581E531075003169F2 /* 122.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 122.jpg; sourceTree = "<group>"; };
+		32CBFB591E531075003169F2 /* 1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1222.jpg; sourceTree = "<group>"; };
+		32CBFB5A1E531075003169F2 /* 122222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 122222.jpg; sourceTree = "<group>"; };
+		32CBFB5B1E531075003169F2 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		32CBFB5C1E531075003169F2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		32CBFB5D1E531075003169F2 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		32CBFB5E1E531075003169F2 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		32CBFB5F1E531075003169F2 /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpeg; sourceTree = "<group>"; };
+		32CBFB601E531075003169F2 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		32CBFB611E531075003169F2 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		32CBFB621E531075003169F2 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		32CBFB631E531075003169F2 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		32CBFB641E531075003169F2 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		32CBFB771E53108B003169F2 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		32CBFB781E53108B003169F2 /* NTHorizontalPageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTHorizontalPageViewCell.swift; sourceTree = "<group>"; };
+		32CBFB791E53108B003169F2 /* NTHorizontalPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTHorizontalPageViewController.swift; sourceTree = "<group>"; };
+		32CBFB7A1E53108B003169F2 /* NTNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTNavigationController.swift; sourceTree = "<group>"; };
+		32CBFB7B1E53108B003169F2 /* NTTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTTransition.swift; sourceTree = "<group>"; };
+		32CBFB7C1E53108B003169F2 /* NTTransitionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTTransitionProtocol.swift; sourceTree = "<group>"; };
+		32CBFB7D1E53108B003169F2 /* NTWaterfallViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTWaterfallViewCell.swift; sourceTree = "<group>"; };
+		32CBFB7E1E53108B003169F2 /* NTWaterfallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTWaterfallViewController.swift; sourceTree = "<group>"; };
+		32CBFB871E5310E0003169F2 /* PinterestLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinterestLayout.storyboard; sourceTree = "<group>"; };
 		9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesPageViewController.swift; sourceTree = "<group>"; };
 		9F896D161E519036003071EE /* ChallengesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +119,8 @@
 		C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewViewController.swift; sourceTree = "<group>"; };
 		C7A805921E51B4A500FF59AC /* Goals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
 		C7A805941E51B5CB00FF59AC /* GolasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolasViewController.swift; sourceTree = "<group>"; };
+		CE7C037F1E52DE450027768A /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
+		CE7C03821E52DF530027768A /* CoachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
 		D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashboardPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,6 +136,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32CBFB4B1E530EAD003169F2 /* Pinterest Layout */ = {
+			isa = PBXGroup;
+			children = (
+				32CBFB771E53108B003169F2 /* Macro.swift */,
+				32CBFB781E53108B003169F2 /* NTHorizontalPageViewCell.swift */,
+				32CBFB791E53108B003169F2 /* NTHorizontalPageViewController.swift */,
+				32CBFB7A1E53108B003169F2 /* NTNavigationController.swift */,
+				32CBFB7B1E53108B003169F2 /* NTTransition.swift */,
+				32CBFB7C1E53108B003169F2 /* NTTransitionProtocol.swift */,
+				32CBFB7D1E53108B003169F2 /* NTWaterfallViewCell.swift */,
+				32CBFB7E1E53108B003169F2 /* NTWaterfallViewController.swift */,
+				32CBFB4C1E53106A003169F2 /* CHTCollectionViewWaterfallLayout.swift */,
+				32CBFB4D1E53106A003169F2 /* CircularRevealTransition.swift */,
+				32CBFB4E1E53106A003169F2 /* Extension.swift */,
+				32CBFB871E5310E0003169F2 /* PinterestLayout.storyboard */,
+			);
+			name = "Pinterest Layout";
+			sourceTree = "<group>";
+		};
+		32CBFB521E531075003169F2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				32CBFB531E531075003169F2 /* 0.jpg */,
+				32CBFB541E531075003169F2 /* 1.jpg */,
+				32CBFB551E531075003169F2 /* 10.jpg */,
+				32CBFB561E531075003169F2 /* 11.jpg */,
+				32CBFB571E531075003169F2 /* 12.jpg */,
+				32CBFB581E531075003169F2 /* 122.jpg */,
+				32CBFB591E531075003169F2 /* 1222.jpg */,
+				32CBFB5A1E531075003169F2 /* 122222.jpg */,
+				32CBFB5B1E531075003169F2 /* 13.jpg */,
+				32CBFB5C1E531075003169F2 /* 2.jpg */,
+				32CBFB5D1E531075003169F2 /* 3.jpg */,
+				32CBFB5E1E531075003169F2 /* 4.jpg */,
+				32CBFB5F1E531075003169F2 /* 5.jpeg */,
+				32CBFB601E531075003169F2 /* 5.jpg */,
+				32CBFB611E531075003169F2 /* 6.jpg */,
+				32CBFB621E531075003169F2 /* 7.jpg */,
+				32CBFB631E531075003169F2 /* 8.jpg */,
+				32CBFB641E531075003169F2 /* 9.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		3B3C49592B74533D556AC0CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				AECA35CD1E491AAE00C9DC45 /* Main.storyboard */,
+				CE7C037F1E52DE450027768A /* Coach.storyboard */,
 				AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */,
 			);
 			name = UI;
@@ -114,6 +223,9 @@
 		AECA35BD1E491AAE00C9DC45 = {
 			isa = PBXGroup;
 			children = (
+				CE7C03811E52DF330027768A /* coach */,
+				32CBFB521E531075003169F2 /* images */,
+				32CBFB4B1E530EAD003169F2 /* Pinterest Layout */,
 				C7A23B201E4DDEE90042D176 /* CustomLayout */,
 				AECA35C81E491AAE00C9DC45 /* DashboardPrototype */,
 				9F896D151E519007003071EE /* Challenges */,
@@ -167,6 +279,14 @@
 				C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */,
 			);
 			path = Goals;
+			sourceTree = "<group>";
+		};
+		CE7C03811E52DF330027768A /* coach */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C03821E52DF530027768A /* CoachViewController.swift */,
+			);
+			name = coach;
 			sourceTree = "<group>";
 		};
 		EF83EE230179F9F992A111AF /* Pods */ = {
@@ -242,12 +362,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CBFB731E531075003169F2 /* 6.jpg in Resources */,
+				32CBFB6C1E531075003169F2 /* 122222.jpg in Resources */,
+				32CBFB721E531075003169F2 /* 5.jpg in Resources */,
 				AE0D27B41E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf in Resources */,
 				AECA35D41E491AAE00C9DC45 /* LaunchScreen.storyboard in Resources */,
+				32CBFB711E531075003169F2 /* 5.jpeg in Resources */,
 				AECA35D11E491AAE00C9DC45 /* Assets.xcassets in Resources */,
+				32CBFB6A1E531075003169F2 /* 122.jpg in Resources */,
+				32CBFB6B1E531075003169F2 /* 1222.jpg in Resources */,
+				32CBFB701E531075003169F2 /* 4.jpg in Resources */,
+				32CBFB6F1E531075003169F2 /* 3.jpg in Resources */,
+				32CBFB741E531075003169F2 /* 7.jpg in Resources */,
+				32CBFB6E1E531075003169F2 /* 2.jpg in Resources */,
+				32CBFB651E531075003169F2 /* 0.jpg in Resources */,
+				32CBFB671E531075003169F2 /* 10.jpg in Resources */,
+				32CBFB681E531075003169F2 /* 11.jpg in Resources */,
 				AE0D27B21E4E3551006AD0B6 /* Peace Sans Webfont.ttf in Resources */,
+				32CBFB751E531075003169F2 /* 8.jpg in Resources */,
+				32CBFB6D1E531075003169F2 /* 13.jpg in Resources */,
+				32CBFB661E531075003169F2 /* 1.jpg in Resources */,
+				32CBFB691E531075003169F2 /* 12.jpg in Resources */,
+				32CBFB761E531075003169F2 /* 9.jpg in Resources */,
+				32CBFB881E5310E0003169F2 /* PinterestLayout.storyboard in Resources */,
 				AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */,
 				C7A805931E51B4A500FF59AC /* Goals.storyboard in Resources */,
+				CE7C03801E52DE450027768A /* Coach.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,17 +449,29 @@
 				C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */,
 				AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */,
 				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,
+				32CBFB831E53108B003169F2 /* NTTransition.swift in Sources */,
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
+				32CBFB7F1E53108B003169F2 /* Macro.swift in Sources */,
 				C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */,
+				32CBFB841E53108B003169F2 /* NTTransitionProtocol.swift in Sources */,
 				AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */,
 				9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */,
+				32CBFB811E53108B003169F2 /* NTHorizontalPageViewController.swift in Sources */,
 				AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */,
+				CE7C03831E52DF530027768A /* CoachViewController.swift in Sources */,
+				32CBFB511E53106A003169F2 /* Extension.swift in Sources */,
+				32CBFB801E53108B003169F2 /* NTHorizontalPageViewCell.swift in Sources */,
 				AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */,
 				9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */,
+				32CBFB821E53108B003169F2 /* NTNavigationController.swift in Sources */,
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
+				32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */,
 				9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */,
 				9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */,
 				AE0D27B01E4E274F006AD0B6 /* CardView.swift in Sources */,
+				32CBFB861E53108B003169F2 /* NTWaterfallViewController.swift in Sources */,
+				32CBFB4F1E53106A003169F2 /* CHTCollectionViewWaterfallLayout.swift in Sources */,
+				32CBFB501E53106A003169F2 /* CircularRevealTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +606,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "DashboardPrototype-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,6 +623,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DashboardPrototype-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
