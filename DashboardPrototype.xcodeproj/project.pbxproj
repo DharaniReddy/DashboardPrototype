@@ -13,6 +13,8 @@
 		AE0D27B01E4E274F006AD0B6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27AF1E4E274F006AD0B6 /* CardView.swift */; };
 		AE0D27B21E4E3551006AD0B6 /* Peace Sans Webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */; };
 		AE0D27B41E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */; };
+		AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */; };
+		AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B91E521557006AD0B6 /* DashboardVC.swift */; };
 		AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */; };
 		AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35CB1E491AAE00C9DC45 /* ViewController.swift */; };
 		AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35CD1E491AAE00C9DC45 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		AE0D27AF1E4E274F006AD0B6 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Peace Sans Webfont.ttf"; sourceTree = "<group>"; };
 		AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SIMPLIFICA Typeface.ttf"; sourceTree = "<group>"; };
+		AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryPageVC.swift; path = Assets.xcassets/CategoryPageVC.swift; sourceTree = "<group>"; };
+		AE0D27B91E521557006AD0B6 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		AECA35C61E491AAE00C9DC45 /* DashboardPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashboardPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECA35CB1E491AAE00C9DC45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,24 @@
 			path = DashboardPrototype;
 			sourceTree = "<group>";
 		};
+		AE0D27B51E5214EA006AD0B6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AECA35CD1E491AAE00C9DC45 /* Main.storyboard */,
+				AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		AE0D27B61E5214F3006AD0B6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */,
+				AE0D27B91E521557006AD0B6 /* DashboardVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		AECA35BD1E491AAE00C9DC45 = {
 			isa = PBXGroup;
 			children = (
@@ -106,13 +128,13 @@
 		AECA35C81E491AAE00C9DC45 /* DashboardPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				AE0D27B61E5214F3006AD0B6 /* ViewControllers */,
+				AE0D27B51E5214EA006AD0B6 /* UI */,
 				AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */,
 				C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */,
 				AECA35CB1E491AAE00C9DC45 /* ViewController.swift */,
-				AECA35CD1E491AAE00C9DC45 /* Main.storyboard */,
 				AE0D27AF1E4E274F006AD0B6 /* CardView.swift */,
 				AECA35D01E491AAE00C9DC45 /* Assets.xcassets */,
-				AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */,
 				AECA35D51E491AAE00C9DC45 /* Info.plist */,
 				AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */,
 				AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */,
@@ -279,7 +301,9 @@
 				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
 				C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */,
+				AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */,
 				9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */,
+				AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */,
 				AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */,
 				9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */,
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
