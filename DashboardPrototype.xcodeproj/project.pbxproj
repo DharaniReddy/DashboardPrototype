@@ -26,6 +26,7 @@
 		C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */; };
 		C7A805931E51B4A500FF59AC /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A805921E51B4A500FF59AC /* Goals.storyboard */; };
 		C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A805941E51B5CB00FF59AC /* GolasViewController.swift */; };
+		CE7C03801E52DE450027768A /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7C037F1E52DE450027768A /* Coach.storyboard */; };
 		D41F30B086687699A1DAC58E /* Pods_DashboardPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewViewController.swift; sourceTree = "<group>"; };
 		C7A805921E51B4A500FF59AC /* Goals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
 		C7A805941E51B5CB00FF59AC /* GolasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolasViewController.swift; sourceTree = "<group>"; };
+		CE7C037F1E52DE450027768A /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
 		D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashboardPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				AECA35CD1E491AAE00C9DC45 /* Main.storyboard */,
+				CE7C037F1E52DE450027768A /* Coach.storyboard */,
 				AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */,
 			);
 			name = UI;
@@ -245,6 +248,7 @@
 				AE0D27B21E4E3551006AD0B6 /* Peace Sans Webfont.ttf in Resources */,
 				AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */,
 				C7A805931E51B4A500FF59AC /* Goals.storyboard in Resources */,
+				CE7C03801E52DE450027768A /* Coach.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
