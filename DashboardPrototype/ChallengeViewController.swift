@@ -26,7 +26,7 @@ class ChallengeViewController: UIViewController {
         super.viewDidLoad()
 
         titleLabel.text = ["Improve Fitness", "Manage Stress", "Improve Cholesterol", "Improve Blood Pressure"][index]
-        challengeImageView.image = UIImage(named: ["challenge", "emotionalHealth", "snapshotReport", "blood_pressure"][index])
+        challengeImageView.image = UIImage(named: ["challenge", "manage_stress", "snapshotReport", "blood_pressure"][index])
         // Do any additional setup after loading the view.
     }
 
