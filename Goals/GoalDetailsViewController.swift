@@ -9,6 +9,7 @@
 import UIKit
 
 class GoalDetailsViewController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView!
 
     @IBOutlet weak var cicleView: UIView!
     
