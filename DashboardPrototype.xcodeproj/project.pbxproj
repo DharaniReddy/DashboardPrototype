@@ -47,11 +47,15 @@
 		AE0D27B41E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */; };
 		AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */; };
 		AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B91E521557006AD0B6 /* DashboardVC.swift */; };
+		AE2610161E54A127000CC47D /* Layout2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2610151E54A127000CC47D /* Layout2.storyboard */; };
+		AE2610181E54A899000CC47D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2610171E54A899000CC47D /* Main.storyboard */; };
+		AE26101A1E54A94E000CC47D /* DUChallengesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2610191E54A94E000CC47D /* DUChallengesVC.swift */; };
+		AE26101C1E54B06D000CC47D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26101B1E54B06D000CC47D /* ViewController.swift */; };
 		AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */; };
-		AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35CB1E491AAE00C9DC45 /* ViewController.swift */; };
-		AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35CD1E491AAE00C9DC45 /* Main.storyboard */; };
 		AECA35D11E491AAE00C9DC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECA35D01E491AAE00C9DC45 /* Assets.xcassets */; };
 		AECA35D41E491AAE00C9DC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */; };
+		AEFCDFDF1E54BB870050CBB5 /* DUGoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCDFDE1E54BB870050CBB5 /* DUGoalsVC.swift */; };
+		AEFCDFE21E54E2630050CBB5 /* DUCoachVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCDFE11E54E2630050CBB5 /* DUCoachVC.swift */; };
 		C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */; };
 		C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B191E4DDE2D0042D176 /* customLayout.m */; };
 		C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */; };
@@ -107,13 +111,17 @@
 		AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SIMPLIFICA Typeface.ttf"; sourceTree = "<group>"; };
 		AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryPageVC.swift; path = Assets.xcassets/CategoryPageVC.swift; sourceTree = "<group>"; };
 		AE0D27B91E521557006AD0B6 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		AE2610151E54A127000CC47D /* Layout2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Layout2.storyboard; sourceTree = "<group>"; };
+		AE2610171E54A899000CC47D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AE2610191E54A94E000CC47D /* DUChallengesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DUChallengesVC.swift; sourceTree = "<group>"; };
+		AE26101B1E54B06D000CC47D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AECA35C61E491AAE00C9DC45 /* DashboardPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashboardPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AECA35CB1E491AAE00C9DC45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AECA35CE1E491AAE00C9DC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AECA35D01E491AAE00C9DC45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AECA35D31E491AAE00C9DC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AECA35D51E491AAE00C9DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEFCDFDE1E54BB870050CBB5 /* DUGoalsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DUGoalsVC.swift; sourceTree = "<group>"; };
+		AEFCDFE11E54E2630050CBB5 /* DUCoachVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DUCoachVC.swift; sourceTree = "<group>"; };
 		C717270B1E54326C007EC940 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
 		C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDetailsViewController.swift; sourceTree = "<group>"; };
 		C7A23B151E4DDE160042D176 /* DashboardPrototype-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashboardPrototype-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -209,7 +217,7 @@
 		AE0D27B51E5214EA006AD0B6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				AECA35CD1E491AAE00C9DC45 /* Main.storyboard */,
+				AE2610171E54A899000CC47D /* Main.storyboard */,
 				CE7C037F1E52DE450027768A /* Coach.storyboard */,
 				AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */,
 			);
@@ -219,10 +227,23 @@
 		AE0D27B61E5214F3006AD0B6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AEFCDFE01E54E23C0050CBB5 /* Coach */,
+				AEFCDFDD1E54BB720050CBB5 /* Goals */,
+				AEFCDFDC1E54BB660050CBB5 /* Challenges */,
 				AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */,
 				AE0D27B91E521557006AD0B6 /* DashboardVC.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AE2610141E54A102000CC47D /* Layout 2 */ = {
+			isa = PBXGroup;
+			children = (
+				AE0D27B61E5214F3006AD0B6 /* ViewControllers */,
+				AE2610151E54A127000CC47D /* Layout2.storyboard */,
+			);
+			name = "Layout 2";
+			path = DashboardPrototype;
 			sourceTree = "<group>";
 		};
 		AECA35BD1E491AAE00C9DC45 = {
@@ -233,6 +254,7 @@
 				32CBFB521E531075003169F2 /* images */,
 				32CBFB4B1E530EAD003169F2 /* Pinterest Layout */,
 				C7A23B201E4DDEE90042D176 /* CustomLayout */,
+				AE2610141E54A102000CC47D /* Layout 2 */,
 				AECA35C81E491AAE00C9DC45 /* DashboardPrototype */,
 				9F896D151E519007003071EE /* Challenges */,
 				C7A805911E51B48A00FF59AC /* Goals */,
@@ -254,11 +276,10 @@
 		AECA35C81E491AAE00C9DC45 /* DashboardPrototype */ = {
 			isa = PBXGroup;
 			children = (
-				AE0D27B61E5214F3006AD0B6 /* ViewControllers */,
 				AE0D27B51E5214EA006AD0B6 /* UI */,
 				AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */,
 				C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */,
-				AECA35CB1E491AAE00C9DC45 /* ViewController.swift */,
+				AE26101B1E54B06D000CC47D /* ViewController.swift */,
 				AE0D27AF1E4E274F006AD0B6 /* CardView.swift */,
 				AECA35D01E491AAE00C9DC45 /* Assets.xcassets */,
 				AECA35D51E491AAE00C9DC45 /* Info.plist */,
@@ -266,6 +287,30 @@
 				AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */,
 			);
 			path = DashboardPrototype;
+			sourceTree = "<group>";
+		};
+		AEFCDFDC1E54BB660050CBB5 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				AE2610191E54A94E000CC47D /* DUChallengesVC.swift */,
+			);
+			name = Challenges;
+			sourceTree = "<group>";
+		};
+		AEFCDFDD1E54BB720050CBB5 /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				AEFCDFDE1E54BB870050CBB5 /* DUGoalsVC.swift */,
+			);
+			name = Goals;
+			sourceTree = "<group>";
+		};
+		AEFCDFE01E54E23C0050CBB5 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				AEFCDFE11E54E2630050CBB5 /* DUCoachVC.swift */,
+			);
+			name = Coach;
 			sourceTree = "<group>";
 		};
 		C7A23B201E4DDEE90042D176 /* CustomLayout */ = {
@@ -376,8 +421,10 @@
 				AE0D27B41E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf in Resources */,
 				AECA35D41E491AAE00C9DC45 /* LaunchScreen.storyboard in Resources */,
 				32CBFB711E531075003169F2 /* 5.jpeg in Resources */,
+				AE2610181E54A899000CC47D /* Main.storyboard in Resources */,
 				AECA35D11E491AAE00C9DC45 /* Assets.xcassets in Resources */,
 				32CBFB6A1E531075003169F2 /* 122.jpg in Resources */,
+				AE2610161E54A127000CC47D /* Layout2.storyboard in Resources */,
 				32CBFB6B1E531075003169F2 /* 1222.jpg in Resources */,
 				32CBFB701E531075003169F2 /* 4.jpg in Resources */,
 				32CBFB6F1E531075003169F2 /* 3.jpg in Resources */,
@@ -393,7 +440,6 @@
 				32CBFB691E531075003169F2 /* 12.jpg in Resources */,
 				32CBFB761E531075003169F2 /* 9.jpg in Resources */,
 				32CBFB881E5310E0003169F2 /* PinterestLayout.storyboard in Resources */,
-				AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */,
 				C7A805931E51B4A500FF59AC /* Goals.storyboard in Resources */,
 				CE7C03801E52DE450027768A /* Coach.storyboard in Resources */,
 			);
@@ -455,9 +501,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */,
-				AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */,
 				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,
 				32CBFB831E53108B003169F2 /* NTTransition.swift in Sources */,
+				AEFCDFDF1E54BB870050CBB5 /* DUGoalsVC.swift in Sources */,
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
 				32CBFB7F1E53108B003169F2 /* Macro.swift in Sources */,
 				C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */,
@@ -475,27 +521,22 @@
 				32CBFB821E53108B003169F2 /* NTNavigationController.swift in Sources */,
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
 				32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */,
+				AE26101C1E54B06D000CC47D /* ViewController.swift in Sources */,
 				CE7C03851E5315A40027768A /* PlanViewController.swift in Sources */,
 				9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */,
 				9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */,
 				AE0D27B01E4E274F006AD0B6 /* CardView.swift in Sources */,
+				AE26101A1E54A94E000CC47D /* DUChallengesVC.swift in Sources */,
 				32CBFB861E53108B003169F2 /* NTWaterfallViewController.swift in Sources */,
 				32CBFB4F1E53106A003169F2 /* CHTCollectionViewWaterfallLayout.swift in Sources */,
 				32CBFB501E53106A003169F2 /* CircularRevealTransition.swift in Sources */,
+				AEFCDFE21E54E2630050CBB5 /* DUCoachVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AECA35CD1E491AAE00C9DC45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AECA35CE1E491AAE00C9DC45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -610,6 +651,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = RGTN4B5ZHY;
 				INFOPLIST_FILE = DashboardPrototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onlife.DashboardPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -628,6 +670,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = RGTN4B5ZHY;
 				INFOPLIST_FILE = DashboardPrototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onlife.DashboardPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";

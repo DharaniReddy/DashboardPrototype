@@ -8,21 +8,10 @@
 
 import UIKit
 
-enum Things: String, CustomStringConvertible {
-    var description: String {
-        return rawValue
-    }
-    
-    case one = "challenge"
-    case two = "two"
-    case three = "three"
-    
-}
-
-var data:Dictionary<String,String> = ["one":"challenge", "two":"two", "three":"three"]
-
 class CategoryPageVC: UIPageViewController {
-
+    
+    var data:[String] = ["one", "two", "three"]
+    
     var pages = [UIViewController]()
     
     var direction: Direction = Direction.left
@@ -34,15 +23,13 @@ class CategoryPageVC: UIPageViewController {
         
         self.delegate = self
         self.dataSource = self
-        
-        data.forEach { (key, value) in
-            let page: UIViewController! = storyboard?.instantiateViewController(withIdentifier: key)
+                
+        for index in 0...2 {
+            let page: UIViewController! = storyboard?.instantiateViewController(withIdentifier: data[index])
             pages.append(page)
         }
         
         setViewControllers([pages.first!], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
-        
-//        categoryPageVCDelegate?.categoryPageViewController(self, didUpdatePageIndex: pages.count)
     }
     
     /**

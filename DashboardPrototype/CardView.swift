@@ -20,7 +20,7 @@ class CardView: UIView {
     */
     
     override func awakeFromNib() {
-//        self.layer.cornerRadius = 10
+        self.layer.cornerRadius = 10
         self.layer.masksToBounds = true
     }
 
