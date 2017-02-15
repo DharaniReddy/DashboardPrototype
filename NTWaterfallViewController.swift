@@ -38,7 +38,7 @@ class NTWaterfallViewController:UICollectionViewController,CHTCollectionViewDele
     var imageNameList : Array <NSString> = []
     let delegateHolder = NavigationControllerDelegate()
     
-    let titles = ["Challenges", "Goals", "Coach", "Coach"]
+    let titles = ["Goals", "Coach", "Improve Fitness Challenge", "Manage Stress Challenge", "Improve Cholesterol Challenge", "Improve Blood Pressure Challenge", "Coach"]
     
     fileprivate weak var menu: MenuView!
     
@@ -96,7 +96,7 @@ class NTWaterfallViewController:UICollectionViewController,CHTCollectionViewDele
         let collectionCell: NTWaterfallViewCellType1 = collectionView.dequeueReusableCell(withReuseIdentifier: waterfallViewCellIdentify, for: indexPath) as! NTWaterfallViewCellType1
         collectionCell.titleLabel.isHidden = true
         
-        if indexPath.row == 3 || indexPath.row == 0 || indexPath.row == 1  {
+        if indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 4 || indexPath.row == 5 || indexPath.row == 0 || indexPath.row == 1  {
            collectionCell.titleLabel.isHidden = false
           collectionCell.titleLabel.text = titles[indexPath.row]
         }
@@ -114,28 +114,26 @@ class NTWaterfallViewController:UICollectionViewController,CHTCollectionViewDele
         
         if indexPath.row == 0 {
             
-            let challengesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"ChallengesViewController") as! ChallengesViewController
-            navigationController?.pushViewController(challengesViewController, animated: true)
-            
-        }else if indexPath.row == 1 {
-            
             let goalsViewController = UIStoryboard(name: "Goals", bundle: nil).instantiateViewController(withIdentifier:"Goals") as! GolasViewController
             navigationController?.pushViewController(goalsViewController, animated: true)
             
             
-        }else if indexPath.row == 3 {
+        }else if indexPath.row == 1 {
             
             let coachViewController = UIStoryboard(name: "Coach", bundle: nil).instantiateInitialViewController() as! CoachViewController
             navigationController?.pushViewController(coachViewController, animated: true)
             
-        }else {
-        
-        
-        let pageViewController =
-        NTHorizontalPageViewController(collectionViewLayout: pageViewControllerLayout(), currentIndexPath:indexPath)
-        pageViewController.imageNameList = imageNameList
-        collectionView.setToIndexPath(indexPath)
-        navigationController!.pushViewController(pageViewController, animated: true)
+        } else if indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 4 || indexPath.row == 5 {
+            let challengesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"ChallengesViewController") as! ChallengesViewController
+            challengesViewController.selectedIndex = indexPath.row - 2
+            navigationController?.pushViewController(challengesViewController, animated: true)
+            
+        } else  {
+            let pageViewController =
+                NTHorizontalPageViewController(collectionViewLayout: pageViewControllerLayout(), currentIndexPath:indexPath)
+            pageViewController.imageNameList = imageNameList
+            collectionView.setToIndexPath(indexPath)
+            navigationController!.pushViewController(pageViewController, animated: true)
         }
     }
     

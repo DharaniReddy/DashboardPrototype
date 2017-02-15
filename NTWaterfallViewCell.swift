@@ -70,7 +70,9 @@ class NTWaterfallViewCellType1 :UICollectionViewCell, NTTansitionWaterfallGridVi
         containerView.layer.borderWidth = 2
         containerView.layer.borderColor = UIColor.lightGray.cgColor
         
-        titleLabel.frame = CGRect(x: 5, y: frame.size.height - 50, width: 100, height: 20)
+        titleLabel.frame = CGRect(x: 5, y: frame.size.height - 50, width: frame.width - 20, height: 50)
+        titleLabel.numberOfLines = 0
+        titleLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
        // titleLabel.text = "Coach"
         
     }
