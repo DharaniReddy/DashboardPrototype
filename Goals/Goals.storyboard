@@ -22,13 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fXr-F9-rIK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RU1-xI-4gf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eO6-Yu-dCl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -40,7 +33,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="goalsCollectionViewCell1" id="0TU-zD-1dw" customClass="GoalsCollectionViewCell" customModule="DashboardPrototype" customModuleProvider="target">
-                                        <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                                        <rect key="frame" x="88" y="0.0" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -288,20 +281,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="1Ev-Cf-eYx" secondAttribute="trailing" id="0Tt-Pt-7ye"/>
-                            <constraint firstItem="RU1-xI-4gf" firstAttribute="trailing" secondItem="fXr-F9-rIK" secondAttribute="trailing" id="0sP-k5-5sf"/>
                             <constraint firstItem="1Ev-Cf-eYx" firstAttribute="top" secondItem="ey5-49-vFE" secondAttribute="top" id="42f-Lg-rAO"/>
-                            <constraint firstItem="RU1-xI-4gf" firstAttribute="leading" secondItem="fXr-F9-rIK" secondAttribute="leading" id="BzB-RL-NK1"/>
-                            <constraint firstItem="jX5-0v-HGk" firstAttribute="top" secondItem="fXr-F9-rIK" secondAttribute="bottom" id="D8i-1C-uHv"/>
-                            <constraint firstAttribute="trailing" secondItem="fXr-F9-rIK" secondAttribute="trailing" id="HF5-e2-R6Y"/>
                             <constraint firstItem="1Ev-Cf-eYx" firstAttribute="leading" secondItem="ey5-49-vFE" secondAttribute="leading" id="KOd-db-puR"/>
                             <constraint firstAttribute="trailing" secondItem="eO6-Yu-dCl" secondAttribute="trailing" id="PMy-Mr-gce"/>
                             <constraint firstItem="eO6-Yu-dCl" firstAttribute="top" secondItem="1j1-9S-rca" secondAttribute="bottom" id="S8y-9O-W0L"/>
-                            <constraint firstItem="fXr-F9-rIK" firstAttribute="top" secondItem="ey5-49-vFE" secondAttribute="top" id="ZxH-ea-BMJ"/>
                             <constraint firstItem="jX5-0v-HGk" firstAttribute="top" secondItem="eO6-Yu-dCl" secondAttribute="bottom" id="b5y-S6-A56"/>
-                            <constraint firstItem="RU1-xI-4gf" firstAttribute="bottom" secondItem="fXr-F9-rIK" secondAttribute="bottom" id="f5q-ot-oy0"/>
                             <constraint firstItem="eO6-Yu-dCl" firstAttribute="leading" secondItem="ey5-49-vFE" secondAttribute="leading" id="jz2-0F-zKQ"/>
-                            <constraint firstItem="fXr-F9-rIK" firstAttribute="leading" secondItem="ey5-49-vFE" secondAttribute="leading" id="yBh-ZX-iT3"/>
-                            <constraint firstItem="RU1-xI-4gf" firstAttribute="top" secondItem="fXr-F9-rIK" secondAttribute="top" id="ygS-OO-ZNa"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>

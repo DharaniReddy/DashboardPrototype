@@ -92,7 +92,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
         // descriptionLabel.text = tilesDescriptions[currentViewIndex%2]
         // transitionLabel(currentViewIndex)
         lastIndex = currentViewIndex
-        titleLabel.text = getSelectedIndexText(indexValue: currentViewIndex)
+//        titleLabel.text = getSelectedIndexText(indexValue: currentViewIndex)
     }
     
     // Animating the text

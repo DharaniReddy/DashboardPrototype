@@ -54,7 +54,7 @@ extension GolasViewController: UICollectionViewDelegate, UICollectionViewDataSou
             
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "goalsCollectionViewCell2", for: indexPath) as! GoalsCollectionViewCell
-            cell.goalName.text = "My Fitness (Active- Recommend)"
+            cell.goalName.text = "My Fitness"
             circleImage(cell.goalImageView, imageName: "fitness")
             cell.completedLabel.text = "\(Int(0.8 * 100)) days"
             addCircleToView( cell.circleView, frame: CGRect(x: 0, y: 0, width: 80,height: 80), borderWidth: 6, borderColor: colors[0], completePercentage: 0.8)
@@ -63,7 +63,7 @@ extension GolasViewController: UICollectionViewDelegate, UICollectionViewDataSou
             
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "goalsCollectionViewCell3", for: indexPath) as! GoalsCollectionViewCell
-            cell.goalName.text = goalsNames[indexPath.row]
+            cell.goalName.text = "\(goalsNames[indexPath.row]) (Active- Recommend)"
             circleImage(cell.goalImageView, imageName: images[indexPath.row])
             circleButton(cell.trackGoal)
             circleButton(cell.closeGoal)
