@@ -10,11 +10,11 @@ import UIKit
 
 class GolasViewController: UIViewController {
     let colors = [UIColor(red: 206/255, green: 234/255, blue: 67/255, alpha: 1), UIColor(red: 1, green: 130/255, blue: 0, alpha: 1.0), UIColor.darkGray]
-    let goals = ["My Fitness", "Nutrition"]
+    let goalsNames = ["Nutrition", "Blood Pressure", "Colesterol"]
+    let images = ["nutritionImg","bloodpressure", "goalbg"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +30,7 @@ class GolasViewController: UIViewController {
 extension GolasViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 3
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -38,9 +38,9 @@ extension GolasViewController: UICollectionViewDelegate, UICollectionViewDataSou
         case 0:
             return 1
         case 1:
-            return goals.count
+            return 1
         default:
-            return 0
+            return goalsNames.count
         }
     }
 
@@ -48,32 +48,27 @@ extension GolasViewController: UICollectionViewDelegate, UICollectionViewDataSou
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "goalsCollectionViewCell1", for: indexPath) as! GoalsCollectionViewCell
-            cell.imageView.image = UIImage(named: "goal2")
+            cell.imageView.image = UIImage(named: "goalbg")
             
             return cell;
             
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "goalsCollectionViewCell2", for: indexPath) as! GoalsCollectionViewCell
-            cell.goalName.text = goals[indexPath.row]
-            cell.goalImageView.image = UIImage(named: "goalbg")
+            cell.goalName.text = "My Fitness (Active- Recommend)"
+            circleImage(cell.goalImageView, imageName: "fitness")
             cell.completedLabel.text = "\(Int(0.8 * 100)) days"
-            cell.remainingDays.text = "30 days Remaining"
-
-            cell.goalImageView.layer.cornerRadius = cell.goalImageView.frame.width/2
-            cell.goalImageView.layer.masksToBounds = true
-            let color = colors[indexPath.row % 2]
-            cell.remainingDays.textColor = color
-            addCircleToView( cell.circleView, frame: CGRect(x: 0, y: 0, width: 80,height: 80), borderWidth: 6, borderColor: color)
-            if goals[indexPath.row] == goals[0]{
-                configWeekView(cell, color: color)
-            }
-
+            addCircleToView( cell.circleView, frame: CGRect(x: 0, y: 0, width: 80,height: 80), borderWidth: 6, borderColor: colors[0], completePercentage: 0.8)
+            configWeekView(cell, color: colors[1])
             return cell;
             
         default:
-            return collectionView.dequeueReusableCell(withReuseIdentifier: "goalsCollectionViewCell2", for: indexPath) as! GoalsCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "goalsCollectionViewCell3", for: indexPath) as! GoalsCollectionViewCell
+            cell.goalName.text = goalsNames[indexPath.row]
+            circleImage(cell.goalImageView, imageName: images[indexPath.row])
+            circleButton(cell.trackGoal)
+            circleButton(cell.closeGoal)
+            return cell
         }
-
     }
     func configWeekView(_ cell: GoalsCollectionViewCell, color: UIColor) {
         let xPosition = Int(cell.daysCircleView.frame.maxX)
@@ -81,16 +76,14 @@ extension GolasViewController: UICollectionViewDelegate, UICollectionViewDataSou
         let textYPos = Int(cell.daysNameLabel.frame.origin.y)
         
         let labelTexts = ["S", "M", "T", "W", "T", "F", "S"]
-        
+        let percentage = [0.2, 0.9, 0.3, 0.7, 0.4, 0.8, 0.5]
         for i in 0...6 {
             
             let xPos = xPosition+(i*7)+(i*18)
             let labelCircle = UILabel(frame: CGRect(x: xPos, y:circleYPos, width: 18, height:  18))
             labelCircle.backgroundColor = UIColor.clear
             cell.addSubview(labelCircle)
-            
-            
-            addCircleToView( labelCircle, frame: CGRect(x: 0, y: 0, width: 15,height: 15), borderWidth: 2, borderColor: color)
+            addCircleToView( labelCircle, frame: CGRect(x: 0, y: 0, width: 15,height: 15), borderWidth: 2, borderColor: color, completePercentage: percentage[i])
             
             let labelName = UILabel(frame: CGRect(x: xPos, y: textYPos, width: 18, height:  18))
             labelName.backgroundColor = UIColor.clear
@@ -102,28 +95,40 @@ extension GolasViewController: UICollectionViewDelegate, UICollectionViewDataSou
         }
         
     }
-    func addCircleToView(_ view: UIView,frame:CGRect, borderWidth: CGFloat, borderColor: UIColor) {
-        let circleView = CircleView(frame: frame, width: borderWidth, drawColor: borderColor)
-        view.addSubview(circleView)
-        circleView.animateCircle(duration: 1.0, toValue: 0.8)
-    }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenWidth = self.view.frame.size.width
         switch indexPath.section {
         case 0:
-            return CGSize(width: screenWidth , height: screenWidth/2)
+            return CGSize(width: screenWidth , height: screenWidth/1.7)
         default:
             return CGSize(width: screenWidth , height: 120)
         }
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "details", sender: nil)
+        if indexPath.section != 0 {
+            self.performSegue(withIdentifier: "details", sender: nil)
+        }
     }
     
+    func circleImage(_ view: UIImageView, imageName: String){
+        view.image = UIImage(named: imageName)
+        view.layer.cornerRadius = view.frame.width/2
+        view.layer.masksToBounds = true
+    }
     
+    func circleButton(_ view: UIView){
+        view.layer.cornerRadius = 5.0
+        view.layer.borderWidth = 1.0
+        view.layer.borderColor = colors[1].cgColor
+    }
+
+    func addCircleToView(_ view: UIView,frame:CGRect, borderWidth: CGFloat, borderColor: UIColor, completePercentage: Double) {
+        let circleView = CircleView(frame: frame, width: borderWidth, drawColor: borderColor)
+        view.addSubview(circleView)
+        circleView.animateCircle(duration: 1.0, toValue: CGFloat(completePercentage))
+    }
     
 }
 
@@ -141,5 +146,9 @@ class GoalsCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var daysCircleView: UILabel!
     @IBOutlet weak var daysNameLabel: UILabel!
-    @IBOutlet weak var remainingDays: UILabel!
+    
+    
+    @IBOutlet weak var trackGoal: UIButton!
+    @IBOutlet weak var closeGoal: UIButton!
+
 }
