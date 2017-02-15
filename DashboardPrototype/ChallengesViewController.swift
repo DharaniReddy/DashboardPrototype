@@ -19,6 +19,8 @@ class ChallengesViewController: UIViewController {
     
     var circleProgressView: CircleView!
     
+    var selectedIndex: Int = 0
+    
     var challengesPageVC: ChallengesPageViewController? {
         didSet {
             challengesPageVC?.challengesDelegate = self
@@ -29,8 +31,8 @@ class ChallengesViewController: UIViewController {
         super.viewDidLoad()
 
         navigationController?.isNavigationBarHidden = true
-        pageControl.currentPage = 0
         pageControl.numberOfPages = 4
+        pageControl.currentPage = selectedIndex
         
         circleProgressView = CircleView(frame: circleView.frame, width: 8, drawColor: UIColor(red: 1, green: 130/255, blue: 0, alpha: 1.0))
         view.addSubview(circleProgressView)
@@ -67,6 +69,7 @@ class ChallengesViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let challengesPageVC = segue.destination as? ChallengesPageViewController {
             self.challengesPageVC = challengesPageVC
+            challengesPageVC.index = selectedIndex
         }
     }
 }

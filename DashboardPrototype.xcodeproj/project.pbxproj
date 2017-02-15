@@ -114,6 +114,7 @@
 		AECA35D01E491AAE00C9DC45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AECA35D31E491AAE00C9DC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AECA35D51E491AAE00C9DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C717270B1E54326C007EC940 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
 		C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDetailsViewController.swift; sourceTree = "<group>"; };
 		C7A23B151E4DDE160042D176 /* DashboardPrototype-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashboardPrototype-Bridging-Header.h"; sourceTree = "<group>"; };
 		C7A23B181E4DDE2D0042D176 /* customLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customLayout.h; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 		AECA35BD1E491AAE00C9DC45 = {
 			isa = PBXGroup;
 			children = (
+				C717270B1E54326C007EC940 /* Test.playground */,
 				CE7C03811E52DF330027768A /* coach */,
 				32CBFB521E531075003169F2 /* images */,
 				32CBFB4B1E530EAD003169F2 /* Pinterest Layout */,

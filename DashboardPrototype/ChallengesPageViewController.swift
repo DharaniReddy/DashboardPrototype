@@ -31,7 +31,7 @@ class ChallengesPageViewController: UIPageViewController {
             challenges.append(challenge)
         }
         
-        setViewControllers([getViewControllerAtIndex(index: 0)], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+        setViewControllers([getViewControllerAtIndex(index: index)], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         
         // Do any additional setup after loading the view.
     }
