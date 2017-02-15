@@ -57,8 +57,10 @@
 		C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */; };
 		C7A805931E51B4A500FF59AC /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A805921E51B4A500FF59AC /* Goals.storyboard */; };
 		C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A805941E51B5CB00FF59AC /* GolasViewController.swift */; };
+		CE3EB1DC1E5464A80024C32F /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EB1DB1E5464A80024C32F /* PlanCell.swift */; };
 		CE7C03801E52DE450027768A /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7C037F1E52DE450027768A /* Coach.storyboard */; };
 		CE7C03831E52DF530027768A /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C03821E52DF530027768A /* CoachViewController.swift */; };
+		CE7C03851E5315A40027768A /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C03841E5315A40027768A /* PlanViewController.swift */; };
 		D41F30B086687699A1DAC58E /* Pods_DashboardPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */; };
 /* End PBXBuildFile section */
 
@@ -120,8 +122,10 @@
 		C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewViewController.swift; sourceTree = "<group>"; };
 		C7A805921E51B4A500FF59AC /* Goals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
 		C7A805941E51B5CB00FF59AC /* GolasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolasViewController.swift; sourceTree = "<group>"; };
+		CE3EB1DB1E5464A80024C32F /* PlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanCell.swift; sourceTree = "<group>"; };
 		CE7C037F1E52DE450027768A /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
 		CE7C03821E52DF530027768A /* CoachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
+		CE7C03841E5315A40027768A /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashboardPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -287,6 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				CE7C03821E52DF530027768A /* CoachViewController.swift */,
+				CE7C03841E5315A40027768A /* PlanViewController.swift */,
+				CE3EB1DB1E5464A80024C32F /* PlanCell.swift */,
 			);
 			name = coach;
 			sourceTree = "<group>";
@@ -460,6 +466,7 @@
 				9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */,
 				32CBFB811E53108B003169F2 /* NTHorizontalPageViewController.swift in Sources */,
 				AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */,
+				CE3EB1DC1E5464A80024C32F /* PlanCell.swift in Sources */,
 				CE7C03831E52DF530027768A /* CoachViewController.swift in Sources */,
 				32CBFB511E53106A003169F2 /* Extension.swift in Sources */,
 				32CBFB801E53108B003169F2 /* NTHorizontalPageViewCell.swift in Sources */,
@@ -468,6 +475,7 @@
 				32CBFB821E53108B003169F2 /* NTNavigationController.swift in Sources */,
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
 				32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */,
+				CE7C03851E5315A40027768A /* PlanViewController.swift in Sources */,
 				9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */,
 				9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */,
 				AE0D27B01E4E274F006AD0B6 /* CardView.swift in Sources */,
