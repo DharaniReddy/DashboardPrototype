@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChallengesViewController: UIViewController {
+class ChallengesViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet private weak var circleView: CircleView!
     @IBOutlet private weak var percentageLabel: UILabel!
@@ -16,6 +16,9 @@ class ChallengesViewController: UIViewController {
     @IBOutlet fileprivate weak var likeLabel: UILabel!
     @IBOutlet fileprivate weak var watchingLabel: UILabel!
     @IBOutlet fileprivate weak var membersJoinedLabel: UILabel!
+    @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet private weak var scrollableView: UIView!
+    @IBOutlet private weak var containerView: UIImageView!
     
     var circleProgressView: CircleView!
     
@@ -35,7 +38,7 @@ class ChallengesViewController: UIViewController {
         pageControl.currentPage = selectedIndex
         
         circleProgressView = CircleView(frame: circleView.frame, width: 8, drawColor: UIColor(red: 1, green: 130/255, blue: 0, alpha: 1.0))
-        view.addSubview(circleProgressView)
+        scrollableView.addSubview(circleProgressView)
         // Do any additional setup after loading the view.
     }
     
@@ -47,6 +50,17 @@ class ChallengesViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let containerHeight = containerView.frame.height
+        
+        let newOrigin = CGPoint(x: 0, y: -containerHeight)
+        
+        scrollView.contentOffset = newOrigin
+        scrollView.contentInset = UIEdgeInsets(top: containerHeight, left: 0, bottom: 0, right: 0)
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -72,10 +86,28 @@ class ChallengesViewController: UIViewController {
             challengesPageVC.index = selectedIndex
         }
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let offsetY = scrollView.contentOffset.y
+        
+        if offsetY < 0
+        {
+            containerView.frame.size.height = -offsetY
+        }
+        else
+        {
+            containerView.frame.size.height = containerView.frame.height
+        }
+    }
 }
 
 extension ChallengesViewController: ChallengesPageDelegate {
     func challengesPageViewController(updatePageIndex index: Int) {
+        guard selectedIndex != index else {
+            return
+        }
+        selectedIndex = index
         pageControl.currentPage = index
         likeLabel.text = ["6", "19", "7", "21"][index]
         watchingLabel.text = ["103", "8", "69", "99"][index]
