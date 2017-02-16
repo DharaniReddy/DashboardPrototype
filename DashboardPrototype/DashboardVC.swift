@@ -13,6 +13,17 @@ enum Direction {
     case left
 }
 
+enum Things: String, CustomStringConvertible {
+    var description: String {
+        return rawValue
+    }
+    
+    case one = "challengeLayout2"
+    case two = "coachLayout2"
+    case three = "goalsLayout2"
+    
+}
+
 class DashboardVC: UIViewController {
     
     @IBOutlet weak var contentView: UIView!
@@ -29,7 +40,7 @@ class DashboardVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let VC = getCurrentVC("challenge")
+        let VC = getCurrentVC("challengeLayout2")
         self.addChildViewController(VC)
         self.addSubview(subView: VC.view, toView: self.contentView)
     }
@@ -77,8 +88,6 @@ class DashboardVC: UIViewController {
     }
     
     func animateViews(_ index: Int, _ view: UIView, _ direction: Direction) -> Void {
-        print("index:\(index)")
-        print("current index:\(self.currentIndex)")
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
             
             switch direction {
@@ -88,36 +97,11 @@ class DashboardVC: UIViewController {
                 view.center.x += self.view.bounds.width
             }
             self.currentIndex = index
-            print("new current index:\(self.currentIndex)")
         }) { (done) in
             self.removeOldViews(self.contentView)
         }
     }
-    
-//    func animateLeft(_ view: UIView) -> Void {
-//        UIView.animate(withDuration: 0.2, animations: {
-//            view.center.x += self.view.bounds.width
-//            self.currentIndex = index
-//            print(view.center.x)
-//        }, completion: { done in
-//            if done {
-//                self.removeOldViews(self.contentView)
-//            }
-//        })
-//    }
-//    
-//    func animateRight(_ view: UIView) -> Void {
-//        UIView.animate(withDuration: 0.2, animations: {
-//            view.center.x += self.view.bounds.width
-//            self.currentIndex = index
-//            print(view.center.x)
-//        }, completion: { done in
-//            if done {
-//                self.removeOldViews(self.contentView)
-//            }
-//        })
-//    }
-    
+        
     /*
      MARK: - Navigation
      */
