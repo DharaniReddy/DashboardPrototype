@@ -52,6 +52,7 @@
 		AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35CD1E491AAE00C9DC45 /* Main.storyboard */; };
 		AECA35D11E491AAE00C9DC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECA35D01E491AAE00C9DC45 /* Assets.xcassets */; };
 		AECA35D41E491AAE00C9DC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */; };
+		C75EFD981E55766800DF7F7E /* Layout3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75EFD971E55766800DF7F7E /* Layout3ViewController.swift */; };
 		C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */; };
 		C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B191E4DDE2D0042D176 /* customLayout.m */; };
 		C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */; };
@@ -115,6 +116,7 @@
 		AECA35D31E491AAE00C9DC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AECA35D51E491AAE00C9DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C717270B1E54326C007EC940 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
+		C75EFD971E55766800DF7F7E /* Layout3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout3ViewController.swift; sourceTree = "<group>"; };
 		C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDetailsViewController.swift; sourceTree = "<group>"; };
 		C7A23B151E4DDE160042D176 /* DashboardPrototype-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashboardPrototype-Bridging-Header.h"; sourceTree = "<group>"; };
 		C7A23B181E4DDE2D0042D176 /* customLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customLayout.h; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */,
 				C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */,
 				AECA35CB1E491AAE00C9DC45 /* ViewController.swift */,
+				C75EFD971E55766800DF7F7E /* Layout3ViewController.swift */,
 				AE0D27AF1E4E274F006AD0B6 /* CardView.swift */,
 				AECA35D01E491AAE00C9DC45 /* Assets.xcassets */,
 				AECA35D51E491AAE00C9DC45 /* Info.plist */,
@@ -474,6 +477,7 @@
 				9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */,
 				32CBFB821E53108B003169F2 /* NTNavigationController.swift in Sources */,
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
+				C75EFD981E55766800DF7F7E /* Layout3ViewController.swift in Sources */,
 				32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */,
 				CE7C03851E5315A40027768A /* PlanViewController.swift in Sources */,
 				9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */,
