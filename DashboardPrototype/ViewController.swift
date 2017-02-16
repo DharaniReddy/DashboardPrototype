@@ -12,6 +12,12 @@ import Spring
 
 class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
 
+    // var for managing VC
+    @IBOutlet weak var contentView: UIView!
+    weak var currentViewController: UIViewController?
+    var currentIndex: Int = 0
+    
+    // VC Outlets
     @IBOutlet weak var descriptionLabel: SpringLabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var carousel: iCarousel!
@@ -21,15 +27,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     var data: [[Int:String]] = [
         [1 : "one"],
         [2 : "two"],
-        [3 : "three"],
-        [4 : "four"],
-        [5 : "five"],
-        [6 : "six"],
-        [7 : "seven"],
-        [8 : "eight"],
-        [9 : "nine"],
-        [10 : "ten"],
-        [11 : "eleven"],
+        [3 : "three"]
     ]
     let tilesDescriptions = [
         "The Health app shows your health and fitness information all in one place. To use the Health app, download the latest version of iOS for your iPhone or iPod touch. Then you can track health information from multiple sources, like compatible apps and fitness accessories. Set up health data. Apple Watch data.",
@@ -71,6 +69,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
         let imageView: UIView
 //        let backgroundImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         let backgroundImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        backgroundImage.tag = index
         
         if view != nil {
             imageView = view!
@@ -89,10 +88,9 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
    
     func carouselDidEndScrollingAnimation(_ carousel: iCarousel) {
         let currentViewIndex = carousel.currentItemIndex
-        // descriptionLabel.text = tilesDescriptions[currentViewIndex%2]
-        // transitionLabel(currentViewIndex)
         lastIndex = currentViewIndex
-//        titleLabel.text = getSelectedIndexText(indexValue: currentViewIndex)
+        addNewVC(currentViewIndex)
+        removeOldViews(self.contentView)
     }
     
     // Animating the text
@@ -115,19 +113,6 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     // gets the string value from local data based on current index of carousel
     func getSelectDataText(_ index: Int) -> String {
         return data[index][index + 1]!
-    }
-    
-    // gets a random UIColor value
-    func randomColor() -> UIColor {
-        var randomRed: CGFloat = CGFloat(arc4random_uniform(256))
-        let randomGreen: CGFloat = CGFloat(arc4random_uniform(256))
-        let randomBlue: CGFloat = CGFloat(arc4random_uniform(256))
-        
-        if (randomRed == 255.0 && randomGreen == 255.0 && randomBlue == 255.0) {
-            randomRed = CGFloat(arc4random_uniform(128))
-        }
-        
-        return UIColor(red: randomRed/255.0, green: randomGreen/255.0, blue: randomBlue/255.0, alpha: 1.0)
     }
 }
 
@@ -162,3 +147,57 @@ extension UIStoryboard {
     }
     
 }
+
+extension ViewController {
+    
+    func getViewId(_ index: Int) -> String {
+        let id:String
+        
+        switch index {
+        case 0:
+            id = Things.one.rawValue
+        case 1:
+            id = Things.two.rawValue
+        default:
+            id = Things.three.rawValue
+        }
+        
+        return id
+    }
+
+    func getCurrentVC(_ id: String) -> UIViewController {
+        self.currentViewController = self.storyboard?.instantiateViewController(withIdentifier: id)
+        if let view = self.currentViewController {
+//            view.view.translatesAutoresizingMaskIntoConstraints = false
+        }
+        return self.currentViewController!
+    }
+    
+    func addSubview(subView:UIView, toView parentView:UIView) {
+        
+        parentView.addSubview(subView)
+        
+        var viewBindingsDict = [String: AnyObject]()
+        viewBindingsDict["subView"] = subView
+        parentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[subView]|",
+                                                                 options: [], metrics: nil, views: viewBindingsDict))
+        parentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[subView]|",
+                                                                 options: [], metrics: nil, views: viewBindingsDict))
+    }
+    
+    func removeOldViews(_ parentView: UIView) -> Void {
+        if parentView.subviews.count > 1 {
+            parentView.subviews.forEach({ (view) in
+                if parentView.subviews.last == view { return }
+                view.removeFromSuperview()
+            })
+        }
+    }
+    
+    func addNewVC(_ index: Int) -> Void {
+        let VC = getCurrentVC(getViewId(index))
+        self.addChildViewController(VC)
+        addSubview(subView: VC.view, toView: self.contentView)
+    }
+}
+

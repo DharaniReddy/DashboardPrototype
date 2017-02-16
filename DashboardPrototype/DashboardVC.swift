@@ -94,30 +94,6 @@ class DashboardVC: UIViewController {
         }
     }
     
-//    func animateLeft(_ view: UIView) -> Void {
-//        UIView.animate(withDuration: 0.2, animations: {
-//            view.center.x += self.view.bounds.width
-//            self.currentIndex = index
-//            print(view.center.x)
-//        }, completion: { done in
-//            if done {
-//                self.removeOldViews(self.contentView)
-//            }
-//        })
-//    }
-//    
-//    func animateRight(_ view: UIView) -> Void {
-//        UIView.animate(withDuration: 0.2, animations: {
-//            view.center.x += self.view.bounds.width
-//            self.currentIndex = index
-//            print(view.center.x)
-//        }, completion: { done in
-//            if done {
-//                self.removeOldViews(self.contentView)
-//            }
-//        })
-//    }
-    
     /*
      MARK: - Navigation
      */

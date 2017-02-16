@@ -9,11 +9,12 @@
 import UIKit
 
 enum Things: String, CustomStringConvertible {
+    
     var description: String {
         return rawValue
     }
     
-    case one = "challenge"
+    case one = "one"
     case two = "two"
     case three = "three"
     
