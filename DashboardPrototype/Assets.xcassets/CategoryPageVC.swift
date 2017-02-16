@@ -8,18 +8,6 @@
 
 import UIKit
 
-enum Things: String, CustomStringConvertible {
-    
-    var description: String {
-        return rawValue
-    }
-    
-    case one = "one"
-    case two = "two"
-    case three = "three"
-    
-}
-
 var data:Dictionary<String,String> = ["one":"challenge", "two":"two", "three":"three"]
 
 class CategoryPageVC: UIPageViewController {

@@ -46,7 +46,11 @@
 		AE0D27B21E4E3551006AD0B6 /* Peace Sans Webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */; };
 		AE0D27B41E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */; };
 		AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */; };
-		AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B91E521557006AD0B6 /* DashboardVC.swift */; };
+		AEBD69C01E560A0F00F2658B /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD69BB1E560A0F00F2658B /* DashboardVC.swift */; };
+		AEBD69C11E560A0F00F2658B /* DUChallengesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD69BC1E560A0F00F2658B /* DUChallengesVC.swift */; };
+		AEBD69C21E560A0F00F2658B /* DUCoachVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD69BD1E560A0F00F2658B /* DUCoachVC.swift */; };
+		AEBD69C31E560A0F00F2658B /* DUGoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD69BE1E560A0F00F2658B /* DUGoalsVC.swift */; };
+		AEBD69C41E560A0F00F2658B /* Layout2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBD69BF1E560A0F00F2658B /* Layout2.storyboard */; };
 		AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */; };
 		AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35CB1E491AAE00C9DC45 /* ViewController.swift */; };
 		AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35CD1E491AAE00C9DC45 /* Main.storyboard */; };
@@ -106,8 +110,12 @@
 		AE0D27AF1E4E274F006AD0B6 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Peace Sans Webfont.ttf"; sourceTree = "<group>"; };
 		AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SIMPLIFICA Typeface.ttf"; sourceTree = "<group>"; };
-		AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryPageVC.swift; path = Assets.xcassets/CategoryPageVC.swift; sourceTree = "<group>"; };
-		AE0D27B91E521557006AD0B6 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryPageVC.swift; path = DashboardPrototype/Assets.xcassets/CategoryPageVC.swift; sourceTree = "<group>"; };
+		AEBD69BB1E560A0F00F2658B /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		AEBD69BC1E560A0F00F2658B /* DUChallengesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DUChallengesVC.swift; sourceTree = "<group>"; };
+		AEBD69BD1E560A0F00F2658B /* DUCoachVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DUCoachVC.swift; sourceTree = "<group>"; };
+		AEBD69BE1E560A0F00F2658B /* DUGoalsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DUGoalsVC.swift; sourceTree = "<group>"; };
+		AEBD69BF1E560A0F00F2658B /* Layout2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Layout2.storyboard; sourceTree = "<group>"; };
 		AECA35C61E491AAE00C9DC45 /* DashboardPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashboardPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECA35CB1E491AAE00C9DC45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -218,18 +226,23 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
-		AE0D27B61E5214F3006AD0B6 /* ViewControllers */ = {
+		AEBD69BA1E5609D900F2658B /* Layout2 */ = {
 			isa = PBXGroup;
 			children = (
 				AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */,
-				AE0D27B91E521557006AD0B6 /* DashboardVC.swift */,
+				AEBD69BB1E560A0F00F2658B /* DashboardVC.swift */,
+				AEBD69BC1E560A0F00F2658B /* DUChallengesVC.swift */,
+				AEBD69BD1E560A0F00F2658B /* DUCoachVC.swift */,
+				AEBD69BE1E560A0F00F2658B /* DUGoalsVC.swift */,
+				AEBD69BF1E560A0F00F2658B /* Layout2.storyboard */,
 			);
-			name = ViewControllers;
+			name = Layout2;
 			sourceTree = "<group>";
 		};
 		AECA35BD1E491AAE00C9DC45 = {
 			isa = PBXGroup;
 			children = (
+				AEBD69BA1E5609D900F2658B /* Layout2 */,
 				C717270B1E54326C007EC940 /* Test.playground */,
 				CE7C03811E52DF330027768A /* coach */,
 				32CBFB521E531075003169F2 /* images */,
@@ -256,7 +269,6 @@
 		AECA35C81E491AAE00C9DC45 /* DashboardPrototype */ = {
 			isa = PBXGroup;
 			children = (
-				AE0D27B61E5214F3006AD0B6 /* ViewControllers */,
 				AE0D27B51E5214EA006AD0B6 /* UI */,
 				AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */,
 				C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */,
@@ -381,6 +393,7 @@
 				32CBFB711E531075003169F2 /* 5.jpeg in Resources */,
 				AECA35D11E491AAE00C9DC45 /* Assets.xcassets in Resources */,
 				32CBFB6A1E531075003169F2 /* 122.jpg in Resources */,
+				AEBD69C41E560A0F00F2658B /* Layout2.storyboard in Resources */,
 				32CBFB6B1E531075003169F2 /* 1222.jpg in Resources */,
 				32CBFB701E531075003169F2 /* 4.jpg in Resources */,
 				32CBFB6F1E531075003169F2 /* 3.jpg in Resources */,
@@ -458,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */,
+				AEBD69C01E560A0F00F2658B /* DashboardVC.swift in Sources */,
 				AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */,
 				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,
 				32CBFB831E53108B003169F2 /* NTTransition.swift in Sources */,
@@ -465,7 +479,6 @@
 				32CBFB7F1E53108B003169F2 /* Macro.swift in Sources */,
 				C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */,
 				32CBFB841E53108B003169F2 /* NTTransitionProtocol.swift in Sources */,
-				AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */,
 				9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */,
 				32CBFB811E53108B003169F2 /* NTHorizontalPageViewController.swift in Sources */,
 				AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */,
@@ -480,12 +493,15 @@
 				C75EFDA41E55E3D900DF7F7E /* Layout3ViewController.swift in Sources */,
 				32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */,
 				CE7C03851E5315A40027768A /* PlanViewController.swift in Sources */,
+				AEBD69C31E560A0F00F2658B /* DUGoalsVC.swift in Sources */,
 				9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */,
 				9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */,
+				AEBD69C21E560A0F00F2658B /* DUCoachVC.swift in Sources */,
 				AE0D27B01E4E274F006AD0B6 /* CardView.swift in Sources */,
 				32CBFB861E53108B003169F2 /* NTWaterfallViewController.swift in Sources */,
 				32CBFB4F1E53106A003169F2 /* CHTCollectionViewWaterfallLayout.swift in Sources */,
 				32CBFB501E53106A003169F2 /* CircularRevealTransition.swift in Sources */,
+				AEBD69C11E560A0F00F2658B /* DUChallengesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

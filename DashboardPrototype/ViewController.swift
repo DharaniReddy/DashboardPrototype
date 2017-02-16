@@ -67,7 +67,6 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let imageView: UIView
-//        let backgroundImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         let backgroundImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
         backgroundImage.tag = index
         
@@ -76,9 +75,8 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
         } else {
             imageView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
             backgroundImage.image = UIImage(named: getImageName(atIndex: index))
-//            imageView.backgroundColor = randomColor()
-//            backgroundImage.contentMode = UIViewContentMode.scaleAspectFit
             backgroundImage.center = imageView.center
+            backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         }
         
         imageView.addSubview(backgroundImage)
@@ -94,7 +92,7 @@ class ViewController: UIViewController, iCarouselDelegate, iCarouselDataSource{
     }
     
     // Animating the text
-    func transitionLabel(_ currentIndex: Int) {
+    func transitionView(_ currentIndex: Int) {
         if lastIndex == currentIndex {
             return
         }
@@ -121,14 +119,12 @@ func getSelectedIndexText(indexValue index: Int) -> String {
 }
 
 func getImageName(atIndex index: Int) -> String {
-    return ["assessment", "trackers", "familytogether", "fitness", "nutrition", "nutrition", "fitness", "assessment", "points", "nutrition", "trackers", "trackers"][index]
+    return ["0.jpg", "coach1", "goals"][index]
 }
 
 extension UIView {
     func createBox(){        
         self.backgroundColor = UIColor.white
-//        self.layer.borderColor = UIColor.gray.cgColor
-//        self.layer.borderWidth = 1
     }
 }
 
@@ -150,6 +146,12 @@ extension UIStoryboard {
 
 extension ViewController {
     
+    func getVCFromStoryBoard(_ id: String) -> UIViewController {
+        let DUViewController = UIStoryboard(name: "Layout2", bundle: nil).instantiateViewController(withIdentifier:id)
+        
+        return DUViewController
+    }
+    
     func getViewId(_ index: Int) -> String {
         let id:String
         
@@ -166,9 +168,9 @@ extension ViewController {
     }
 
     func getCurrentVC(_ id: String) -> UIViewController {
-        self.currentViewController = self.storyboard?.instantiateViewController(withIdentifier: id)
+        self.currentViewController = getVCFromStoryBoard(id)
         if let view = self.currentViewController {
-//            view.view.translatesAutoresizingMaskIntoConstraints = false
+            view.view.translatesAutoresizingMaskIntoConstraints = false
         }
         return self.currentViewController!
     }
