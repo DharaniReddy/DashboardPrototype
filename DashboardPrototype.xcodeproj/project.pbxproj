@@ -37,6 +37,7 @@
 		32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB7D1E53108B003169F2 /* NTWaterfallViewCell.swift */; };
 		32CBFB861E53108B003169F2 /* NTWaterfallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB7E1E53108B003169F2 /* NTWaterfallViewController.swift */; };
 		32CBFB881E5310E0003169F2 /* PinterestLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB871E5310E0003169F2 /* PinterestLayout.storyboard */; };
+		9F1119C41E5C312B0091D1B3 /* Layout4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */; };
 		9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */; };
 		9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */; };
 		9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D161E519036003071EE /* ChallengesViewController.swift */; };
@@ -98,6 +99,7 @@
 		32CBFB7D1E53108B003169F2 /* NTWaterfallViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTWaterfallViewCell.swift; sourceTree = "<group>"; };
 		32CBFB7E1E53108B003169F2 /* NTWaterfallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTWaterfallViewController.swift; sourceTree = "<group>"; };
 		32CBFB871E5310E0003169F2 /* PinterestLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinterestLayout.storyboard; sourceTree = "<group>"; };
+		9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout4ViewController.swift; sourceTree = "<group>"; };
 		9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesPageViewController.swift; sourceTree = "<group>"; };
 		9F896D161E519036003071EE /* ChallengesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				AECA35CB1E491AAE00C9DC45 /* ViewController.swift */,
 				AE0D27AF1E4E274F006AD0B6 /* CardView.swift */,
 				C75EFDA31E55E3D900DF7F7E /* Layout3ViewController.swift */,
+				9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */,
 				AECA35D01E491AAE00C9DC45 /* Assets.xcassets */,
 				AECA35D51E491AAE00C9DC45 /* Info.plist */,
 				AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */,
@@ -476,6 +479,7 @@
 				AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */,
 				9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */,
 				32CBFB821E53108B003169F2 /* NTNavigationController.swift in Sources */,
+				9F1119C41E5C312B0091D1B3 /* Layout4ViewController.swift in Sources */,
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
 				C75EFDA41E55E3D900DF7F7E /* Layout3ViewController.swift in Sources */,
 				32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */,
