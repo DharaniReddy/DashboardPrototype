@@ -9,6 +9,12 @@
 import UIKit
 
 class Layout4ViewController: UIViewController {
+    let titles = ["Challenges", "Goals", "Coach"]
+//    ["blood_pressure", "snapshotReport", "goals", "emotionalHealth", "manage_stress", "nutrition", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress"]
+    let images = ["snapshotReport", "goals", "blood_pressure"]
+//    ["100", "20", "20", "20", "30", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20"]
+    let points = ["100", "50", "30"]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,16 +53,28 @@ extension Layout4ViewController: UICollectionViewDelegate, UICollectionViewDataS
         } else {
             cell.frame = CGRect(x: finalFrame.origin.x + 1000, y: -500, width: 0, height: 0)
         }
-        cell.layoutImage.image = UIImage(named: ["blood_pressure", "snapshotReport", "goals", "emotionalHealth", "manage_stress", "nutrition", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress"][indexPath.row])
+        cell.layoutImage.image = UIImage(named: self.images[indexPath.row % 3])
         UIView.animate(withDuration: 0.5, animations: {
             cell.frame = finalFrame
         }, completion: { _ in
             cell.pointsView.isHidden = false
-            cell.tileTitleLabel.text = ["Complete the Health Assessment", "Quit Tobacco", "Find a Doctor", "Stress Management", "Connect Friends", "Are You At Risk?", "Connect Device", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""][indexPath.row]
-            //cell.layoutImage.image = UIImage(named: ["blood_pressure", "snapshotReport", "goals", "emotionalHealth", "manage_stress", "nutrition", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress"][indexPath.row])
-            cell.pointsLabel.text = ["100", "20", "20", "20", "30", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20"][indexPath.row]
+            cell.tileTitleLabel.text = self.titles[indexPath.row % 3]
+            cell.pointsLabel.text = self.points[indexPath.row % 3]
         })
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (indexPath.row % 3) == 1 {
+            let goalsViewController = UIStoryboard(name: "Goals", bundle: nil).instantiateViewController(withIdentifier:"Goals") as! GolasViewController
+            navigationController?.pushViewController(goalsViewController, animated: true)
+        } else if (indexPath.row % 3) == 2 {
+            let coachViewController = UIStoryboard(name: "Coach", bundle: nil).instantiateInitialViewController() as! CoachViewController
+            navigationController?.pushViewController(coachViewController, animated: true)
+        } else {
+            let challengesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"ChallengesViewController") as! ChallengesViewController
+            navigationController?.pushViewController(challengesViewController, animated: true)
+        }
     }
 }
 
