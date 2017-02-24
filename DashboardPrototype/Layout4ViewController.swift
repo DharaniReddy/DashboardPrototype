@@ -9,11 +9,11 @@
 import UIKit
 
 class Layout4ViewController: UIViewController {
-    let titles = ["Challenges", "Goals", "Coach"]
+    let titles = ["Challenges", "Goals", "Friends & Family",  "Coach"]
 //    ["blood_pressure", "snapshotReport", "goals", "emotionalHealth", "manage_stress", "nutrition", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress"]
-    let images = ["snapshotReport", "goals", "blood_pressure"]
+    let images = ["snapshotReport", "goals", "familytogether", "blood_pressure"]
 //    ["100", "20", "20", "20", "30", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20"]
-    let points = ["100", "50", "30"]
+    let points = ["100", "50", "30", "40"]
     
 
     override func viewDidLoad() {
@@ -53,22 +53,25 @@ extension Layout4ViewController: UICollectionViewDelegate, UICollectionViewDataS
         } else {
             cell.frame = CGRect(x: finalFrame.origin.x + 1000, y: -500, width: 0, height: 0)
         }
-        cell.layoutImage.image = UIImage(named: self.images[indexPath.row % 3])
+        cell.layoutImage.image = UIImage(named: self.images[indexPath.row % 4])
         UIView.animate(withDuration: 0.5, animations: {
             cell.frame = finalFrame
         }, completion: { _ in
             cell.pointsView.isHidden = false
-            cell.tileTitleLabel.text = self.titles[indexPath.row % 3]
-            cell.pointsLabel.text = self.points[indexPath.row % 3]
+            cell.tileTitleLabel.text = self.titles[indexPath.row % 4]
+            cell.pointsLabel.text = self.points[indexPath.row % 4]
         })
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if (indexPath.row % 3) == 1 {
+        if (indexPath.row % 4) == 1 {
             let goalsViewController = UIStoryboard(name: "Goals", bundle: nil).instantiateViewController(withIdentifier:"Goals") as! GolasViewController
             navigationController?.pushViewController(goalsViewController, animated: true)
-        } else if (indexPath.row % 3) == 2 {
+        } else if (indexPath.row % 4) == 2 {
+            let coachViewController = UIStoryboard(name: "FriendsAndFamily", bundle: nil).instantiateInitialViewController() as! FriendsAndFamilyViewController
+            navigationController?.pushViewController(coachViewController, animated: true)
+        } else if (indexPath.row % 4) == 3 {
             let coachViewController = UIStoryboard(name: "Coach", bundle: nil).instantiateInitialViewController() as! CoachViewController
             navigationController?.pushViewController(coachViewController, animated: true)
         } else {

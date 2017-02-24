@@ -63,6 +63,10 @@
 		CE7C03801E52DE450027768A /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7C037F1E52DE450027768A /* Coach.storyboard */; };
 		CE7C03831E52DF530027768A /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C03821E52DF530027768A /* CoachViewController.swift */; };
 		CE7C03851E5315A40027768A /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C03841E5315A40027768A /* PlanViewController.swift */; };
+		CEA69F0E1E5D953900F04807 /* FriendsAndFamily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA69F0D1E5D953900F04807 /* FriendsAndFamily.storyboard */; };
+		CEA69F111E5D95E700F04807 /* FriendsAndFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA69F101E5D95E700F04807 /* FriendsAndFamilyViewController.swift */; };
+		CEA69F131E5DC12400F04807 /* FriendsAndFamilyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA69F121E5DC12400F04807 /* FriendsAndFamilyTableViewCell.swift */; };
+		CED90E221E5F22990041804C /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED90E211E5F22990041804C /* InviteViewController.swift */; };
 		D41F30B086687699A1DAC58E /* Pods_DashboardPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +134,10 @@
 		CE7C037F1E52DE450027768A /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
 		CE7C03821E52DF530027768A /* CoachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
 		CE7C03841E5315A40027768A /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		CEA69F0D1E5D953900F04807 /* FriendsAndFamily.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FriendsAndFamily.storyboard; sourceTree = "<group>"; };
+		CEA69F101E5D95E700F04807 /* FriendsAndFamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAndFamilyViewController.swift; sourceTree = "<group>"; };
+		CEA69F121E5DC12400F04807 /* FriendsAndFamilyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAndFamilyTableViewCell.swift; sourceTree = "<group>"; };
+		CED90E211E5F22990041804C /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
 		D6EB50AC74D526EDBF21DBD5 /* Pods_DashboardPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashboardPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -214,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				AECA35CD1E491AAE00C9DC45 /* Main.storyboard */,
+				CEA69F0D1E5D953900F04807 /* FriendsAndFamily.storyboard */,
 				CE7C037F1E52DE450027768A /* Coach.storyboard */,
 				AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */,
 			);
@@ -232,6 +241,7 @@
 		AECA35BD1E491AAE00C9DC45 = {
 			isa = PBXGroup;
 			children = (
+				CEA69F0F1E5D95C100F04807 /* FriendsAndFamily */,
 				C717270B1E54326C007EC940 /* Test.playground */,
 				CE7C03811E52DF330027768A /* coach */,
 				32CBFB521E531075003169F2 /* images */,
@@ -303,6 +313,16 @@
 			name = coach;
 			sourceTree = "<group>";
 		};
+		CEA69F0F1E5D95C100F04807 /* FriendsAndFamily */ = {
+			isa = PBXGroup;
+			children = (
+				CEA69F101E5D95E700F04807 /* FriendsAndFamilyViewController.swift */,
+				CEA69F121E5DC12400F04807 /* FriendsAndFamilyTableViewCell.swift */,
+				CED90E211E5F22990041804C /* InviteViewController.swift */,
+			);
+			name = FriendsAndFamily;
+			sourceTree = "<group>";
+		};
 		EF83EE230179F9F992A111AF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,7 +367,7 @@
 				TargetAttributes = {
 					AECA35C51E491AAE00C9DC45 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RGTN4B5ZHY;
+						DevelopmentTeam = YH5WZFPZK4;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -391,6 +411,7 @@
 				32CBFB6E1E531075003169F2 /* 2.jpg in Resources */,
 				32CBFB651E531075003169F2 /* 0.jpg in Resources */,
 				32CBFB671E531075003169F2 /* 10.jpg in Resources */,
+				CEA69F0E1E5D953900F04807 /* FriendsAndFamily.storyboard in Resources */,
 				32CBFB681E531075003169F2 /* 11.jpg in Resources */,
 				AE0D27B21E4E3551006AD0B6 /* Peace Sans Webfont.ttf in Resources */,
 				32CBFB751E531075003169F2 /* 8.jpg in Resources */,
@@ -463,17 +484,20 @@
 				C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */,
 				AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */,
 				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,
+				CED90E221E5F22990041804C /* InviteViewController.swift in Sources */,
 				32CBFB831E53108B003169F2 /* NTTransition.swift in Sources */,
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
 				32CBFB7F1E53108B003169F2 /* Macro.swift in Sources */,
 				C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */,
 				32CBFB841E53108B003169F2 /* NTTransitionProtocol.swift in Sources */,
 				AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */,
+				CEA69F131E5DC12400F04807 /* FriendsAndFamilyTableViewCell.swift in Sources */,
 				9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */,
 				32CBFB811E53108B003169F2 /* NTHorizontalPageViewController.swift in Sources */,
 				AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */,
 				CE3EB1DC1E5464A80024C32F /* PlanCell.swift in Sources */,
 				CE7C03831E52DF530027768A /* CoachViewController.swift in Sources */,
+				CEA69F111E5D95E700F04807 /* FriendsAndFamilyViewController.swift in Sources */,
 				32CBFB511E53106A003169F2 /* Extension.swift in Sources */,
 				32CBFB801E53108B003169F2 /* NTHorizontalPageViewCell.swift in Sources */,
 				AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */,
@@ -616,7 +640,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = RGTN4B5ZHY;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YH5WZFPZK4;
 				INFOPLIST_FILE = DashboardPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onlife.DashboardPrototype;
@@ -634,7 +659,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = RGTN4B5ZHY;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YH5WZFPZK4;
 				INFOPLIST_FILE = DashboardPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onlife.DashboardPrototype;
