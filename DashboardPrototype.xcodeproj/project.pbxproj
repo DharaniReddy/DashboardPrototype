@@ -37,6 +37,8 @@
 		32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB7D1E53108B003169F2 /* NTWaterfallViewCell.swift */; };
 		32CBFB861E53108B003169F2 /* NTWaterfallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBFB7E1E53108B003169F2 /* NTWaterfallViewController.swift */; };
 		32CBFB881E5310E0003169F2 /* PinterestLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CBFB871E5310E0003169F2 /* PinterestLayout.storyboard */; };
+		9F0A3C531E6590790003399F /* CoachScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0A3C521E6590790003399F /* CoachScreen.storyboard */; };
+		9F0A3C551E65BEDA0003399F /* MyCoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A3C541E65BEDA0003399F /* MyCoachViewController.swift */; };
 		9F1119C41E5C312B0091D1B3 /* Layout4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */; };
 		9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */; };
 		9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */; };
@@ -103,6 +105,8 @@
 		32CBFB7D1E53108B003169F2 /* NTWaterfallViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTWaterfallViewCell.swift; sourceTree = "<group>"; };
 		32CBFB7E1E53108B003169F2 /* NTWaterfallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTWaterfallViewController.swift; sourceTree = "<group>"; };
 		32CBFB871E5310E0003169F2 /* PinterestLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinterestLayout.storyboard; sourceTree = "<group>"; };
+		9F0A3C521E6590790003399F /* CoachScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CoachScreen.storyboard; sourceTree = "<group>"; };
+		9F0A3C541E65BEDA0003399F /* MyCoachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCoachViewController.swift; sourceTree = "<group>"; };
 		9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout4ViewController.swift; sourceTree = "<group>"; };
 		9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesPageViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 				CEA69F0D1E5D953900F04807 /* FriendsAndFamily.storyboard */,
 				CE7C037F1E52DE450027768A /* Coach.storyboard */,
 				AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */,
+				9F0A3C521E6590790003399F /* CoachScreen.storyboard */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				AE0D27AF1E4E274F006AD0B6 /* CardView.swift */,
 				C75EFDA31E55E3D900DF7F7E /* Layout3ViewController.swift */,
 				9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */,
+				9F0A3C541E65BEDA0003399F /* MyCoachViewController.swift */,
 				AECA35D01E491AAE00C9DC45 /* Assets.xcassets */,
 				AECA35D51E491AAE00C9DC45 /* Info.plist */,
 				AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */,
@@ -399,6 +405,7 @@
 				32CBFB731E531075003169F2 /* 6.jpg in Resources */,
 				32CBFB6C1E531075003169F2 /* 122222.jpg in Resources */,
 				32CBFB721E531075003169F2 /* 5.jpg in Resources */,
+				9F0A3C531E6590790003399F /* CoachScreen.storyboard in Resources */,
 				AE0D27B41E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf in Resources */,
 				AECA35D41E491AAE00C9DC45 /* LaunchScreen.storyboard in Resources */,
 				32CBFB711E531075003169F2 /* 5.jpeg in Resources */,
@@ -492,6 +499,7 @@
 				32CBFB841E53108B003169F2 /* NTTransitionProtocol.swift in Sources */,
 				AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */,
 				CEA69F131E5DC12400F04807 /* FriendsAndFamilyTableViewCell.swift in Sources */,
+				9F0A3C551E65BEDA0003399F /* MyCoachViewController.swift in Sources */,
 				9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */,
 				32CBFB811E53108B003169F2 /* NTHorizontalPageViewController.swift in Sources */,
 				AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */,

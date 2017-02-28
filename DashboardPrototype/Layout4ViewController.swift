@@ -9,7 +9,7 @@
 import UIKit
 
 class Layout4ViewController: UIViewController {
-    let titles = ["Challenges", "Goals", "Friends & Family",  "Coach"]
+    let titles = ["Challenges", "Goals", "Friends & Family", "Coach", "My Coach"]
 //    ["blood_pressure", "snapshotReport", "goals", "emotionalHealth", "manage_stress", "nutrition", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress"]
     let images = ["snapshotReport", "goals", "familytogether", "blood_pressure"]
 //    ["100", "20", "20", "20", "30", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20"]
@@ -72,21 +72,24 @@ extension Layout4ViewController: UICollectionViewDelegate, UICollectionViewDataS
 //        })
         cell.layoutImage.image = UIImage(named: self.images[indexPath.row % 3])
         cell.pointsView.isHidden = false
-        cell.tileTitleLabel.text = self.titles[indexPath.row % 3]
+        cell.tileTitleLabel.text = self.titles[indexPath.row % 5]
         cell.pointsLabel.text = self.points[indexPath.row % 3]
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if (indexPath.row % 4) == 1 {
+        if (indexPath.row % 5) == 1 {
             let goalsViewController = UIStoryboard(name: "Goals", bundle: nil).instantiateViewController(withIdentifier:"Goals") as! GolasViewController
             navigationController?.pushViewController(goalsViewController, animated: true)
-        } else if (indexPath.row % 4) == 2 {
+        } else if (indexPath.row % 5) == 2 {
             let coachViewController = UIStoryboard(name: "FriendsAndFamily", bundle: nil).instantiateInitialViewController() as! FriendsAndFamilyViewController
             navigationController?.pushViewController(coachViewController, animated: true)
-        } else if (indexPath.row % 4) == 3 {
+        } else if (indexPath.row % 5) == 3 {
             let coachViewController = UIStoryboard(name: "Coach", bundle: nil).instantiateInitialViewController() as! CoachViewController
             navigationController?.pushViewController(coachViewController, animated: true)
+        } else if indexPath.row % 5 == 4 {
+            let myCoachViewController = UIStoryboard(name: "CoachScreen", bundle: nil).instantiateInitialViewController()
+            present(myCoachViewController!, animated: true, completion: nil)
         } else {
             let challengesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"ChallengesViewController") as! ChallengesViewController
             navigationController?.pushViewController(challengesViewController, animated: true)
