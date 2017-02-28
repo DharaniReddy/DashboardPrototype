@@ -9,10 +9,16 @@
 import UIKit
 
 class Layout5ViewController: UIViewController {
-    let tilesImage = ["challenge","friend&family","coach1","goals"]
-    let tilesTitle = ["Challenge", "Friends & Family", "Coach", "Goals"]
-    let height: CGFloat =  150
+    let recommends = ["recommend","recommend1","recommend2","recommend","recommend1"]
+ 
+    let tilesImage = ["recommend2","challenge","friend&family","coach1","goals"]
+    
+    let tilesTitle = ["", "Challenge", "Friends & Family", "Coach","Goals"]
+    
+    let height: CGFloat =  180
+    let width: CGFloat = 150
     let collectionViewSpacing: CGFloat = 7
+   
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -30,16 +36,20 @@ extension Layout5ViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-         return height+100
+         return height+70
         }
-        return height+30;
+        return height;
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! Layout5TableViewCell
-        cell.titleLabel.text = tilesTitle[indexPath.row]
         cell.collectionView.tag = indexPath.row
+        if indexPath.row == 0 {
+            cell.titleLabel.text = "Recommend"
+        }else {
+            cell.titleLabel.text = tilesTitle[indexPath.row]
+        }
         return cell
     }
 }
@@ -54,11 +64,14 @@ extension Layout5ViewController: UICollectionViewDelegate,UICollectionViewDataSo
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! Layout5CollectionViewCell
-        
-        cell.cellImage?.image = UIImage(named: tilesImage[indexPath.row])
-//        cell.titleLabel.text = tilesTitle[indexPath.row]
-        
+       
+        if collectionView.tag == 0 {
+            cell.cellImage?.image = UIImage(named: recommends[indexPath.row])
+        }else{
+            cell.cellImage?.image = UIImage(named: tilesImage[abs(tilesImage.count-indexPath.row-collectionView.tag)])
+        }
         return cell;
     }
     
@@ -78,14 +91,14 @@ extension Layout5ViewController: UICollectionViewDelegate,UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if collectionView.tag == 0 {
-            return CGSize(width: 2*height , height: height+100-(2*collectionViewSpacing))
+            return CGSize(width: 2*width , height: width+100-(2*collectionViewSpacing))
+        }else{
+            return CGSize(width: width*0.7 , height: width-(2*collectionViewSpacing))
         }
-        return CGSize(width: height*0.7 , height: height-(2*collectionViewSpacing))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsetsMake(0, collectionViewSpacing, 0, collectionViewSpacing);
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

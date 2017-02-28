@@ -59,7 +59,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j4F-tb-zrs">
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommend" translatesAutoresizingMaskIntoConstraints="NO" id="j4F-tb-zrs">
                                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                     </imageView>
@@ -135,4 +135,7 @@
             <point key="canvasLocation" x="781.60000000000002" y="281.10944527736132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="recommend" width="368" height="263"/>
+    </resources>
 </document>
