@@ -54,6 +54,8 @@
 		AECA35D11E491AAE00C9DC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECA35D01E491AAE00C9DC45 /* Assets.xcassets */; };
 		AECA35D41E491AAE00C9DC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */; };
 		C75EFDA41E55E3D900DF7F7E /* Layout3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75EFDA31E55E3D900DF7F7E /* Layout3ViewController.swift */; };
+		C77196061E6555AC00ACC7CE /* Layout5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77196051E6555AC00ACC7CE /* Layout5ViewController.swift */; };
+		C77196091E6555E900ACC7CE /* Layout5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77196071E6555E900ACC7CE /* Layout5.storyboard */; };
 		C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */; };
 		C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B191E4DDE2D0042D176 /* customLayout.m */; };
 		C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */; };
@@ -123,6 +125,8 @@
 		AECA35D51E491AAE00C9DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C717270B1E54326C007EC940 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
 		C75EFDA31E55E3D900DF7F7E /* Layout3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout3ViewController.swift; sourceTree = "<group>"; };
+		C77196051E6555AC00ACC7CE /* Layout5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout5ViewController.swift; sourceTree = "<group>"; };
+		C77196081E6555E900ACC7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Layout5.storyboard; sourceTree = "<group>"; };
 		C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDetailsViewController.swift; sourceTree = "<group>"; };
 		C7A23B151E4DDE160042D176 /* DashboardPrototype-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashboardPrototype-Bridging-Header.h"; sourceTree = "<group>"; };
 		C7A23B181E4DDE2D0042D176 /* customLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customLayout.h; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				AECA35CD1E491AAE00C9DC45 /* Main.storyboard */,
+				C77196071E6555E900ACC7CE /* Layout5.storyboard */,
 				CEA69F0D1E5D953900F04807 /* FriendsAndFamily.storyboard */,
 				CE7C037F1E52DE450027768A /* Coach.storyboard */,
 				AECA35D21E491AAE00C9DC45 /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 				AE0D27AF1E4E274F006AD0B6 /* CardView.swift */,
 				C75EFDA31E55E3D900DF7F7E /* Layout3ViewController.swift */,
 				9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */,
+				C77196051E6555AC00ACC7CE /* Layout5ViewController.swift */,
 				AECA35D01E491AAE00C9DC45 /* Assets.xcassets */,
 				AECA35D51E491AAE00C9DC45 /* Info.plist */,
 				AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */,
@@ -367,7 +373,6 @@
 				TargetAttributes = {
 					AECA35C51E491AAE00C9DC45 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = YH5WZFPZK4;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -396,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77196091E6555E900ACC7CE /* Layout5.storyboard in Resources */,
 				32CBFB731E531075003169F2 /* 6.jpg in Resources */,
 				32CBFB6C1E531075003169F2 /* 122222.jpg in Resources */,
 				32CBFB721E531075003169F2 /* 5.jpg in Resources */,
@@ -487,6 +493,7 @@
 				CED90E221E5F22990041804C /* InviteViewController.swift in Sources */,
 				32CBFB831E53108B003169F2 /* NTTransition.swift in Sources */,
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
+				C77196061E6555AC00ACC7CE /* Layout5ViewController.swift in Sources */,
 				32CBFB7F1E53108B003169F2 /* Macro.swift in Sources */,
 				C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */,
 				32CBFB841E53108B003169F2 /* NTTransitionProtocol.swift in Sources */,
@@ -534,6 +541,14 @@
 				AECA35D31E491AAE00C9DC45 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C77196071E6555E900ACC7CE /* Layout5.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C77196081E6555E900ACC7CE /* Base */,
+			);
+			name = Layout5.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -640,11 +655,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Emids Technologies Private Limited";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = YH5WZFPZK4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DashboardPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onlife.DashboardPrototype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Emids.DashboardPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DashboardPrototype-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -659,11 +675,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Emids Technologies Private Limited";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = YH5WZFPZK4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DashboardPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onlife.DashboardPrototype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Emids.DashboardPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DashboardPrototype-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
