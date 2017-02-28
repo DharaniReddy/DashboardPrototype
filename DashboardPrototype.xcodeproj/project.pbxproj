@@ -287,6 +287,7 @@
 				C75EFDA31E55E3D900DF7F7E /* Layout3ViewController.swift */,
 				9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */,
 				9F0A3C541E65BEDA0003399F /* MyCoachViewController.swift */,
+				C77196051E6555AC00ACC7CE /* Layout5ViewController.swift */,
 				AECA35D01E491AAE00C9DC45 /* Assets.xcassets */,
 				AECA35D51E491AAE00C9DC45 /* Info.plist */,
 				AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */,
