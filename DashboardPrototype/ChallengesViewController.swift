@@ -91,12 +91,9 @@ class ChallengesViewController: UIViewController, UIScrollViewDelegate {
         
         let offsetY = scrollView.contentOffset.y
         
-        if offsetY < 0
-        {
+        if offsetY < 0 {
             containerView.frame.size.height = -offsetY
-        }
-        else
-        {
+        } else {
             containerView.frame.size.height = containerView.frame.height
         }
     }
