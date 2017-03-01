@@ -1,0 +1,29 @@
+{
+    "cards": [
+        {
+            "cardID": 0,
+            "cardTitle": "Challenge One",
+            "cardType": "Challenge",
+            "cardPoints": 25,
+        },
+        {
+            "cardID": 1,
+            "cardTitle": "FriendsFamily One",
+            "cardType": "FriendsFamily",
+            "cardPoints": 120,
+        },
+        {
+            "cardID": 2,
+            "cardTitle": "Trackers One",
+            "cardType": "Trackers",
+            "cardPoints": 50,
+        },
+        {
+            "cardID": 3,
+            "cardTitle": "Challenge Two",
+            "cardType": "Challenge",
+            "cardPoints": 140,
+        }
+    ],
+    "dataTitle": "JSON"
+}

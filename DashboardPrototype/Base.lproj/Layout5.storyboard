@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MgN-f3-VHK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MgN-f3-VHK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -64,8 +64,20 @@
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhE-Qo-DZg">
-                                                                        <rect key="frame" x="20" y="75" width="110" height="0.0"/>
+                                                                        <rect key="frame" x="20" y="55" width="110" height="40"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="uOj-Um-3zk"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-5X-Ffy" userLabel="Type Label">
+                                                                        <rect key="frame" x="0.0" y="120" width="359" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="30" id="MjQ-ij-pgc"/>
+                                                                        </constraints>
                                                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
@@ -80,13 +92,17 @@
                                                                 <constraint firstItem="j4F-tb-zrs" firstAttribute="leading" secondItem="sxM-xa-OxF" secondAttribute="leading" id="UtL-Xu-99H"/>
                                                                 <constraint firstItem="rhE-Qo-DZg" firstAttribute="centerY" secondItem="j4F-tb-zrs" secondAttribute="centerY" id="Wyb-ZR-chb"/>
                                                                 <constraint firstAttribute="bottom" secondItem="j4F-tb-zrs" secondAttribute="bottom" id="cfg-mo-riY"/>
+                                                                <constraint firstAttribute="trailing" secondItem="mu3-5X-Ffy" secondAttribute="trailing" constant="-209" id="efm-9s-nws"/>
+                                                                <constraint firstAttribute="bottom" secondItem="mu3-5X-Ffy" secondAttribute="bottom" id="fvV-t7-uce"/>
                                                                 <constraint firstItem="rhE-Qo-DZg" firstAttribute="centerX" secondItem="j4F-tb-zrs" secondAttribute="centerX" id="i0L-Vg-AJO"/>
+                                                                <constraint firstItem="mu3-5X-Ffy" firstAttribute="leading" secondItem="sxM-xa-OxF" secondAttribute="leading" id="oIW-4S-Kbs"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="cellImage" destination="j4F-tb-zrs" id="0pM-qL-nEg"/>
                                                                 <outlet property="label_horizontalConstraint" destination="i0L-Vg-AJO" id="AfM-Lh-C7p"/>
                                                                 <outlet property="label_verticalConstraint" destination="Wyb-ZR-chb" id="Dew-9z-6nV"/>
                                                                 <outlet property="titleLabel" destination="rhE-Qo-DZg" id="RXx-5f-8Tm"/>
+                                                                <outlet property="typeLabel" destination="mu3-5X-Ffy" id="80t-As-CCe"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>

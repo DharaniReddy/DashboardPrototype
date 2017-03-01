@@ -7,20 +7,75 @@
 //
 
 import UIKit
+import LayoutKit
+
+enum CardTypes: String {
+    case Challenge = "Challenge"
+    case FriendsFamily = "FriendsFamily"
+    case Trackers = "Trackers"
+}
 
 class Layout5ViewController: UIViewController {
+    
     let recommends = ["recommend","recommend1","recommend2","recommend","recommend1"]
  
     let tilesImage = ["recommend2","challenge","friend&family","coach1","goals"]
     
-    let tilesTitle = ["", "Challenge", "Friends & Family", "Coach","Goals"]
+    var tilesTitle = ["", "Challenge", "Friends & Family", "Coach","Goals"]
     
     let height: CGFloat =  180
     let width: CGFloat = 150
     let collectionViewSpacing: CGFloat = 7
    
+    var cardsArray: [EngagementCard] = []
+    
+    func printItem(_ item: EngagementCard, specialSomething special: String?) -> Void {
+        print("ID \(item.cardID!)")
+        print("Points: \(item.cardPoints!)")
+        print("Title: \(item.cardTitle!)")
+        print("Type: \(item.cardType!)")
+        print("Special: \(special!)")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Load JSON File
+//        let path = Bundle.main.path(forResource: "data", ofType: "json")
+        let url = Bundle.main.url(forResource: "data", withExtension: "json")
+        let data = NSData(contentsOf: url!)
+        do {
+            // Parse JSON as swift Dict[String: Any]
+            let json = try JSONSerialization.jsonObject(with: data! as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [String: AnyObject]
+            
+            // Grab the 'cards' array from json and cast to EngagementCard
+            if let cards = json?["cards"] as? [AnyObject] {
+                for index in 0...cards.count - 1 {
+                    let card = cards[index]
+                    let type = card["cardType"] as! String
+                    let cardModel: EngagementCard
+                    
+                    switch type {
+                    case CardTypes.Challenge.rawValue:
+                        let Challenge = ChallengeCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, challengeSomething: "Something1")
+//                        let nameLayout = LabelLayout(text: Challenge.cardTitle!, font: UIFont.systemFontOfSize(40))
+                        printItem(Challenge, specialSomething: Challenge.challengeSomething)
+                        cardsArray.append(Challenge)
+//                        tilesTitle.append(Challenge.cardTitle!)
+                    case CardTypes.FriendsFamily.rawValue:
+                        let FriendsFamily = FriendsAndFamilyCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, friendsAndFamilySomething: "FriendsFamily")
+                        printItem(FriendsFamily, specialSomething: FriendsFamily.friendsAndFamilySomething)
+                        cardsArray.append(FriendsFamily)
+                    default:
+                        let Trackers = TrackersCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, trackerSomething: "Trackers")
+                        printItem(Trackers, specialSomething: Trackers.trackerSomething)
+                        cardsArray.append(Trackers)
+                    }
+                }
+            }
+        } catch let error as NSError {
+            print(error)
+        }
+        
     }
 }
 
@@ -31,12 +86,12 @@ extension Layout5ViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tilesTitle.count
+        return cardsArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-         return height+70
+         return height + 70
         }
         return height;
         
@@ -59,7 +114,7 @@ extension Layout5ViewController: UICollectionViewDelegate,UICollectionViewDataSo
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tilesTitle.count
+        return cardsArray.count
     }
     
     
@@ -70,6 +125,9 @@ extension Layout5ViewController: UICollectionViewDelegate,UICollectionViewDataSo
         if collectionView.tag == 0 {
             cell.cellImage?.image = UIImage(named: recommends[indexPath.row])
         }else{
+            let card = cardsArray[indexPath.row]
+            cell.titleLabel.text = card.cardTitle!
+            cell.typeLabel.text = card.cardType!
             cell.cellImage?.image = UIImage(named: tilesImage[abs(tilesImage.count-indexPath.row-collectionView.tag)])
         }
         return cell;
@@ -116,6 +174,7 @@ class Layout5TableViewCell: UITableViewCell {
 class Layout5CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
     
     @IBOutlet weak var label_verticalConstraint: NSLayoutConstraint!
     @IBOutlet weak var label_horizontalConstraint: NSLayoutConstraint!

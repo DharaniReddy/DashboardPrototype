@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>LayoutKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Persei.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DashboardPrototype.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2977C21DE44DA3A0B2B5A923F9B9D093</key>
+		<key>24BFB1D2887773CC715981615AA89BBE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84EB239D033A48B845623B13EC7E25B8</key>
+		<key>37E9DC11DD5930F61F39665A9E2A0B08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B35DCE2522BE0F13B8D970A34D5829BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B8D8C363B343A0778AE6633D70E11749</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA5B6E81214A727EF8C4BD657381031B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
