@@ -10,6 +10,8 @@ import UIKit
 
 class MyCoachViewController: UIViewController {
     
+    @IBOutlet fileprivate weak var imageView: UIImageView!
+    @IBOutlet fileprivate weak var scrollView: UIScrollView!
     @IBOutlet private weak var specialitiesLabel: UILabel!
     @IBOutlet private weak var bioLabel: UILabel!
     @IBOutlet private weak var certificationLabel: UILabel!
@@ -23,7 +25,38 @@ class MyCoachViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let containerHeight = imageView.frame.height
+        
+        let newOrigin = CGPoint(x: 0, y: -containerHeight)
+        
+        scrollView.contentOffset = newOrigin
+        scrollView.contentInset = UIEdgeInsets(top: containerHeight, left: 0, bottom: 0, right: 0)
+    }
+    
     @IBAction func dismissOnSwipe(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+}
+
+extension MyCoachViewController: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let offsetY = scrollView.contentOffset.y
+        
+        if offsetY < 0 {
+            imageView.frame.size.height = -offsetY
+        } else {
+            imageView.frame.size.height = imageView.frame.height
+        }
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView.contentOffset.y <= -250 {
+            dismiss(animated: true, completion: nil)
+        }
     }
 }
