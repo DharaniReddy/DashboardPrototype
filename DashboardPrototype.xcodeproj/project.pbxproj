@@ -53,6 +53,7 @@
 		AE4771D51E675218008E4E34 /* FriendsAndFamilyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771D41E675218008E4E34 /* FriendsAndFamilyCard.swift */; };
 		AE4771D71E675250008E4E34 /* TrackersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771D61E675250008E4E34 /* TrackersCard.swift */; };
 		AE4771DA1E6752DD008E4E34 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = AE4771D91E6752DD008E4E34 /* data.json */; };
+		AE4771DC1E678187008E4E34 /* CardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771DB1E678187008E4E34 /* CardParser.swift */; };
 		AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */; };
 		AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35CB1E491AAE00C9DC45 /* ViewController.swift */; };
 		AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35CD1E491AAE00C9DC45 /* Main.storyboard */; };
@@ -126,6 +127,7 @@
 		AE4771D41E675218008E4E34 /* FriendsAndFamilyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAndFamilyCard.swift; sourceTree = "<group>"; };
 		AE4771D61E675250008E4E34 /* TrackersCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackersCard.swift; sourceTree = "<group>"; };
 		AE4771D91E6752DD008E4E34 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		AE4771DB1E678187008E4E34 /* CardParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardParser.swift; sourceTree = "<group>"; };
 		AECA35C61E491AAE00C9DC45 /* DashboardPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashboardPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECA35CB1E491AAE00C9DC45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				AECA35D51E491AAE00C9DC45 /* Info.plist */,
 				AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */,
 				AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */,
+				AE4771DB1E678187008E4E34 /* CardParser.swift */,
 			);
 			path = DashboardPrototype;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				CEA69F131E5DC12400F04807 /* FriendsAndFamilyTableViewCell.swift in Sources */,
 				AE4771D71E675250008E4E34 /* TrackersCard.swift in Sources */,
 				9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */,
+				AE4771DC1E678187008E4E34 /* CardParser.swift in Sources */,
 				32CBFB811E53108B003169F2 /* NTHorizontalPageViewController.swift in Sources */,
 				AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */,
 				CE3EB1DC1E5464A80024C32F /* PlanCell.swift in Sources */,

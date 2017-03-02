@@ -9,33 +9,19 @@
 import UIKit
 import LayoutKit
 
-enum CardTypes: String {
-    case Challenge = "Challenge"
-    case FriendsFamily = "FriendsFamily"
-    case Trackers = "Trackers"
-}
-
 class Layout5ViewController: UIViewController {
     
     let recommends = ["recommend","recommend1","recommend2","recommend","recommend1"]
  
     let tilesImage = ["recommend2","challenge","friend&family","coach1","goals"]
     
-    var tilesTitle = ["", "Challenge", "Friends & Family", "Coach","Goals"]
+    var tilesTitle = ["", "Challenge", "Friends & Family", "Coach", "Goals"]
     
     let height: CGFloat =  180
     let width: CGFloat = 150
     let collectionViewSpacing: CGFloat = 7
    
     var cardsArray: [EngagementCard] = []
-    
-    func printItem(_ item: EngagementCard, specialSomething special: String?) -> Void {
-        print("ID \(item.cardID!)")
-        print("Points: \(item.cardPoints!)")
-        print("Title: \(item.cardTitle!)")
-        print("Type: \(item.cardType!)")
-        print("Special: \(special!)")
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,39 +29,16 @@ class Layout5ViewController: UIViewController {
 //        let path = Bundle.main.path(forResource: "data", ofType: "json")
         let url = Bundle.main.url(forResource: "data", withExtension: "json")
         let data = NSData(contentsOf: url!)
-        do {
-            // Parse JSON as swift Dict[String: Any]
-            let json = try JSONSerialization.jsonObject(with: data! as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [String: AnyObject]
-            
-            // Grab the 'cards' array from json and cast to EngagementCard
-            if let cards = json?["cards"] as? [AnyObject] {
-                for index in 0...cards.count - 1 {
-                    let card = cards[index]
-                    let type = card["cardType"] as! String
-                    let cardModel: EngagementCard
-                    
-                    switch type {
-                    case CardTypes.Challenge.rawValue:
-                        let Challenge = ChallengeCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, challengeSomething: "Something1")
-//                        let nameLayout = LabelLayout(text: Challenge.cardTitle!, font: UIFont.systemFontOfSize(40))
-                        printItem(Challenge, specialSomething: Challenge.challengeSomething)
-                        cardsArray.append(Challenge)
-//                        tilesTitle.append(Challenge.cardTitle!)
-                    case CardTypes.FriendsFamily.rawValue:
-                        let FriendsFamily = FriendsAndFamilyCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, friendsAndFamilySomething: "FriendsFamily")
-                        printItem(FriendsFamily, specialSomething: FriendsFamily.friendsAndFamilySomething)
-                        cardsArray.append(FriendsFamily)
-                    default:
-                        let Trackers = TrackersCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, trackerSomething: "Trackers")
-                        printItem(Trackers, specialSomething: Trackers.trackerSomething)
-                        cardsArray.append(Trackers)
-                    }
-                }
+        let parsedJson = CardParser.sharedInstance.parseJSON(JSON: data!)
+        // Grab the 'cards' array from json and cast to EngagementCard
+        if let cards = parsedJson["cards"] as? [AnyObject] {
+            for index in 0...cards.count - 1 {
+                let cardJson = cards[index] as! [String: AnyObject]
+                let cardModel = CardParser.sharedInstance.parse(cardJson)
+                cardsArray.append(cardModel)
+//                tilesTitle.append(Challenge.cardTitle!)
             }
-        } catch let error as NSError {
-            print(error)
         }
-        
     }
 }
 

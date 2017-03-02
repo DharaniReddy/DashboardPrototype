@@ -10,6 +10,7 @@ import Foundation
 
 protocol ChallengeCard: EngagementCard {
     var challengeSomething: String? { get set }
+    var totalNumberOfPoeple: Int? { get set }
 }
 
 struct ChallengeCardStruct: ChallengeCard {
@@ -18,4 +19,5 @@ struct ChallengeCardStruct: ChallengeCard {
     var cardType: String? = "Type"
     var cardPoints: Int? = 150
     var challengeSomething: String? = "Challenge"
+    var totalNumberOfPoeple: Int? = 0
 }

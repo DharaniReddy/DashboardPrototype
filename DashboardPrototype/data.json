@@ -5,6 +5,7 @@
             "cardTitle": "Challenge One",
             "cardType": "Challenge",
             "cardPoints": 25,
+            "challengeSomething": "Something"
         },
         {
             "cardID": 1,
