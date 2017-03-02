@@ -18,15 +18,13 @@ class CardParser {
     
     static let sharedInstance = CardParser()
     
-//    fileprivate let data: [String: Any]?
-//    fileprivate var _character: Character?
     fileprivate var cardsArray = [EngagementCard]()
     
     func parseJSON(JSON data: NSData) -> [String:AnyObject] {
         var json: [String: AnyObject] = ["":"" as AnyObject]
         do {
             // Parse JSON as swift Dict[String: Any]
-            json = try JSONSerialization.jsonObject(with: data as! Data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String: AnyObject]
+            json = try JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String: AnyObject]
             
         } catch let error as NSError {
             print(error)

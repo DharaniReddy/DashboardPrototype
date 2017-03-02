@@ -25,18 +25,18 @@ class Layout5ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Load JSON File
-//        let path = Bundle.main.path(forResource: "data", ofType: "json")
         let url = Bundle.main.url(forResource: "data", withExtension: "json")
         let data = NSData(contentsOf: url!)
         let parsedJson = CardParser.sharedInstance.parseJSON(JSON: data!)
+        
         // Grab the 'cards' array from json and cast to EngagementCard
         if let cards = parsedJson["cards"] as? [AnyObject] {
             for index in 0...cards.count - 1 {
                 let cardJson = cards[index] as! [String: AnyObject]
                 let cardModel = CardParser.sharedInstance.parse(cardJson)
                 cardsArray.append(cardModel)
-//                tilesTitle.append(Challenge.cardTitle!)
             }
         }
     }
