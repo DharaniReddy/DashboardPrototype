@@ -42,6 +42,8 @@
 		9F1119C41E5C312B0091D1B3 /* Layout4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */; };
 		9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */; };
 		9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */; };
+		9F7AD7BC1E68316A0076A1C9 /* PersistMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AD7BB1E68316A0076A1C9 /* PersistMember.swift */; };
+		9F7AD7BE1E6834FF0076A1C9 /* RealmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AD7BD1E6834FF0076A1C9 /* RealmStore.swift */; };
 		9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D161E519036003071EE /* ChallengesViewController.swift */; };
 		9F896D191E51A461003071EE /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D181E51A461003071EE /* CircleView.swift */; };
 		9F896D1B1E51B38A003071EE /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D1A1E51B38A003071EE /* RoundedButton.swift */; };
@@ -112,6 +114,8 @@
 		9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout4ViewController.swift; sourceTree = "<group>"; };
 		9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesPageViewController.swift; sourceTree = "<group>"; };
+		9F7AD7BB1E68316A0076A1C9 /* PersistMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistMember.swift; sourceTree = "<group>"; };
+		9F7AD7BD1E6834FF0076A1C9 /* RealmStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmStore.swift; sourceTree = "<group>"; };
 		9F896D161E519036003071EE /* ChallengesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		9F896D181E51A461003071EE /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		9F896D1A1E51B38A003071EE /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -213,6 +217,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F7AD7BA1E6831260076A1C9 /* Persist Data */ = {
+			isa = PBXGroup;
+			children = (
+				9F7AD7BB1E68316A0076A1C9 /* PersistMember.swift */,
+				9F7AD7BD1E6834FF0076A1C9 /* RealmStore.swift */,
+			);
+			name = "Persist Data";
+			path = DashboardPrototype;
+			sourceTree = "<group>";
+		};
 		9F896D151E519007003071EE /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +273,7 @@
 				C7A23B201E4DDEE90042D176 /* CustomLayout */,
 				AECA35C81E491AAE00C9DC45 /* DashboardPrototype */,
 				9F896D151E519007003071EE /* Challenges */,
+				9F7AD7BA1E6831260076A1C9 /* Persist Data */,
 				C7A805911E51B48A00FF59AC /* Goals */,
 				AECA35C71E491AAE00C9DC45 /* Products */,
 				EF83EE230179F9F992A111AF /* Pods */,
@@ -523,10 +538,12 @@
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
 				C75EFDA41E55E3D900DF7F7E /* Layout3ViewController.swift in Sources */,
 				32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */,
+				9F7AD7BE1E6834FF0076A1C9 /* RealmStore.swift in Sources */,
 				CE7C03851E5315A40027768A /* PlanViewController.swift in Sources */,
 				9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */,
 				9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */,
 				AE0D27B01E4E274F006AD0B6 /* CardView.swift in Sources */,
+				9F7AD7BC1E68316A0076A1C9 /* PersistMember.swift in Sources */,
 				32CBFB861E53108B003169F2 /* NTWaterfallViewController.swift in Sources */,
 				32CBFB4F1E53106A003169F2 /* CHTCollectionViewWaterfallLayout.swift in Sources */,
 				32CBFB501E53106A003169F2 /* CircularRevealTransition.swift in Sources */,

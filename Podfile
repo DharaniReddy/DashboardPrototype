@@ -9,5 +9,6 @@ target 'DashboardPrototype' do
   pod 'iCarousel'
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
   pod 'Persei', '~> 3.0'
+  pod 'RealmSwift'
 
 end

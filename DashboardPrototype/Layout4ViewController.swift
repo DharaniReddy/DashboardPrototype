@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class Layout4ViewController: UIViewController {
     let titles = ["Challenges", "Goals", "Friends & Family", "Coach", "My Coach"]
@@ -24,6 +25,11 @@ class Layout4ViewController: UIViewController {
         super.viewDidLoad()
 
         navigationController?.isNavigationBarHidden = true
+        MemberStore.storeMemberInfo()
+        
+        let realm = try! Realm()
+        let member = realm.objects(Member.self)
+        print(member[0].enableLifepoints)
         // Do any additional setup after loading the view.
     }
 

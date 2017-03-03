@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Persei.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DashboardPrototype.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2977C21DE44DA3A0B2B5A923F9B9D093</key>
+		<key>0C420684A90A56BFA85E23CFD4CEB3A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,12 +47,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84EB239D033A48B845623B13EC7E25B8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AC4EBC4C242D759B88202E6A8E8198C3</key>
+		<key>38E994EB838DBBCB6124DAE84928B1BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,7 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD9CE6EB649AE47C3DEFE2EE6A9B9E26</key>
+		<key>D2B8AA518826AE0765623F8A2A991D28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF750024CEA615711BD4F54F4325F687</key>
 		<dict>
 			<key>primary</key>
 			<true/>
