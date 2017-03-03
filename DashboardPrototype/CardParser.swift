@@ -9,9 +9,9 @@
 import Foundation
 
 enum CardTypes: String {
-    case Challenge = "Challenge"
-    case FriendsFamily = "FriendsFamily"
-    case Trackers = "Trackers"
+    case challenge = "Challenge"
+    case friendsFamily = "FriendsFamily"
+    case trackers = "Trackers"
 }
 
 class CardParser {
@@ -35,23 +35,23 @@ class CardParser {
     func parse(_ card: [String:AnyObject]) -> EngagementCard {
 
         let type = card["cardType"] as! String
-        
-        switch type {
-        case CardTypes.Challenge.rawValue:
+        let cardType = CardTypes(rawValue: type)
+        switch cardType! {
+        case .challenge:
             
-            let Challenge = ChallengeCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, challengeSomething: card["challengeSomething"] as? String, totalNumberOfPoeple: 120)
+            let challenge = ChallengeCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, challengeSomething: card["challengeSomething"] as? String, totalNumberOfPoeple: 120)
             
-            return Challenge
-        case CardTypes.FriendsFamily.rawValue:
+            return challenge
+        case .friendsFamily:
             
-            let FriendsFamily = FriendsAndFamilyCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, friendsAndFamilySomething: "FriendsFamily")
+            let friendsFamily = FriendsAndFamilyCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, friendsAndFamilySomething: "FriendsFamily")
             
-            return FriendsFamily
-        default:
+            return friendsFamily
+        case .trackers:
             
-            let Trackers = TrackersCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, trackerSomething: "Trackers")
+            let trackers = TrackersCardStruct(cardID: card["cardID"] as? Int, cardTitle: card["cardTitle"] as? String, cardType: card["cardType"] as? String, cardPoints: card["cardPoints"] as? Int, trackerSomething: "Trackers")
             
-            return Trackers
+            return trackers
         }
     }
     
