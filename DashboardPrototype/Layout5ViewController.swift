@@ -33,9 +33,8 @@ class Layout5ViewController: UIViewController {
         
         // Grab the 'cards' array from json and cast to EngagementCard
         if let cards = parsedJson["cards"] as? [AnyObject] {
-            for index in 0...cards.count - 1 {
-                let cardJson = cards[index] as! [String: AnyObject]
-                let cardModel = CardParser.sharedInstance.parse(cardJson)
+            for cardJson in cards {
+                let cardModel = CardParser.sharedInstance.parse(cardJson as! [String : AnyObject])
                 cardsArray.append(cardModel)
             }
         }
