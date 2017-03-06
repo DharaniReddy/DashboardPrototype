@@ -28,8 +28,8 @@ class Layout4ViewController: UIViewController {
         MemberStore.storeMemberInfo()
         
         let realm = try! Realm()
-        let member = realm.objects(Member.self)
-        print(member[0].enableLifepoints)
+        let members = realm.objects(Member.self)
+        print(members)
         // Do any additional setup after loading the view.
     }
 
