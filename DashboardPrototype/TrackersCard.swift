@@ -17,5 +17,6 @@ struct TrackersCardStruct: TrackersCard {
     var cardTitle: String? = "Title"
     var cardType: String? = "Type"
     var cardPoints: Int? = 150
+    var cardImage: String? = "coach1"
     var trackerSomething: String? = "Trackers"
 }

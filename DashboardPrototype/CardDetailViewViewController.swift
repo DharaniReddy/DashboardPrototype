@@ -8,12 +8,17 @@
 
 import UIKit
 
-class CardDetailViewViewController: UIViewController {
-
+class BaseViewController: UIViewController {
+    var stateController: StateController!
+    
     @IBOutlet weak var cardTitle: UILabel?
     @IBOutlet weak var cardType: UILabel?
     
-    var card: EngagementCard?
+}
+
+class ChallengeDetailViewViewController: BaseViewController {
+    
+    var card: EngagementCardProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +28,7 @@ class CardDetailViewViewController: UIViewController {
             cardType?.text = viewCard.cardType
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
     /*
     // MARK: - Navigation
 

@@ -49,6 +49,7 @@
 		AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */; };
 		AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B91E521557006AD0B6 /* DashboardVC.swift */; };
 		AE0EC1CF1E6DC16100ADD4DE /* CardDetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EC1CE1E6DC16100ADD4DE /* CardDetailViewViewController.swift */; };
+		AE0EC1D21E6F13D900ADD4DE /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EC1D11E6F13D900ADD4DE /* StateController.swift */; };
 		AE4771D11E6751E6008E4E34 /* EngagementCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771D01E6751E6008E4E34 /* EngagementCard.swift */; };
 		AE4771D31E6751FB008E4E34 /* ChallengeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771D21E6751FB008E4E34 /* ChallengeCard.swift */; };
 		AE4771D51E675218008E4E34 /* FriendsAndFamilyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771D41E675218008E4E34 /* FriendsAndFamilyCard.swift */; };
@@ -124,6 +125,7 @@
 		AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryPageVC.swift; path = Assets.xcassets/CategoryPageVC.swift; sourceTree = "<group>"; };
 		AE0D27B91E521557006AD0B6 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		AE0EC1CE1E6DC16100ADD4DE /* CardDetailViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailViewViewController.swift; sourceTree = "<group>"; };
+		AE0EC1D11E6F13D900ADD4DE /* StateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 		AE4771D01E6751E6008E4E34 /* EngagementCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngagementCard.swift; sourceTree = "<group>"; };
 		AE4771D21E6751FB008E4E34 /* ChallengeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCard.swift; sourceTree = "<group>"; };
 		AE4771D41E675218008E4E34 /* FriendsAndFamilyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAndFamilyCard.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 				AE0D27B11E4E3551006AD0B6 /* Peace Sans Webfont.ttf */,
 				AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */,
 				AE4771DB1E678187008E4E34 /* CardParser.swift */,
+				AE0EC1D11E6F13D900ADD4DE /* StateController.swift */,
 			);
 			path = DashboardPrototype;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0EC1D21E6F13D900ADD4DE /* StateController.swift in Sources */,
 				C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */,
 				AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */,
 				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,

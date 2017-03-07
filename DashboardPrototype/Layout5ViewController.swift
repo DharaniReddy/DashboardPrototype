@@ -10,9 +10,9 @@ import UIKit
 
 class Layout5ViewController: UIViewController {
     
+    var stateController: StateController!
+    
     let recommends = ["recommend","recommend1","recommend2","recommend","recommend1"]
- 
-    let tilesImage = ["recommend2","challenge","friend&family","coach1","goals"]
     
     var tilesTitle = ["", "Challenge", "Friends & Family", "Coach", "Goals"]
     
@@ -21,7 +21,8 @@ class Layout5ViewController: UIViewController {
     let collectionViewSpacing: CGFloat = 7
    
     var cardsArray: [EngagementCardProtocol] = []
-
+    var selectedIndex: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,9 +30,9 @@ class Layout5ViewController: UIViewController {
         let url = Bundle.main.url(forResource: "data", withExtension: "json")
         let data = NSData(contentsOf: url!)
         cardsArray = CardParser.sharedInstance.parseCardsData(data! as Data)
-
+        self.stateController = StateController(cards: cardsArray)
         
-        //        let parsedJson = CardParser.sharedInstance.parseJSON(JSON: data!)
+        // let parsedJson = CardParser.sharedInstance.parseJSON(JSON: data!)
         // Grab the 'cards' array from json and cast to EngagementCard
 //        if let cards = parsedJson["cards"] as? [AnyObject] {
 //            for cardJson in cards {
@@ -41,12 +42,12 @@ class Layout5ViewController: UIViewController {
 //        }
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "CardDetialVC" {
-            if let detailVC = segue.destination as? CardDetailViewViewController {
-                if let card = sender as? EngagementCard {
-                    detailVC.card = card
-                }
+            if let detailVC = segue.destination as? ChallengeDetailViewViewController {
+                    detailVC.card = self.stateController.cards[selectedIndex]
+                    detailVC.stateController = self.stateController
             }
         }
     }
@@ -101,7 +102,8 @@ extension Layout5ViewController: UICollectionViewDelegate,UICollectionViewDataSo
             let card = cardsArray[indexPath.row]
             cell.titleLabel.text = card.cardTitle!
             cell.typeLabel.text = card.cardType!
-            cell.cellImage?.image = UIImage(named: tilesImage[abs(tilesImage.count-indexPath.row-collectionView.tag)])
+//            cell.cellImage?.image = UIImage(named: tilesImage[abs(tilesImage.count-indexPath.row-collectionView.tag)])
+            cell.cellImage?.image = UIImage(named: card.cardImage!)
         }
         return cell;
     }
@@ -133,7 +135,8 @@ extension Layout5ViewController: UICollectionViewDelegate,UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        var card: EngagementCard!
+        self.selectedIndex = indexPath.row
+        var card: EngagementCardProtocol!
         card = cardsArray[indexPath.row]
         performSegue(withIdentifier: "CardDetialVC", sender: card)  
     }

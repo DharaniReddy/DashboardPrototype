@@ -20,4 +20,5 @@ struct ChallengeCardStruct: ChallengeCard {
     var cardPoints: Int? = 150
     var challengeSomething: String? = "Challenge"
     var totalNumberOfPoeple: Int? = 0
+    var cardImage: String? = "challenge"
 }

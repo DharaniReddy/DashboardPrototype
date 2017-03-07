@@ -3,7 +3,7 @@ PODS:
   - LayoutKit (3.1.0)
   - Persei (3.0)
   - Spring (1.0.3)
-  - SwiftyJSON (3.1.4)
+  - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
   - iCarousel
@@ -27,7 +27,7 @@ SPEC CHECKSUMS:
   LayoutKit: a47e2e970d035986fd2d7369821d8484e3c58924
   Persei: 2fa633362b1686ec53f8d2d1368ee523b8630742
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
 PODFILE CHECKSUM: a2f7b3ded44b91bb1a7c348fd23f5c306cdb0ccf
 

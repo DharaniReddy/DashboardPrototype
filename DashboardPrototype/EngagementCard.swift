@@ -13,6 +13,7 @@ protocol EngagementCardProtocol {
     var cardTitle: String? { get set }
     var cardType: String? { get set }
     var cardPoints: Int? { get set }
+    var cardImage: String? { get set }
 }
 
 struct EngagementCards: EngagementCardProtocol {
@@ -20,4 +21,5 @@ struct EngagementCards: EngagementCardProtocol {
     var cardTitle: String? = "Title"
     var cardType: String? = "Type"
     var cardPoints: Int? = 150
+    var cardImage: String? = ""
 }

@@ -30,8 +30,9 @@ class CardParser {
             let cardTitle = card["cardTitle"].stringValue
             let cardPoints = card["cardPoints"].intValue
             let cardType = card["cardType"].stringValue
+            let cardImage = card["cardImage"].stringValue
 
-            let engagementCard = EngagementCards(cardID: cardID, cardTitle: cardTitle, cardType: cardType, cardPoints: cardPoints)
+            let engagementCard = EngagementCards(cardID: cardID, cardTitle: cardTitle, cardType: cardType, cardPoints: cardPoints, cardImage: cardImage)
             cardsArray.append(engagementCard)
         }
         return cardsArray

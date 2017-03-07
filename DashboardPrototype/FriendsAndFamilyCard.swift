@@ -18,4 +18,5 @@ struct FriendsAndFamilyCardStruct: FriendsAndFamilyCard {
     var cardType: String? = "Type"
     var cardPoints: Int? = 150
     var friendsAndFamilySomething: String? = "FriendsFamily"
+    var cardImage: String? = "friend&family"
 }
