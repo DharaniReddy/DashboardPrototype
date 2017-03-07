@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LayoutKit
 
 class Layout5ViewController: UIViewController {
     
@@ -36,6 +35,16 @@ class Layout5ViewController: UIViewController {
             for cardJson in cards {
                 let cardModel = CardParser.sharedInstance.parse(cardJson as! [String : AnyObject])
                 cardsArray.append(cardModel)
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CardDetialVC" {
+            if let detailVC = segue.destination as? CardDetailViewViewController {
+                if let card = sender as? EngagementCard {
+                    detailVC.card = card
+                }
             }
         }
     }
@@ -122,6 +131,9 @@ extension Layout5ViewController: UICollectionViewDelegate,UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        var card: EngagementCard!
+        card = cardsArray[indexPath.row]
+        performSegue(withIdentifier: "CardDetialVC", sender: card)  
     }
 }
 

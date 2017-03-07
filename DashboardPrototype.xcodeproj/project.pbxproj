@@ -48,6 +48,7 @@
 		AE0D27B41E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */; };
 		AE0D27B81E52153C006AD0B6 /* CategoryPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */; };
 		AE0D27BA1E521557006AD0B6 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D27B91E521557006AD0B6 /* DashboardVC.swift */; };
+		AE0EC1CF1E6DC16100ADD4DE /* CardDetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EC1CE1E6DC16100ADD4DE /* CardDetailViewViewController.swift */; };
 		AE4771D11E6751E6008E4E34 /* EngagementCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771D01E6751E6008E4E34 /* EngagementCard.swift */; };
 		AE4771D31E6751FB008E4E34 /* ChallengeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771D21E6751FB008E4E34 /* ChallengeCard.swift */; };
 		AE4771D51E675218008E4E34 /* FriendsAndFamilyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771D41E675218008E4E34 /* FriendsAndFamilyCard.swift */; };
@@ -122,6 +123,7 @@
 		AE0D27B31E4E366A006AD0B6 /* SIMPLIFICA Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SIMPLIFICA Typeface.ttf"; sourceTree = "<group>"; };
 		AE0D27B71E52153C006AD0B6 /* CategoryPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryPageVC.swift; path = Assets.xcassets/CategoryPageVC.swift; sourceTree = "<group>"; };
 		AE0D27B91E521557006AD0B6 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		AE0EC1CE1E6DC16100ADD4DE /* CardDetailViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailViewViewController.swift; sourceTree = "<group>"; };
 		AE4771D01E6751E6008E4E34 /* EngagementCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngagementCard.swift; sourceTree = "<group>"; };
 		AE4771D21E6751FB008E4E34 /* ChallengeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCard.swift; sourceTree = "<group>"; };
 		AE4771D41E675218008E4E34 /* FriendsAndFamilyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAndFamilyCard.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				AE0D27AF1E4E274F006AD0B6 /* CardView.swift */,
 				C75EFDA31E55E3D900DF7F7E /* Layout3ViewController.swift */,
 				9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */,
+				AE0EC1CE1E6DC16100ADD4DE /* CardDetailViewViewController.swift */,
 				C77196051E6555AC00ACC7CE /* Layout5ViewController.swift */,
 				AECA35D01E491AAE00C9DC45 /* Assets.xcassets */,
 				AECA35D51E491AAE00C9DC45 /* Info.plist */,
@@ -551,6 +554,7 @@
 				9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */,
 				32CBFB821E53108B003169F2 /* NTNavigationController.swift in Sources */,
 				9F1119C41E5C312B0091D1B3 /* Layout4ViewController.swift in Sources */,
+				AE0EC1CF1E6DC16100ADD4DE /* CardDetailViewViewController.swift in Sources */,
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
 				C75EFDA41E55E3D900DF7F7E /* Layout3ViewController.swift in Sources */,
 				32CBFB851E53108B003169F2 /* NTWaterfallViewCell.swift in Sources */,
