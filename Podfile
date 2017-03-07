@@ -10,5 +10,6 @@ target 'DashboardPrototype' do
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
   pod 'Persei', '~> 3.0'
   pod 'LayoutKit'
+  pod 'SwiftyJSON'
 
 end

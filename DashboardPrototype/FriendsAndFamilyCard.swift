@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol FriendsAndFamilyCard: EngagementCard {
+protocol FriendsAndFamilyCard: EngagementCardProtocol {
     var friendsAndFamilySomething: String? { get set }
 }
 

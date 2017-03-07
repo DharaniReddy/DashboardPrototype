@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ChallengeCard: EngagementCard {
+protocol ChallengeCard: EngagementCardProtocol {
     var challengeSomething: String? { get set }
     var totalNumberOfPoeple: Int? { get set }
 }

@@ -21,7 +21,7 @@ class Layout5ViewController: UIViewController {
     let width: CGFloat = 150
     let collectionViewSpacing: CGFloat = 7
    
-    var cardsArray: [EngagementCard] = []
+    var cardsArray: [EngagementCardProtocol] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +29,17 @@ class Layout5ViewController: UIViewController {
         // Load JSON File
         let url = Bundle.main.url(forResource: "data", withExtension: "json")
         let data = NSData(contentsOf: url!)
-        let parsedJson = CardParser.sharedInstance.parseJSON(JSON: data!)
+        cardsArray = CardParser.sharedInstance.parseCardsData(data! as Data)
+
         
+        //        let parsedJson = CardParser.sharedInstance.parseJSON(JSON: data!)
         // Grab the 'cards' array from json and cast to EngagementCard
-        if let cards = parsedJson["cards"] as? [AnyObject] {
-            for cardJson in cards {
-                let cardModel = CardParser.sharedInstance.parse(cardJson as! [String : AnyObject])
-                cardsArray.append(cardModel)
-            }
-        }
+//        if let cards = parsedJson["cards"] as? [AnyObject] {
+//            for cardJson in cards {
+//                let cardModel = CardParser.sharedInstance.parse(cardJson as! [String : AnyObject])
+//                cardsArray.append(cardModel)
+//            }
+//        }
     }
 }
 

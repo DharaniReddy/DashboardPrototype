@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MgN-f3-VHK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MgN-f3-VHK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -63,20 +63,20 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhE-Qo-DZg">
-                                                                        <rect key="frame" x="20" y="55" width="110" height="40"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhE-Qo-DZg">
+                                                                        <rect key="frame" x="10" y="72.5" width="130" height="25"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="40" id="uOj-Um-3zk"/>
+                                                                            <constraint firstAttribute="height" constant="25" id="uOj-Um-3zk"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
-                                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <color key="textColor" red="0.079621838530000003" green="0.17063673069999999" blue="0.22755393400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-5X-Ffy" userLabel="Type Label">
-                                                                        <rect key="frame" x="0.0" y="120" width="359" height="30"/>
+                                                                        <rect key="frame" x="10" y="97.5" width="130" height="25"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="30" id="MjQ-ij-pgc"/>
+                                                                            <constraint firstAttribute="height" constant="25" id="MjQ-ij-pgc"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,16 +86,16 @@
                                                             </view>
                                                             <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                             <constraints>
-                                                                <constraint firstItem="rhE-Qo-DZg" firstAttribute="leading" secondItem="j4F-tb-zrs" secondAttribute="leading" constant="20" id="3Rb-gM-MkY"/>
+                                                                <constraint firstItem="rhE-Qo-DZg" firstAttribute="leading" secondItem="j4F-tb-zrs" secondAttribute="leading" constant="10" id="3Rb-gM-MkY"/>
+                                                                <constraint firstItem="mu3-5X-Ffy" firstAttribute="leading" secondItem="rhE-Qo-DZg" secondAttribute="leading" id="5Wj-VW-vla"/>
                                                                 <constraint firstItem="j4F-tb-zrs" firstAttribute="top" secondItem="sxM-xa-OxF" secondAttribute="top" id="Kyu-ra-nT6"/>
                                                                 <constraint firstAttribute="trailing" secondItem="j4F-tb-zrs" secondAttribute="trailing" id="TIk-gq-YaJ"/>
                                                                 <constraint firstItem="j4F-tb-zrs" firstAttribute="leading" secondItem="sxM-xa-OxF" secondAttribute="leading" id="UtL-Xu-99H"/>
-                                                                <constraint firstItem="rhE-Qo-DZg" firstAttribute="centerY" secondItem="j4F-tb-zrs" secondAttribute="centerY" id="Wyb-ZR-chb"/>
+                                                                <constraint firstItem="rhE-Qo-DZg" firstAttribute="centerY" secondItem="j4F-tb-zrs" secondAttribute="centerY" constant="10" id="Wyb-ZR-chb"/>
                                                                 <constraint firstAttribute="bottom" secondItem="j4F-tb-zrs" secondAttribute="bottom" id="cfg-mo-riY"/>
-                                                                <constraint firstAttribute="trailing" secondItem="mu3-5X-Ffy" secondAttribute="trailing" constant="-209" id="efm-9s-nws"/>
-                                                                <constraint firstAttribute="bottom" secondItem="mu3-5X-Ffy" secondAttribute="bottom" id="fvV-t7-uce"/>
+                                                                <constraint firstItem="mu3-5X-Ffy" firstAttribute="top" secondItem="rhE-Qo-DZg" secondAttribute="bottom" id="f7x-y8-fQK"/>
                                                                 <constraint firstItem="rhE-Qo-DZg" firstAttribute="centerX" secondItem="j4F-tb-zrs" secondAttribute="centerX" id="i0L-Vg-AJO"/>
-                                                                <constraint firstItem="mu3-5X-Ffy" firstAttribute="leading" secondItem="sxM-xa-OxF" secondAttribute="leading" id="oIW-4S-Kbs"/>
+                                                                <constraint firstItem="mu3-5X-Ffy" firstAttribute="trailing" secondItem="rhE-Qo-DZg" secondAttribute="trailing" id="m42-Ni-wZZ"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="cellImage" destination="j4F-tb-zrs" id="0pM-qL-nEg"/>
