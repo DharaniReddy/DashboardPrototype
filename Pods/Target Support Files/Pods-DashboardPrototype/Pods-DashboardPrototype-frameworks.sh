@@ -87,11 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/LayoutKit/LayoutKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Persei/Persei.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Spring/Spring.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/iCarousel/iCarousel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/LayoutKit/LayoutKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Persei/Persei.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Spring/Spring.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/iCarousel/iCarousel.framework"
 fi

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol TrackersCard: EngagementCard {
+protocol TrackersCard: EngagementCardProtocol {
     var trackerSomething: String? { get set }
 }
 
