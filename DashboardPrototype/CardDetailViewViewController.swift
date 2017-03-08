@@ -24,8 +24,8 @@ class ChallengeDetailViewViewController: BaseViewController {
         super.viewDidLoad()
         
         if let viewCard = card {
-            cardTitle?.text = viewCard.cardTitle
-            cardType?.text = viewCard.cardType
+            cardTitle?.text = viewCard.title
+            cardType?.text = viewCard.type
         }
     }
     

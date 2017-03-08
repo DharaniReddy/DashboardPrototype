@@ -29,7 +29,7 @@ class Layout5ViewController: UIViewController {
         // Load JSON File
         let url = Bundle.main.url(forResource: "data", withExtension: "json")
         let data = NSData(contentsOf: url!)
-        cardsArray = CardParser.sharedInstance.parseCardsData(data! as Data)
+        cardsArray = CardParser.sharedInstance.engagementCardsData(data! as Data)
         self.stateController = StateController(cards: cardsArray)
         
         // let parsedJson = CardParser.sharedInstance.parseJSON(JSON: data!)
@@ -100,10 +100,10 @@ extension Layout5ViewController: UICollectionViewDelegate,UICollectionViewDataSo
             cell.cellImage?.image = UIImage(named: recommends[indexPath.row])
         }else{
             let card = cardsArray[indexPath.row]
-            cell.titleLabel.text = card.cardTitle!
-            cell.typeLabel.text = card.cardType!
+            cell.titleLabel.text = card.title
+            cell.typeLabel.text = card.type
 //            cell.cellImage?.image = UIImage(named: tilesImage[abs(tilesImage.count-indexPath.row-collectionView.tag)])
-            cell.cellImage?.image = UIImage(named: card.cardImage!)
+            cell.cellImage?.image = UIImage(named: card.imageUrl!)
         }
         return cell;
     }

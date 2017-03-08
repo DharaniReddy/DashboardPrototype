@@ -13,6 +13,8 @@ enum CardTypes: String {
     case challenge = "Challenge"
     case friendsFamily = "FriendsFamily"
     case trackers = "Trackers"
+    case video = "Video"
+    case article = "Article"
 }
 
 class CardParser {
@@ -21,22 +23,29 @@ class CardParser {
     private init() {}
     fileprivate var cardsArray = [EngagementCardProtocol]()
     
-    func parseCardsData(_ dataFromServer: Data) -> [EngagementCards]{
+    func engagementCardsData(_ dataFromServer: Data) -> [EngagementCards]{
         let json = JSON(data: dataFromServer)
         let cards = json["cards"].arrayValue
         var cardsArray: [EngagementCards] = []
         for card in cards {
-            let cardID = card["cardID"].intValue
-            let cardTitle = card["cardTitle"].stringValue
-            let cardPoints = card["cardPoints"].intValue
-            let cardType = card["cardType"].stringValue
-            let cardImage = card["cardImage"].stringValue
+            let id = card["id"].stringValue
+            let title = card["title"].stringValue
+            let type = card["type"].stringValue
+            let imageUrl = card["imageUrl"].stringValue
+            let lastUpdated = card["lastUpdated"].stringValue
+            let articleLink = card["articleLink"].stringValue
+            let shortDescription = card["shortDescription"].stringValue
+            let points = card["points"].intValue
+            let isRecommend = card["isRecommend"].boolValue
 
-            let engagementCard = EngagementCards(cardID: cardID, cardTitle: cardTitle, cardType: cardType, cardPoints: cardPoints, cardImage: cardImage)
+            
+            let engagementCard = EngagementCards(id: id, title: title, type: type, points: points, imageUrl: imageUrl, isRecommend: isRecommend, lastUpdated: lastUpdated, articleLink: articleLink, shortDescription: shortDescription)
             cardsArray.append(engagementCard)
         }
         return cardsArray
     }
+    
+    
     
         //
 //    func parseJSON(JSON data: NSData) -> [String:AnyObject] {
