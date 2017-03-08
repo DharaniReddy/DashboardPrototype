@@ -64,6 +64,7 @@
 		C75EFDA41E55E3D900DF7F7E /* Layout3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75EFDA31E55E3D900DF7F7E /* Layout3ViewController.swift */; };
 		C77196061E6555AC00ACC7CE /* Layout5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77196051E6555AC00ACC7CE /* Layout5ViewController.swift */; };
 		C77196091E6555E900ACC7CE /* Layout5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77196071E6555E900ACC7CE /* Layout5.storyboard */; };
+		C77FE99F1E6FDB1D0054BBF1 /* EngagementFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = C77FE99E1E6FDB1D0054BBF1 /* EngagementFeed.json */; };
 		C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */; };
 		C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B191E4DDE2D0042D176 /* customLayout.m */; };
 		C7A23B1F1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A23B1E1E4DDE7B0042D176 /* CustomCollectionViewViewController.swift */; };
@@ -143,6 +144,7 @@
 		C75EFDA31E55E3D900DF7F7E /* Layout3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout3ViewController.swift; sourceTree = "<group>"; };
 		C77196051E6555AC00ACC7CE /* Layout5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout5ViewController.swift; sourceTree = "<group>"; };
 		C77196081E6555E900ACC7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Layout5.storyboard; sourceTree = "<group>"; };
+		C77FE99E1E6FDB1D0054BBF1 /* EngagementFeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EngagementFeed.json; sourceTree = "<group>"; };
 		C79A0FBC1E5322BF00E99BE7 /* GoalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDetailsViewController.swift; sourceTree = "<group>"; };
 		C7A23B151E4DDE160042D176 /* DashboardPrototype-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashboardPrototype-Bridging-Header.h"; sourceTree = "<group>"; };
 		C7A23B181E4DDE2D0042D176 /* customLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customLayout.h; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				AE4771D91E6752DD008E4E34 /* data.json */,
+				C77FE99E1E6FDB1D0054BBF1 /* EngagementFeed.json */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				AE4771DA1E6752DD008E4E34 /* data.json in Resources */,
 				32CBFB6B1E531075003169F2 /* 1222.jpg in Resources */,
 				32CBFB701E531075003169F2 /* 4.jpg in Resources */,
+				C77FE99F1E6FDB1D0054BBF1 /* EngagementFeed.json in Resources */,
 				32CBFB6F1E531075003169F2 /* 3.jpg in Resources */,
 				32CBFB741E531075003169F2 /* 7.jpg in Resources */,
 				32CBFB6E1E531075003169F2 /* 2.jpg in Resources */,

@@ -15,7 +15,7 @@ class StateController {
         self.cards = cards
     }
     
-    func add(_ card: EngagementCardProtocol) -> Void {
-        cards.append(card)
-    }
+//    func add(_ card: EngagementCardProtocol) -> Void {
+//        cards.append(card)
+//    }
 }

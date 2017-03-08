@@ -13,12 +13,16 @@ protocol ChallengeCard: EngagementCardProtocol {
     var totalNumberOfPoeple: Int? { get set }
 }
 
-struct ChallengeCardStruct: ChallengeCard {
-    var cardID: Int? = 1
-    var cardTitle: String? = "Title"
-    var cardType: String? = "Type"
-    var cardPoints: Int? = 150
-    var challengeSomething: String? = "Challenge"
-    var totalNumberOfPoeple: Int? = 0
-    var cardImage: String? = "challenge"
+struct Challenge: ChallengeCard {
+    internal var id: String
+    internal var title: String
+    internal var type: String
+    internal var points: Int?
+    internal var imageUrl: String?
+    internal var isRecommend: Bool
+    internal var lastUpdated: String?
+    internal var articleLink: String?
+    internal var shortDescription: String?
+    internal var challengeSomething: String?
+    internal var totalNumberOfPoeple: Int?
 }
