@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        checkSchema()
         return true
     }
 
@@ -41,6 +43,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // MARK: Migration
+    
+    func checkSchema() {
+        Realm.Configuration.defaultConfiguration = Realm.Configuration(
+            schemaVersion: 3,
+            migrationBlock: { migration, oldSchemaVersion in
+                if (oldSchemaVersion < 3) {
+                    // The enumerateObjects(ofType:_:) method iterates
+                    // over every Person object stored in the Realm file
+                    migration.enumerateObjects(ofType: Member.className()) { oldObject, newObject in
+                        // add new property to list
+                        
+                        // To add a new column + 1 the scheme version and add a new object in model class as below mentioned name in "" and write the line as below in the block.
+                        //newObject!["validicTokenID"] = "dharanikumar"
+                        
+                        
+                        // To deleate a column + 1 the schema version, remove the unwanted object in model class and didn't add any line in this block.
+                    }
+                }
+        })
+    }
 
 }
 
