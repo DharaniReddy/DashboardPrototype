@@ -5,24 +5,28 @@
             "cardTitle": "Challenge One",
             "cardType": "Challenge",
             "cardPoints": 25,
+            "cardImage": "challenge",
             "challengeSomething": "Something"
         },
         {
             "cardID": 1,
             "cardTitle": "FriendsFamily One",
             "cardType": "FriendsFamily",
+            "cardImage": "friend&family",
             "cardPoints": 120,
         },
         {
             "cardID": 2,
             "cardTitle": "Trackers One",
             "cardType": "Trackers",
+            "cardImage": "coach1",
             "cardPoints": 50,
         },
         {
             "cardID": 3,
             "cardTitle": "Challenge Two",
             "cardType": "Challenge",
+            "cardImage": "challenge",
             "cardPoints": 140,
         }
     ],

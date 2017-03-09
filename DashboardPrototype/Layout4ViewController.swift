@@ -9,22 +9,25 @@
 import UIKit
 
 class Layout4ViewController: UIViewController {
-    let titles = ["Challenges", "Goals", "Friends & Family",  "Coach"]
-//    ["blood_pressure", "snapshotReport", "goals", "emotionalHealth", "manage_stress", "nutrition", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress", "emotionalHealth", "manage_stress", "manage_stress"]
-    let images = ["snapshotReport", "goals", "familytogether", "blood_pressure"]
-//    ["100", "20", "20", "20", "30", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20", "20", "30", "20", "20", "20", "20", "20", "30", "20", "30", "20", "20"]
-    let points = ["100", "50", "30", "40"]
-    var previousScrollOffset: CGFloat = 0
-    
     @IBOutlet fileprivate weak var tabBarViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var naviBarHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var tabBarTitleLabel: UILabel!
-
+    var cardsArray: [EngagementCardProtocol] = []
+    let colors = [  UIColor(red: 204/255, green: 255/255, blue: 229/255, alpha: 1),
+                    UIColor(red: 255/255, green: 204/255, blue: 204/255, alpha: 1),
+                    UIColor(red: 204/255, green: 204/255, blue: 255/255, alpha: 1),]
+    var previousScrollOffset: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationController?.isNavigationBarHidden = true
-        // Do any additional setup after loading the view.
+
+        // Load JSON File
+        let url = Bundle.main.url(forResource: "EngagementFeed", withExtension: "json")
+        if let data = NSData(contentsOf: url!) as? Data {
+            cardsArray = CardParser.sharedInstance.engagementCardsData(data)
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -40,7 +43,7 @@ class Layout4ViewController: UIViewController {
 
 extension Layout4ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 19
+        return cardsArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -54,71 +57,92 @@ extension Layout4ViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Layout4CollectionCell", for: indexPath) as! Layout4CollectionCell
-//        let finalFrame = cell.frame
-//        let translation = collectionView.panGestureRecognizer.translation(in: collectionView.superview)
-//        if translation.x > 0 {
-//            cell.frame = CGRect(x: finalFrame.origin.x - 1000, y: -500, width: 0, height: 0)
-//        } else {
-//            cell.frame = CGRect(x: finalFrame.origin.x + 1000, y: -500, width: 0, height: 0)
-//        }
-//        cell.layoutImage.image = UIImage(named: self.images[indexPath.row % 3])
-//        UIView.animate(withDuration: 0.5, animations: {
-//            cell.frame = finalFrame
-//        }, completion: { _ in
-//            cell.pointsView.isHidden = false
-//            cell.tileTitleLabel.text = self.titles[indexPath.row % 3]
-//            cell.pointsLabel.text = self.points[indexPath.row % 3]
-//        })
-        cell.layoutImage.image = UIImage(named: self.images[indexPath.row % 3])
-        cell.pointsView.isHidden = false
-        cell.tileTitleLabel.text = self.titles[indexPath.row % 3]
-        cell.pointsLabel.text = self.points[indexPath.row % 3]
+        let card = cardsArray[indexPath.row]
+
+        var cell:Layout4CollectionCell!
+        switch card.type {
+        case CardTypes.trackers.rawValue :
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "trackerCell", for: indexPath) as! Layout4CollectionCell
+            cell.pointsLabel.text = " \(card.points!) PTS "
+            
+        default:
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "articleCell", for: indexPath) as! Layout4CollectionCell
+            cell.videoPlayButton.isHidden = card.type != CardTypes.video.rawValue
+
+        }
+        
+        
+        //common
+        if let imageUrl = card.imageUrl, imageUrl != "" {
+            cell.layoutImage.image = UIImage(named: imageUrl)
+        }
+        cell.backgroundColor = colors[indexPath.row % 3]
+
+        cell.titleLabel.text = card.title
+        cell.descriptionLabel.text = card.shortDescription!
+
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if (indexPath.row % 4) == 1 {
-            let goalsViewController = UIStoryboard(name: "Goals", bundle: nil).instantiateViewController(withIdentifier:"Goals") as! GolasViewController
-            navigationController?.pushViewController(goalsViewController, animated: true)
-        } else if (indexPath.row % 4) == 2 {
-            let coachViewController = UIStoryboard(name: "FriendsAndFamily", bundle: nil).instantiateInitialViewController() as! FriendsAndFamilyViewController
-            navigationController?.pushViewController(coachViewController, animated: true)
-        } else if (indexPath.row % 4) == 3 {
-            let coachViewController = UIStoryboard(name: "Coach", bundle: nil).instantiateInitialViewController() as! CoachViewController
-            navigationController?.pushViewController(coachViewController, animated: true)
-        } else {
-            let challengesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"ChallengesViewController") as! ChallengesViewController
-            navigationController?.pushViewController(challengesViewController, animated: true)
-        }
+        
+        
+        
+        
+        
+        
+        
+//        if (indexPath.row % 4) == 1 {
+//            let goalsViewController = UIStoryboard(name: "Goals", bundle: nil).instantiateViewController(withIdentifier:"Goals") as! GolasViewController
+//            navigationController?.pushViewController(goalsViewController, animated: true)
+//        } else if (indexPath.row % 4) == 2 {
+//            let coachViewController = UIStoryboard(name: "FriendsAndFamily", bundle: nil).instantiateInitialViewController() as! FriendsAndFamilyViewController
+//            navigationController?.pushViewController(coachViewController, animated: true)
+//        } else if (indexPath.row % 4) == 3 {
+//            let coachViewController = UIStoryboard(name: "Coach", bundle: nil).instantiateInitialViewController() as! CoachViewController
+//            navigationController?.pushViewController(coachViewController, animated: true)
+//        } else {
+//            let challengesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"ChallengesViewController") as! ChallengesViewController
+//            navigationController?.pushViewController(challengesViewController, animated: true)
+//        }
     }
 }
 
-extension Layout4ViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let scrollOffset = scrollView.contentOffset.y
-        var bottomValue = CGFloat(0)
-        var heightValue = CGFloat(0)
-        if (scrollOffset > previousScrollOffset) && scrollOffset != 0 {
-            bottomValue = -30
-            heightValue = 0
-        } else {
-            bottomValue = 0
-            heightValue = 64
-        }
-        previousScrollOffset = scrollOffset
-        UIView.animate(withDuration: 0.5, animations: {
-            self.tabBarTitleLabel.alpha = bottomValue != -30 ? 0.0 : 1.0
-            self.tabBarViewBottomConstraint.constant = bottomValue
-            self.naviBarHeightConstraint.constant = heightValue
-            self.view.layoutIfNeeded()
-        })
-    }
-}
+//extension Layout4ViewController: UIScrollViewDelegate {
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let scrollOffset = scrollView.contentOffset.y
+//        var bottomValue = CGFloat(0)
+//        var heightValue = CGFloat(0)
+//        if (scrollOffset > previousScrollOffset) && scrollOffset != 0 {
+//            bottomValue = -30
+//            heightValue = 0
+//        } else {
+//            bottomValue = 0
+//            heightValue = 64
+//        }
+//        previousScrollOffset = scrollOffset
+//        UIView.animate(withDuration: 0.5, animations: {
+//            self.tabBarTitleLabel.alpha = bottomValue != -30 ? 0.0 : 1.0
+//            self.tabBarViewBottomConstraint.constant = bottomValue
+//            self.naviBarHeightConstraint.constant = heightValue
+//            self.view.layoutIfNeeded()
+//        })
+//    }
+//}
 
 class Layout4CollectionCell: UICollectionViewCell {
-    @IBOutlet fileprivate weak var tileTitleLabel: UILabel!
+    @IBOutlet fileprivate weak var titleLabel: UILabel!
     @IBOutlet fileprivate weak var layoutImage: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    //tracker
     @IBOutlet fileprivate weak var pointsLabel: UILabel!
-    @IBOutlet fileprivate weak var pointsView: UIView!
+    @IBOutlet weak var lastUpdatedButton: UIButton!
+
+    //article
+    @IBOutlet weak var linkTextView: UITextView!
+    @IBOutlet weak var videoPlayButton: UIButton!
+    @IBAction func playAction(_ sender: Any) {
+    }
+    
 }
