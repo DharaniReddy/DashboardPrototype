@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>iCarousel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>24BFB1D2887773CC715981615AA89BBE</key>
+		<key>0FCD19A215E2917126A38A483C09697B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>37E9DC11DD5930F61F39665A9E2A0B08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>612463D94D3CB79808E604BB8B60D028</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DA5B6E81214A727EF8C4BD657381031B</key>
+		<key>B9BD781B7668DBA119BDBEC1F65ECB7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

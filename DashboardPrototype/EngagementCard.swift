@@ -9,15 +9,26 @@
 import Foundation
 
 protocol EngagementCardProtocol {
-    var cardID: Int? { get set }
-    var cardTitle: String? { get set }
-    var cardType: String? { get set }
-    var cardPoints: Int? { get set }
+    var id: String { get set }
+    var title: String { get set }
+    var type: String { get set }
+    var points: Int? { get set }
+    var imageUrl: String? { get set }
+    var isRecommend: Bool {get set }
+    var lastUpdated: String? {get set }
+    var articleLink: String? {get set }
+    var shortDescription: String? {get set }
 }
 
+
 struct EngagementCards: EngagementCardProtocol {
-    var cardID: Int? = 0
-    var cardTitle: String? = "Title"
-    var cardType: String? = "Type"
-    var cardPoints: Int? = 150
+    internal var id: String
+    internal var title: String
+    internal var type: String
+    internal var points: Int?
+    internal var imageUrl: String?
+    internal var isRecommend: Bool
+    internal var lastUpdated: String?
+    internal var articleLink: String?
+    internal var shortDescription: String?
 }

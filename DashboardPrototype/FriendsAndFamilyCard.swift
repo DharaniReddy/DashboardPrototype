@@ -13,9 +13,16 @@ protocol FriendsAndFamilyCard: EngagementCardProtocol {
 }
 
 struct FriendsAndFamilyCardStruct: FriendsAndFamilyCard {
-    var cardID: Int? = 1
-    var cardTitle: String? = "Title"
-    var cardType: String? = "Type"
-    var cardPoints: Int? = 150
-    var friendsAndFamilySomething: String? = "FriendsFamily"
+    internal var friendsAndFamilySomething: String?
+
+    internal var id: String
+    internal var title: String
+    internal var type: String
+    internal var points: Int?
+    internal var imageUrl: String?
+    internal var isRecommend: Bool
+    internal var lastUpdated: String?
+    internal var articleLink: String?
+    internal var shortDescription: String?
+
 }

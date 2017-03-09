@@ -1,0 +1,39 @@
+{
+    "cards": [{
+              "id": "abc123",
+              "type": "Trackers",
+              "title": "Stress",
+              "imageUrl": "",
+              "points": "50",
+              "isRecommend": "true",
+              "lastUpdated": "2nd March",
+              "articleLink": "",
+              "shortDescription": "Stress isn’t always bad. In small doses, it can help you perform under pressure and motivate you to do your best."
+              
+              },
+              {
+              "id": "abc123",
+              "type": "link",
+              "title": "Article",
+              "imageUrl": "",
+              "points": "",
+              "isRecommend": "false",
+              "lastUpdated": "",
+              "articleLink": "www.google.com",
+              "shortDescription": "10 Smart Diet Tips for the Healthy Woman!"
+              
+              },
+              {
+              "id": "abc123",
+              "type": "Video",
+              "title": "Video Ex",
+              "imageUrl": "stress",
+              "points": "",
+              "isRecommend": "false",
+              "lastUpdated": "",
+              "articleLink": "https://www.google.com",
+              "shortDescription": ""
+              
+              }],
+    "dataTitle": "JSON"
+}
