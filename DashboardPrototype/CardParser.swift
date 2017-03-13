@@ -28,18 +28,21 @@ class CardParser {
         let cards = json["cards"].arrayValue
         var cardsArray: [EngagementCards] = []
         for card in cards {
-            let id = card["id"].stringValue
+//            let id = card["id"].stringValue
             let title = card["title"].stringValue
-            let type = card["type"].stringValue
+//            let type = card["type"].stringValue
             let imageUrl = card["imageUrl"].stringValue
             let lastUpdated = card["lastUpdated"].stringValue
             let articleLink = card["articleLink"].stringValue
             let shortDescription = card["shortDescription"].stringValue
-            let points = card["points"].intValue
+            let pointsAvailable = card["pointsAvailable"].intValue
             let isRecommend = card["isRecommend"].boolValue
 
+            let contentType = card["contentType"].stringValue
+            let contentIdentifier = card["contentIdentifier"].stringValue
+            let displayPriority = card["displayPriority"].intValue
             
-            let engagementCard = EngagementCards(id: id, title: title, type: type, points: points, imageUrl: imageUrl, isRecommend: isRecommend, lastUpdated: lastUpdated, articleLink: articleLink, shortDescription: shortDescription)
+            let engagementCard = EngagementCards(imageUrl: imageUrl, isRecommend: isRecommend, lastUpdated: lastUpdated, articleLink: articleLink, shortDescription: shortDescription, contentType: contentType, contentIdentifier: contentIdentifier, displayPriority: displayPriority, pointsAvailable: pointsAvailable, title: title, description: shortDescription)
             cardsArray.append(engagementCard)
         }
         return cardsArray

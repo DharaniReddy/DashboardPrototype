@@ -56,6 +56,8 @@
 		AE4771D71E675250008E4E34 /* TrackersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771D61E675250008E4E34 /* TrackersCard.swift */; };
 		AE4771DA1E6752DD008E4E34 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = AE4771D91E6752DD008E4E34 /* data.json */; };
 		AE4771DC1E678187008E4E34 /* CardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4771DB1E678187008E4E34 /* CardParser.swift */; };
+		AE659D421E76F31F00281E2A /* CoachCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE659D411E76F31F00281E2A /* CoachCard.swift */; };
+		AE659D441E77007B00281E2A /* ArticleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE659D431E77007B00281E2A /* ArticleCard.swift */; };
 		AECA35CA1E491AAE00C9DC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */; };
 		AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA35CB1E491AAE00C9DC45 /* ViewController.swift */; };
 		AECA35CF1E491AAE00C9DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA35CD1E491AAE00C9DC45 /* Main.storyboard */; };
@@ -133,6 +135,8 @@
 		AE4771D61E675250008E4E34 /* TrackersCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackersCard.swift; sourceTree = "<group>"; };
 		AE4771D91E6752DD008E4E34 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		AE4771DB1E678187008E4E34 /* CardParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardParser.swift; sourceTree = "<group>"; };
+		AE659D411E76F31F00281E2A /* CoachCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachCard.swift; sourceTree = "<group>"; };
+		AE659D431E77007B00281E2A /* ArticleCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCard.swift; sourceTree = "<group>"; };
 		AECA35C61E491AAE00C9DC45 /* DashboardPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashboardPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECA35C91E491AAE00C9DC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECA35CB1E491AAE00C9DC45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 				AE4771D21E6751FB008E4E34 /* ChallengeCard.swift */,
 				AE4771D41E675218008E4E34 /* FriendsAndFamilyCard.swift */,
 				AE4771D61E675250008E4E34 /* TrackersCard.swift */,
+				AE659D411E76F31F00281E2A /* CoachCard.swift */,
+				AE659D431E77007B00281E2A /* ArticleCard.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -533,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE659D421E76F31F00281E2A /* CoachCard.swift in Sources */,
 				AE0EC1D21E6F13D900ADD4DE /* StateController.swift in Sources */,
 				C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */,
 				AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */,
@@ -562,6 +569,7 @@
 				9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */,
 				32CBFB821E53108B003169F2 /* NTNavigationController.swift in Sources */,
 				9F1119C41E5C312B0091D1B3 /* Layout4ViewController.swift in Sources */,
+				AE659D441E77007B00281E2A /* ArticleCard.swift in Sources */,
 				AE0EC1CF1E6DC16100ADD4DE /* CardDetailViewViewController.swift in Sources */,
 				9F896D191E51A461003071EE /* CircleView.swift in Sources */,
 				C75EFDA41E55E3D900DF7F7E /* Layout3ViewController.swift in Sources */,

@@ -1,39 +1,68 @@
 {
     "cards": [{
-              "id": "abc123",
-              "type": "Trackers",
-              "title": "Stress",
-              "imageUrl": "",
-              "points": "50",
-              "isRecommend": "true",
-              "lastUpdated": "2nd March",
-              "articleLink": "",
-              "shortDescription": "Stress isn’t always bad. In small doses, it can help you perform under pressure and motivate you to do your best."
-              
+                  "id": "abc123",
+                  "contentType": "Trackers",
+                  "title": "Stress",
+                  "imageUrl": "",
+                  "points": "50",
+                  "isRecommend": "true",
+                  "lastUpdated": "2nd March",
+                  "articleLink": "",
+                  "shortDescription": "Stress isn’t always bad. In small doses, it can help you perform under pressure and motivate you to do your best.",
+              "contentIdentifier": "11ccff0d-f623-4ee5-b001-203163831fa9",
+              "displayPriority": 100
               },
               {
-              "id": "abc123",
-              "type": "link",
-              "title": "Article",
-              "imageUrl": "",
-              "points": "",
-              "isRecommend": "false",
-              "lastUpdated": "",
-              "articleLink": "www.google.com",
-              "shortDescription": "10 Smart Diet Tips for the Healthy Woman!"
-              
+                  "id": "abc123",
+                  "contentType": "link",
+                  "title": "Article",
+                  "imageUrl": "",
+                  "points": "",
+                  "isRecommend": "false",
+                  "lastUpdated": "",
+                  "articleLink": "www.google.com",
+                  "shortDescription": "10 Smart Diet Tips for the Healthy Woman!",
+              "contentIdentifier": "11ccff0d-f623-4ee5-b001-203163831fa9",
+              "displayPriority": 100
               },
               {
-              "id": "abc123",
-              "type": "Video",
-              "title": "Video Ex",
-              "imageUrl": "stress",
-              "points": "",
-              "isRecommend": "false",
-              "lastUpdated": "",
-              "articleLink": "https://www.google.com",
-              "shortDescription": ""
-              
+                  "id": "abc123",
+                  "contentType": "Video",
+                  "title": "Video Ex",
+                  "imageUrl": "stress",
+                  "points": "",
+                  "isRecommend": "false",
+                  "lastUpdated": "",
+                  "articleLink": "https://www.google.com",
+                  "shortDescription": "",
+              "contentIdentifier": "11ccff0d-f623-4ee5-b001-203163831fa9",
+              "displayPriority": 100
+              },
+              {
+                  "id": "abc123",
+                  "contentType": "link",
+                  "title": "6 Ways Yoga Reduces Stress",
+                  "imageUrl": "",
+                  "points": "20",
+                  "isRecommend": "false",
+                  "lastUpdated": "",
+                  "articleLink": "https://www.google.com",
+                  "shortDescription": "Find out More!",
+              "contentIdentifier": "11ccff0d-f623-4ee5-b001-203163831fa9",
+              "displayPriority": 100
+              },
+              {
+                  "id": "abc123",
+                  "contentType": "link",
+                  "title": "Cooking spicy tofu noodles",
+                  "imageUrl": "",
+                  "points": "10",
+                  "isRecommend": "false",
+                  "lastUpdated": "",
+                  "articleLink": "https://www.google.com",
+                  "shortDescription": "Yum!",
+                    "contentIdentifier": "11ccff0d-f623-4ee5-b001-203163831fa9",
+                    "displayPriority": 100
               }],
     "dataTitle": "JSON"
 }

@@ -13,10 +13,12 @@ class Layout4ViewController: UIViewController {
     @IBOutlet fileprivate weak var naviBarHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var tabBarTitleLabel: UILabel!
     var cardsArray: [EngagementCardProtocol] = []
-    let colors = [  UIColor(red: 204/255, green: 255/255, blue: 229/255, alpha: 1),
+    let colors: [UIColor] = [  UIColor(red: 204/255, green: 255/255, blue: 229/255, alpha: 1),
                     UIColor(red: 255/255, green: 204/255, blue: 204/255, alpha: 1),
                     UIColor(red: 204/255, green: 204/255, blue: 255/255, alpha: 1),]
     var previousScrollOffset: CGFloat = 0
+    
+    var stateController: StateController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,7 @@ class Layout4ViewController: UIViewController {
         let url = Bundle.main.url(forResource: "EngagementFeed", withExtension: "json")
         if let data = NSData(contentsOf: url!) as? Data {
             cardsArray = CardParser.sharedInstance.engagementCardsData(data)
+            self.stateController = StateController(cards: cardsArray)
         }
     }
 
@@ -43,7 +46,7 @@ class Layout4ViewController: UIViewController {
 
 extension Layout4ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cardsArray.count
+        return cardsArray.count 
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -60,14 +63,14 @@ extension Layout4ViewController: UICollectionViewDelegate, UICollectionViewDataS
         let card = cardsArray[indexPath.row]
 
         var cell:Layout4CollectionCell!
-        switch card.type {
+        switch card.contentType {
         case CardTypes.trackers.rawValue :
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: "trackerCell", for: indexPath) as! Layout4CollectionCell
-            cell.pointsLabel.text = " \(card.points!) PTS "
+            cell.pointsLabel.text = " \(card.pointsAvailable!) PTS "
             
         default:
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: "articleCell", for: indexPath) as! Layout4CollectionCell
-            cell.videoPlayButton.isHidden = card.type != CardTypes.video.rawValue
+            cell.videoPlayButton.isHidden = card.contentType != CardTypes.video.rawValue
 
         }
         
