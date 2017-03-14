@@ -30,6 +30,9 @@ class Layout4ViewController: UIViewController {
         let realm = try! Realm()
         let members = realm.objects(Member.self)
         print(members)
+        
+        let trackers = realm.objects(Tracker.self).filter("memberID CONTAINS '123456' AND trackerType CONTAINS 'Blood Pressure'")
+        print(trackers)
         // Do any additional setup after loading the view.
     }
 

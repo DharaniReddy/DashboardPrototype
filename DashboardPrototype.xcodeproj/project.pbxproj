@@ -42,6 +42,7 @@
 		9F1119C41E5C312B0091D1B3 /* Layout4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */; };
 		9F12ACE31E52D84C0079558A /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */; };
 		9F12ACE51E52D8630079558A /* ChallengesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */; };
+		9F3E7C1C1E767E5F00F449BE /* PersistTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E7C1B1E767E5F00F449BE /* PersistTracker.swift */; };
 		9F7AD7BC1E68316A0076A1C9 /* PersistMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AD7BB1E68316A0076A1C9 /* PersistMember.swift */; };
 		9F7AD7BE1E6834FF0076A1C9 /* RealmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AD7BD1E6834FF0076A1C9 /* RealmStore.swift */; };
 		9F896D171E519036003071EE /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F896D161E519036003071EE /* ChallengesViewController.swift */; };
@@ -114,6 +115,7 @@
 		9F1119C31E5C312B0091D1B3 /* Layout4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout4ViewController.swift; sourceTree = "<group>"; };
 		9F12ACE21E52D84C0079558A /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		9F12ACE41E52D8630079558A /* ChallengesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesPageViewController.swift; sourceTree = "<group>"; };
+		9F3E7C1B1E767E5F00F449BE /* PersistTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistTracker.swift; sourceTree = "<group>"; };
 		9F7AD7BB1E68316A0076A1C9 /* PersistMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistMember.swift; sourceTree = "<group>"; };
 		9F7AD7BD1E6834FF0076A1C9 /* RealmStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmStore.swift; sourceTree = "<group>"; };
 		9F896D161E519036003071EE /* ChallengesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				9F7AD7BB1E68316A0076A1C9 /* PersistMember.swift */,
+				9F3E7C1B1E767E5F00F449BE /* PersistTracker.swift */,
 				9F7AD7BD1E6834FF0076A1C9 /* RealmStore.swift */,
 			);
 			name = "Persist Data";
@@ -513,6 +516,7 @@
 				C79A0FBD1E5322BF00E99BE7 /* GoalDetailsViewController.swift in Sources */,
 				AECA35CC1E491AAE00C9DC45 /* ViewController.swift in Sources */,
 				C7A805951E51B5CB00FF59AC /* GolasViewController.swift in Sources */,
+				9F3E7C1C1E767E5F00F449BE /* PersistTracker.swift in Sources */,
 				CED90E221E5F22990041804C /* InviteViewController.swift in Sources */,
 				32CBFB831E53108B003169F2 /* NTTransition.swift in Sources */,
 				C7A23B1A1E4DDE2D0042D176 /* customLayout.m in Sources */,
