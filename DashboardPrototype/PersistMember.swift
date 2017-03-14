@@ -11,7 +11,8 @@ import RealmSwift
 
 class Member: Object {
     
-    dynamic var  memberID: String? = nil
+    dynamic var id = 0
+    dynamic var memberID: String? = nil
     
     dynamic var enableLifepoints: Bool = false
     dynamic var enableRedeeming: Bool = false
@@ -29,11 +30,18 @@ class Member: Object {
     
     let deviceTOSAgreementID = RealmOptional<Int>()
     
-    let configuredGoals = Array<Any>()
+    //let configuredGoals = List<recommended>()
     
     dynamic var pointsText: String? = nil
     dynamic var supportPhone: String? = nil
     dynamic var validicUserID: String? = nil
     dynamic var validicAccessToken: String? = nil
+    
+    func primaryKey() -> Int {
+        return id
+    }
 }
 
+class recommended: Object {
+    dynamic var name: String? = nil
+}

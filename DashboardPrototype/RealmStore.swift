@@ -47,9 +47,15 @@ class MemberStore {
     }
     
     class func createMember(realm: Realm) {
-        var member = realm.create(Member.self)
-        member.memberID = "123456"
-        member = updateMember(member: member)
+        
+        let data = "{\"memberID\": \"123456\", \"enableLifepoints\": true, \"enableRedeeming\": true, \"showMessaging\": true, \"showMyCoach\": false, \"showCoachingGoals\": false, \"specialTile\": true, \"isDeviceEnabled\": true, \"isFitnessEnabled\": true, \"hasDeviceConnected\": true, \"hasNutritionAppConnected\": false, \"hasAcceptedDeviceTerms\": false, \"deviceTOSAgreementID\": 123, \"pointsText\": \"123456\", \"supportPhone\": \"123456\", \"validicUserID\": \"123456\", \"validicAccessToken\": \"123456\"}".data(using: .utf8)!
+        
+        let json = try! JSONSerialization.jsonObject(with: data, options: [])
+        realm.create(Member.self, value: json, update: false)
+        
+//        var member = realm.create(Member.self)
+//        member.memberID = "123456"
+//        member = updateMember(member: member)
         try! realm.commitWrite()
     }
     
